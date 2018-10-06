@@ -1,0 +1,541 @@
+@import "normalize";
+@import "rouge-github";
+@import "variables";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,900');
+
+@mixin large {
+  @media screen and (min-width: #{$large-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media screen and (min-width: #{$medium-breakpoint}) and (max-width: #{$large-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media screen and (max-width: #{$medium-breakpoint}) {
+    @content;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $body-text-color;
+  background-color:$body-background-color;
+}
+
+#skip-to-content {
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  overflow: hidden;
+  top: -10px;
+
+  &:focus {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    height: auto;
+    width: auto;
+    background: invert($body-link-color);
+    outline: thick solid invert($body-link-color);
+  }
+}
+
+a {
+  color: $body-link-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.btn {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.3rem;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  + .btn {
+    margin-left: 1rem;
+  }
+
+  @include large {
+    padding: 0.75rem 1rem;
+  }
+
+  @include medium {
+    padding: 0.6rem 0.9rem;
+    font-size: 0.9rem;
+  }
+
+  @include small {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 0.9rem;
+
+    + .btn {
+      margin-top: 1rem;
+      margin-left: 0;
+    }
+  }
+}
+
+.page-header {
+  color: $header-heading-color;
+  text-align: center;
+  background-color: #FFF;
+  background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
+  box-shadow: 0px 5px 10px 0px #656565;
+  @include large {
+    padding: 1rem 6rem;
+  }
+
+  @include medium {
+    padding: 1rem 4rem;
+  }
+
+  @include small {
+    padding: 1rem 1rem;
+  }
+}
+
+.project-name {
+  margin-top: 0;
+  margin-bottom: 0.1rem;
+  font-family:"Montserrat";
+  font-weight:700;
+  color: white;
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+
+
+  @include large {
+    font-size: 4rem;
+  }
+
+  @include medium {
+    font-size: 3rem;
+  }
+
+  @include small {
+    font-size: 2rem;
+  }
+}
+
+.project-tagline {
+  margin-bottom: 2rem;
+  font-family:"Montserrat";
+  border: 1px solid #656565;
+  background-color: #DADDE8;
+  padding: 0.5rem;
+  text-align: center;
+  color: #656565;
+  border-radius: 20px;
+  font-weight:600 !important;
+  width: 50rem;
+  margin: 2rem auto;
+  box-shadow: inset 2px 2px 3px 0px rgba(0,0,0,0.75);
+
+  @include large {
+    font-size: 1.25rem;
+  }
+
+  @include medium {
+    font-size: 1.15rem;
+  }
+
+  @include small {
+    font-size: 1rem;
+  }
+}
+
+.main-content {
+  word-wrap: break-word;
+  :first-child {
+    margin-top: 0;
+
+  }
+
+  @include large {
+    max-width: 90rem;
+    padding: 2rem 6rem;
+    margin: 0 auto;
+    font-size: 1.1rem;
+  }
+
+  @include medium {
+    padding: 2rem 4rem;
+    font-size: 1.1rem;
+  }
+
+  @include small {
+    padding: 2rem 1rem;
+    font-size: 1rem;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-family:"Montserrat";
+    font-weight: 800;
+    color: $section-headings-color;
+  }
+
+  h2{
+    font-size: 2rem;
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  code {
+    padding: 2px 4px;
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 0.9rem;
+    color: $code-text-color;
+    background-color: $code-bg-color;
+    border-radius: 0.3rem;
+  }
+
+  pre {
+    padding: 0.8rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    color: $code-text-color;
+    word-wrap: normal;
+    background-color: $code-bg-color;
+    border: solid 1px $border-color;
+    border-radius: 0.3rem;
+
+    > code {
+      padding: 0;
+      margin: 0;
+      font-size: 0.9rem;
+      color: $code-text-color;
+      word-break: normal;
+      white-space: pre;
+      background: transparent;
+      border: 0;
+    }
+  }
+
+  .highlight {
+    margin-bottom: 1rem;
+
+    pre {
+      margin-bottom: 0;
+      word-break: normal;
+    }
+  }
+
+  .highlight pre,
+  pre {
+    padding: 0.8rem;
+    overflow: auto;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    border-radius: 0.3rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  pre code,
+  pre tt {
+    display: inline;
+    max-width: initial;
+    padding: 0;
+    margin: 0;
+    overflow: initial;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
+
+    &:before,
+    &:after {
+      content: normal;
+    }
+  }
+
+  ul,
+  ol {
+    margin-top: 0;
+  }
+
+  blockquote {
+    padding: 0 1rem;
+    margin-left: 0;
+    color: $blockquote-text-color;
+    border-left: 0.3rem solid $border-color;
+
+    > :first-child {
+      margin-top: 0;
+    }
+
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  table {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    word-break: normal;
+    word-break: keep-all; // For Firefox to horizontally scroll wider tables.
+    -webkit-overflow-scrolling: touch;
+
+    th {
+      font-weight: bold;
+    }
+
+    th,
+    td {
+      padding: 0.5rem 1rem;
+      border: 1px solid $table-border-color;
+    }
+  }
+
+  dl {
+    padding: 0;
+
+    dt {
+      padding: 0;
+      margin-top: 1rem;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    dd {
+      padding: 0;
+      margin-bottom: 1rem;
+    }
+  }
+
+  hr {
+    height: 2px;
+    padding: 0;
+    margin: 1rem 0;
+    background-color: $hr-border-color;
+    border: 0;
+  }
+}
+
+.site-footer {
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: solid 1px $hr-border-color;
+
+  @include large {
+    font-size: 1rem;
+  }
+
+  @include medium {
+    font-size: 1rem;
+  }
+
+  @include small {
+    font-size: 0.9rem;
+  }
+}
+
+.site-footer-owner {
+  display: block;
+  font-weight: bold;
+}
+
+.site-footer-credits {
+  color: $blockquote-text-color;
+}
+
+
+// CLASSES FOR THE CITY LISTS, TIER BY TIER ---------------------------------------------------------------------------------------------------------------------------
+
+.tier_1, .tier_2, .tier_3{
+  margin:auto;
+  text-align: center;
+}
+
+.tier_1 .ville{
+  display: inline-block;
+  width: 22rem;
+  border: 2px solid #264193;
+  border-radius : 30px;
+  padding: 0.5rem 1rem;
+  margin:0.75rem;
+  font-size:0.9rem;
+}
+
+.tier_1 h3{
+  color:#264193;
+  text-align: center;
+  font-size: 1.5rem;
+  }
+
+
+.tier_2 .ville{
+  display: inline-block;
+  width: 17rem;
+  border: 2px solid #2B0C43;
+  border-radius : 30px;
+  padding: 0.5rem 1rem;
+  margin:0.5rem;
+  font-size:0.8rem;
+}
+
+.tier_2 h3{
+  color:#2B0C43;
+  text-align: center;
+  font-size: 1.3rem;
+  }
+
+.tier_3 .ville{
+  display: inline-block;
+  width: 17rem;
+  border: 2px solid #440930;
+  border-radius : 30px;
+  padding: 0.5rem 1rem;
+  margin:0.5rem;
+  font-size:0.8rem;
+}
+
+.tier_3 h3{
+  color:#440930;
+  text-align: center;
+  font-size: 1.3rem;
+  }
+
+.tell_me_more {
+  background-color:#2B0C43;
+  width:15rem;
+  height:2.5rem;
+  line-height:2.5rem;
+  margin: 1rem auto;
+  border-radius:15px;
+  color:#FFF;
+  font-family: "Montserrat";
+  font-weight:600;
+  font-size: 1rem;
+  vertical-align:middle;
+  text-align:center;
+}
+
+.tier_1 .tell_me_more{
+  background-color:#264193;
+}
+
+.tier_2 .tell_me_more{
+  background-color:#2B0C43;
+}
+.tier_3 .tell_me_more{
+  background-color:#440930;
+}
+
+.tell_me_more a, a:hover, a:after {
+  text-decoration:none;
+  color: #FFF;
+}
+
+.ville{
+  * {
+      box-sizing: border-box;
+  }
+
+
+  /* 2 column layout */
+
+  .row{
+    max-width:20rem;
+    margin: 1rem auto;
+  }
+  
+  .side {
+      float: left;
+      width: 35%;
+      height: 1.8rem;
+      text-align: left;
+  }
+
+  .middle {
+      float: left;
+      width: 65%;
+      height: 1.8rem;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+
+  /* The bar container */
+  .bar-container {
+      width: 100%;
+      background-color: #DADDE8;
+      text-align: center;
+      color: white;
+      border-radius:10px;
+  }
+
+  /* Individual bars */
+  .bar-5 {width: 100%; height: 18px; background-color: #0E105B; border-radius:10px;}
+  .bar-4 {width: 80%; height: 18px; background-color: #2B0C43; border-radius:10px;}
+  .bar-3 {width: 60%; height: 18px; background-color: #440930; border-radius:10px;}
+  .bar-2 {width: 40%; height: 18px; background-color: #5F051A; border-radius:10px;}
+  .bar-1 {width: 20%; height: 18px; background-color: #750208; border-radius:10px;}
+
+  /* Responsive layout - make the columns stack on top of each other instead of next to each other */
+  @media (max-width: 400px) {
+      .side, .middle {
+          width: 100%;
+      }
+  }
+}

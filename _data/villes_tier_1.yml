@@ -1,0 +1,27 @@
+-
+ nom: Clermont-Ferrand
+ loyer: 5
+ animation: 5
+ delinquance: 3
+ internet: 3
+ meteo: 5
+ transport: 5
+ coworking: 5
+-
+ nom: Nantes
+ loyer: 4
+ animation: 4
+ delinquance: 4
+ internet: 4
+ meteo: 3
+ transport: 4
+ coworking: 5
+-
+ nom: Tours
+ loyer: 4
+ animation: 4
+ delinquance: 4
+ internet: 3
+ meteo: 5
+ transport: 4
+ coworking: 5

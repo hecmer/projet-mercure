@@ -1,0 +1,108 @@
+-
+ nom: Marseille
+ loyer: 3
+ animation: 5
+ delinquance: 2
+ internet: 3
+ meteo: 5
+ transport: 3
+ coworking: 5
+-
+ nom: Montpellier
+ loyer: 3
+ animation: 5
+ delinquance: 2
+ internet: 3
+ meteo: 5
+ transport: 3
+ coworking: 5
+-
+ nom: La Rochelle
+ loyer: 3
+ animation: 5
+ delinquance: 4
+ internet: 2
+ meteo: 4
+ transport: 3
+ coworking: 5
+-
+ nom: Nîmes
+ loyer: 4
+ animation: 4
+ delinquance: 3
+ internet: 3
+ meteo: 4
+ transport: 4
+ coworking: 5
+-
+ nom: Strasbourg
+ loyer: 3
+ animation: 4
+ delinquance: 3
+ internet: 3
+ meteo: 4
+ transport: 3
+ coworking: 5
+-
+ nom: Rennes
+ loyer: 3
+ animation: 4
+ delinquance: 4
+ internet: 4
+ meteo: 2
+ transport: 3
+ coworking: 5
+-
+ nom: Angers
+ loyer: 5
+ animation: 3
+ delinquance: 4
+ internet: 4
+ meteo: 3
+ transport: 5
+ coworking: 5
+-
+ nom: Nancy
+ loyer: 4
+ animation: 5
+ delinquance: 3
+ internet: 3
+ meteo: 1
+ transport: 4
+ coworking: 5
+-
+ nom: Niort
+ loyer: 5
+ animation: 3
+ delinquance: 5
+ internet: 3
+ meteo: 4
+ transport: 5
+ coworking: 1
+-
+ nom: Narbonne
+ loyer: 4
+ animation: 5
+ delinquance: 3
+ internet: 1
+ meteo: 5
+ transport: 4
+ coworking: 4
+-
+ nom: Vannes
+ loyer: 5
+ animation: 4
+ delinquance: 5
+ internet: 2
+ meteo: 2
+ transport: 5
+ coworking: 3
+-
+ nom: Carcassonne
+ loyer: 5
+ animation: 5
+ delinquance: 3
+ internet: 1
+ meteo: 5
+ transport: 5
+ coworking: 1

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+
+    {% if site.google_analytics %}
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ site.google_analytics }}');
+      </script>
+    {% endif %}
+    <meta charset="UTF-8">
+
+{% seo %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+      <h1 class="project-name">{{ site.title }}</h1>
+    </header>
+
+    <main id="content" class="main-content" role="main">
+        <div class="project-tagline">{{ site.description }}</div>
+
+      <h2>Top Tier</h2>
+      <p>Voici les villes avec les meilleurs classements à travers toutes les catégories</p>
+      <div class="tier_1">
+          {% for city in site.data.villes_tier_1 %}
+            <div class="ville">
+              <h3>{{ city.nom }}</h3>
+              <div class="row">
+
+                <div class="side">
+                  <div>Loyer</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-{{ city.loyer }}"></div>
+                  </div>
+                </div>
+                
+                <div class="side">
+                  <div>Animation</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-{{ city.animation }}"></div>
+                  </div>
+                </div>
+
+                <div class="side">
+                  <div>Sécurité</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-{{ city.delinquance }}"></div>
+                  </div>
+                </div>
+                
+                <div class="side">
+                  <div>Internet</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-{{ city.internet }}"></div>
+                  </div>
+                </div>
+
+                <div class="side">
+                  <div>Météo</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-{{ city.meteo }}"></div>
+                  </div>
+                </div>
+
+
+                <div class="side">
+                  <div>Transports</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-{{ city.transport }}"></div>
+                  </div>
+                </div>
+
+
+                <div class="side">
+                  <div>Coworkings</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-{{ city.coworking }}"></div>
+                  </div>
+                </div>
+
+              </div>
+
+              <a href="#"><div class="tell_me_more">Dites m'en plus !</div></a>
+
+            </div>
+          {% endfor %}
+      </div>
+
+      <h2>Tier 2</h2>
+      <p>Ces villes ont des forces indéniables. A regarder de près !</p>
+      <div class="tier_2">
+          {% for city in site.data.villes_tier_2 %}
+            <div class="ville">
+              <h3>{{ city.nom }}</h3>
+              <div class="row">
+
+                <div class="side">
+                  <div>Loyer</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-{{ city.loyer }}"></div>
+                  </div>
+                </div>
+                
+                <div class="side">
+                  <div>Animation</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-{{ city.animation }}"></div>
+                  </div>
+                </div>
+
+                <div class="side">
+                  <div>Sécurité</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-{{ city.delinquance }}"></div>
+                  </div>
+                </div>
+                
+                <div class="side">
+                  <div>Internet</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-{{ city.internet }}"></div>
+                  </div>
+                </div>
+
+                <div class="side">
+                  <div>Météo</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-{{ city.meteo }}"></div>
+                  </div>
+                </div>
+
+
+                <div class="side">
+                  <div>Transports</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-{{ city.transport }}"></div>
+                  </div>
+                </div>
+
+
+                <div class="side">
+                  <div>Coworkings</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-{{ city.coworking }}"></div>
+                  </div>
+                </div>
+
+              </div>
+
+              <a href="#"><div class="tell_me_more">Dites m'en plus !</div></a>
+
+            </div>
+          {% endfor %}
+      </div>
+
+      <h2>Tier 3</h2>
+      <p>Encore, toujours plus de choix ! Notre algorythme (que dis-je, notre "IA") nous signale également ces villes franaçaises.</p>
+        <div class="tier_3">
+          {% for city in site.data.villes_tier_3 %}
+            <div class="ville">
+              <h3>{{ city.nom }}</h3>
+              <div class="row">
+
+                <div class="side">
+                  <div>Loyer</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-{{ city.loyer }}"></div>
+                  </div>
+                </div>
+                
+                <div class="side">
+                  <div>Animation</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-{{ city.animation }}"></div>
+                  </div>
+                </div>
+
+                <div class="side">
+                  <div>Sécurité</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-{{ city.delinquance }}"></div>
+                  </div>
+                </div>
+                
+                <div class="side">
+                  <div>Internet</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-{{ city.internet }}"></div>
+                  </div>
+                </div>
+
+                <div class="side">
+                  <div>Météo</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-{{ city.meteo }}"></div>
+                  </div>
+                </div>
+
+
+                <div class="side">
+                  <div>Transports</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-{{ city.transport }}"></div>
+                  </div>
+                </div>
+
+
+                <div class="side">
+                  <div>Coworkings</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-{{ city.coworking }}"></div>
+                  </div>
+                </div>
+
+              </div>
+
+              <a href="#"><div class="tell_me_more">Dites m'en plus !</div></a>
+
+            </div>
+          {% endfor %}
+        </div>
+
+      <footer class="site-footer">
+        <span class="site-footer-credits">Ce site est une création de Hector Mercadier & Thomas Lesachey</span>
+      </footer>
+    </main>
+  </body>
+</html>
