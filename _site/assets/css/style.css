@@ -603,7 +603,7 @@ a {
 
 .btn {
   display: inline-block;
-  margin-bottom: 1rem;
+  margin: 1rem auto;
   color: rgba(255, 255, 255, 0.7);
   background-color: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.2);
@@ -620,10 +620,10 @@ a {
     margin-left: 1rem; }
   @media screen and (min-width: 64em) {
     .btn {
-      padding: 0.75rem 1rem; } }
+      padding: 0.5rem 1rem; } }
   @media screen and (min-width: 42em) and (max-width: 64em) {
     .btn {
-      padding: 0.6rem 0.9rem;
+      padding: 0.5rem 0.9rem;
       font-size: 0.9rem; } }
   @media screen and (max-width: 42em) {
     .btn {
@@ -867,7 +867,7 @@ a {
   border: 2px solid #2B0C43;
   border-radius: 30px;
   padding: 0.5rem 1rem;
-  margin: 0.5rem;
+  margin: 1rem 0.5rem;
   font-size: 0.8rem; }
 
 .tier_2 h3 {
@@ -881,7 +881,7 @@ a {
   border: 2px solid #440930;
   border-radius: 30px;
   padding: 0.5rem 1rem;
-  margin: 0.5rem;
+  margin: 1rem 0.5rem;
   font-size: 0.8rem; }
 
 .tier_3 h3 {
