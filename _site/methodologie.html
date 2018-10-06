@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  
+  <head>
+    
+    <meta charset="UTF-8">
+
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Projet Mercure | Trouvez la meilleure ville française pour les nomades !</title>
+<meta name="generator" content="Jekyll v3.8.4" />
+<meta property="og:title" content="Projet Mercure" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Trouvez la meilleure ville française pour les nomades !" />
+<meta property="og:description" content="Trouvez la meilleure ville française pour les nomades !" />
+<link rel="canonical" href="http://localhost:4000/methodologie.html" />
+<meta property="og:url" content="http://localhost:4000/methodologie.html" />
+<meta property="og:site_name" content="Projet Mercure" />
+<script type="application/ld+json">
+{"description":"Trouvez la meilleure ville française pour les nomades !","@type":"WebPage","url":"http://localhost:4000/methodologie.html","headline":"Projet Mercure","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    
+  </head>
+
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+    
+    <header class="page-header" role="banner">
+	<h1 class="project-name">Projet Mercure</h1>
+	<a href="/" class="btn">Classement</a>
+	<a href="methodologie" class="btn">Methodologie</a>
+</header>
+    
+    <main id="content" class="main-content" role="main" style="width:65rem;text-align:justify;";>
+      <div class="project-tagline">La méthodologie du classement Projet Mercure</div>
+
+      <h1 id="introduction">Introduction</h1>
+
+<p>L’objectif final de ce classement est de permettre à des travailleurs nomades de s’implanter (à court ou long terme) dans des lieux adaptés à leurs besoins, en France. Nomadist &amp; co font déjà un très bon travail pour couvrir les villes internationales, mais nous restons confrontés à une problématique : pour être résident fiscal français, et donc ne pas avoir d’ennuis ou de complications fiscales, il nous faut résider pendant environ 6 mois par ans en France. Dés lors, où devons-nous nous établir ?</p>
+
+<p>Projet Mercure utilise des sources ouvertes afin d’alimenter un algorythme qui note chacune des charactéristiques des villes, et permet ainsi d’obtenir un classement cohérent et objectif.</p>
+
+<h1 id="les-sources">Les Sources</h1>
+<p>Nous utilisons uniquement des sources ouvertes. Les informations sont récupérées grâce à des scrapers, et sont aggrégées par un algorythme. Très franchement, nous sommes tentés de parler d’IA. C’est super intelligent de collecter de l’information d’un nombre de sources limitées, et de les aggréger toujours de la même manière, non ? C’est même du Machine Learning, que dis-je du Deep Learning ! ON se sert même d’une Blockch… Sorry j’en peux plus il est trois heures du mat.</p>
+
+<p>DONC, les sources. Ce sont les suivantes, sortez vos callepins :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Catégorie</th>
+      <th>Source</th>
+      <th>Commentaires</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Loyer</td>
+      <td>Agences immobilières</td>
+      <td>On scrape, on scrape, à droite à gauche. On a &gt;10k d’annonces</td>
+    </tr>
+    <tr>
+      <td>Animation</td>
+      <td>Guides touristiques</td>
+      <td>On compte le nombre de resto par habitants (nb resto/nb hab)</td>
+    </tr>
+    <tr>
+      <td>Sécurité</td>
+      <td>INSEE - délinquance</td>
+      <td>On interprète les données de délinquance de l’INSEE &amp; GOUV</td>
+    </tr>
+    <tr>
+      <td>Internet</td>
+      <td>ARCEP</td>
+      <td>C’est une combinaison des données internet fixe et 4G</td>
+    </tr>
+    <tr>
+      <td>Météo</td>
+      <td>Météo France</td>
+      <td>Surprise ! Météo France a des données sur la météo !</td>
+    </tr>
+    <tr>
+      <td>Transports</td>
+      <td>SNCF &amp; Wikipedia</td>
+      <td>Nous prenons en considération les aéroports et gares TGV</td>
+    </tr>
+    <tr>
+      <td>Coworkings</td>
+      <td>Annuaires de coworking</td>
+      <td>On ne fait que des choses légales. On cherche des coworkings.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Vous remarquerez, si vous êtes attentifs, que les informations dans le tableau ci-dessus ne sont pas <em>très</em> explicites… C’est volontaire, et lié à deux raisons :</p>
+<ul>
+  <li>On ne veut pas donner le nom de nos meilleurs ingrédients</li>
+  <li>On ne veut pas donner la recette complète de notre sauce secrète</li>
+</ul>
+
+<p>Eh oui ! Nous avons envie d’être transparent, pour que vous puissiez comprendre ce que vous regardez, mais nous ne voulons pas non plus tout offrir sur un plateau !</p>
+
+<h1 id="les-notes">Les notes</h1>
+<p>Nous utilisons une notation relative, car le but est de trouver la meilleure ville en France, et pas de juger si la meilleure est, en absolu, mauvaise, ou si la moins bonne est, en absolu, excellente. Nous voulons choisir une ville !</p>
+
+<p>Pour chacune des catégories, nous attribuons une note sur 5. Les meilleures villes obtiennent 5, et les moins bonnes 1.</p>
+
+<p>Pour calculer la note finale de l’entreprise, et déterminer dans quelle catégorie elle se situe (1, 2, 3 ou “Podium”, “Peloton” et “Poursuivants”), nous aggrégeons les notes de chaque catégorie en tenant compte de la pondération de chacune des catégories.</p>
+
+<h1 id="la-pondération">La pondération</h1>
+<p>Nous adoptons une pondération très simple : dans une tradition pastéquière, nous considérons que “Cash is King”, et nous donnons donc un coefficient 2 au Loyer. Toutes les autres catégories not un coefficient 1.</p>
+
+<p>Cela nous permet de séparer les 250 plus grandes villes en 4 segments :</p>
+<ul>
+  <li>Le podium (classements 1 à 3)</li>
+  <li>Le peloton (classements 4 à 11)</li>
+  <li>Les poursuivants (classements 12 à 23)</li>
+  <li>Les exclus, qui ne sont pas dans le classement (classements 24 à 250)</li>
+</ul>
+
+<h1 id="questions-remarques-commentaires">Questions, remarques, commentaires</h1>
+<ul>
+  <li>Votre ville ne figure pas au classement, et vous pensez qu’elle le devrait ? Envoyez-nous un email !</li>
+  <li>Votre ville figure au classement, et vous pensez qu’elle ne le devrait pas ? Envoyez-nous un email !</li>
+</ul>
+
+
+    
+      <footer class="site-footer">
+        <span class="site-footer-credits">Copyright blablabla etc. etc. vous connaissez la chanson !</span>
+      </footer>
+    </main>
+  </body>
+</html>

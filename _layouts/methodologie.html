@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  
+  <head>
+    {% include head.html %}
+  </head>
+
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+    
+    {% include header.html %}
+    
+    <main id="content" class="main-content" role="main" style="width:65rem;text-align:justify;";>
+      <div class="project-tagline">La méthodologie du classement Projet Mercure</div>
+
+      {{ content }}
+    
+      <footer class="site-footer">
+        {% include footer.html %}
+      </footer>
+    </main>
+  </body>
+</html>
