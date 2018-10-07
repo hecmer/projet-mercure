@@ -620,10 +620,10 @@ a {
     margin-left: 1rem; }
   @media screen and (min-width: 64em) {
     .btn {
-      padding: 0.5rem 1rem; } }
+      padding: 0.5rem 2rem; } }
   @media screen and (min-width: 42em) and (max-width: 64em) {
     .btn {
-      padding: 0.5rem 0.9rem;
+      padding: 0.5rem 1.5rem;
       font-size: 0.9rem; } }
   @media screen and (max-width: 42em) {
     .btn {
@@ -678,8 +678,9 @@ a {
   color: #0E105B;
   border-radius: 20px;
   font-weight: 600 !important;
-  width: 50rem;
+  max-width: 50rem;
   margin: 2rem auto;
+  padding: 0.5rem 2rem;
   box-shadow: inset 2px 2px 3px 0px rgba(0, 0, 0, 0.75); }
   @media screen and (min-width: 64em) {
     .project-tagline {
@@ -859,7 +860,8 @@ a {
 .tier_1 h3 {
   color: #264193;
   text-align: center;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  margin: 0.2rem auto; }
 
 .tier_2 .ville {
   display: inline-block;
@@ -873,7 +875,8 @@ a {
 .tier_2 h3 {
   color: #2B0C43;
   text-align: center;
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  margin: 0.2rem auto; }
 
 .tier_3 .ville {
   display: inline-block;
@@ -887,7 +890,8 @@ a {
 .tier_3 h3 {
   color: #440930;
   text-align: center;
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  margin: 0.2rem auto; }
 
 .tell_me_more {
   background-color: #2B0C43;
@@ -989,3 +993,8 @@ a {
   @media (max-width: 400px) {
     .ville .side, .ville .middle {
       width: 100%; } }
+
+.trophy {
+  height: 1.5rem;
+  width: auto;
+  margin: auto 0.5rem; }
