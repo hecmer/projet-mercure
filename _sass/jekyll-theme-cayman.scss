@@ -113,6 +113,7 @@ a {
   background-color: #FFF;
   background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
   box-shadow: 0px 5px 10px 0px #656565;
+  width:100%;
   @include large {
     padding: 1rem 6rem;
   }
@@ -404,60 +405,131 @@ a {
   text-align: center;
 }
 
-.tier_1 .ville{
-  display: inline-block;
-  width: 22rem;
-  border: 2px solid #264193;
-  border-radius : 30px;
-  padding: 0.5rem 1rem;
-  margin:0.75rem;
-  font-size:0.9rem;
+.tier_1title{
+  color:$color-tier1 !important;
 }
 
-.tier_1 h3{
-  color:#264193;
-  text-align: center;
-  font-size: 1.5rem;
-  margin: 0.2rem auto;
-  }
-
-
-.tier_2 .ville{
-  display: inline-block;
-  width: 17rem;
-  border: 2px solid #2B0C43;
-  border-radius : 30px;
-  padding: 0.5rem 1rem;
-  margin:1rem 0.5rem;
-  font-size:0.8rem;
+.tier_2title{
+  color:$color-tier2 !important;
 }
 
-.tier_2 h3{
-  color:#2B0C43;
-  text-align: center;
-  font-size: 1.3rem;
-  margin: 0.2rem auto;
-  }
-
-.tier_3 .ville{
-  display: inline-block;
-  width: 17rem;
-  border: 2px solid #440930;
-  border-radius : 30px;
-  padding: 0.5rem 1rem;
-  margin: 1rem 0.5rem;
-  font-size:0.8rem;
+.tier_3title{
+  color:$color-tier3 !important;
 }
 
-.tier_3 h3{
-  color:#440930;
-  text-align: center;
-  font-size: 1.3rem;
-  margin: 0.2rem auto;
+.tier_1 {
+  .ville{
+    display: inline-block;
+    width: 22rem;
+    border: 2px solid $color-tier1;
+    border-radius : 30px;
+    padding: 0.5rem 1rem;
+    margin:0.75rem;
+    font-size:0.9rem;
   }
+
+  h3{
+    color:$color-tier1;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .tell_me_more{
+    background-color:$color-tier1;
+  }
+
+  .classement{
+    width:2.5rem;
+    height:2.5rem;
+    border-radius:1.5rem;
+    color: #fff;
+    background-color:$color-tier1;
+    margin: 0.5rem;
+    text-align:center;
+    font-weight:bold;
+    display:inline-block;
+    line-height:2.5rem;
+    font-size: 1.25rem;
+  }
+}
+
+
+.tier_2 {
+  .ville{
+    display: inline-block;
+    width: 17rem;
+    border: 2px solid $color-tier2;
+    border-radius : 30px;
+    padding: 0.5rem 1rem;
+    margin:1rem 0.5rem;
+    font-size:0.8rem;
+  }
+
+  h3{
+    color:$color-tier2;
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 0.2rem auto;
+  }
+
+  .classement{
+    width:2rem;
+    height:2rem;
+    border-radius:1rem;
+    color: #fff;
+    background-color:$color-tier2;
+    margin: 0.5rem;
+    text-align:center;
+    font-weight:bold;
+    display:inline-block;
+    line-height:2rem;
+    font-size: 1rem;
+  }
+  
+  .tell_me_more{
+    background-color:$color-tier2;
+  }
+}
+
+.tier_3{
+  .ville{
+    display: inline-block;
+    width: 17rem;
+    border: 2px solid $color-tier3;
+    border-radius : 30px;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0.5rem;
+    font-size:0.8rem;
+  }
+
+  h3{
+    color:$color-tier3;
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 0.2rem auto;
+    }
+
+  .classement{
+    width:2rem;
+    height:2rem;
+    border-radius:1rem;
+    color: #fff;
+    background-color:$color-tier2;
+    margin: 0.5rem;
+    text-align:center;
+    font-weight:bold;
+    display:inline-block;
+    line-height:2rem;
+    font-size: 1rem;
+  }
+
+  .tell_me_more{
+    background-color:$color-tier3;
+  }
+}
 
 .tell_me_more {
-  background-color:#2B0C43;
+  background-color:$color-tier2;
   width:15rem;
   height:2.5rem;
   line-height:2.5rem;
@@ -471,17 +543,6 @@ a {
   text-align:center;
 }
 
-.tier_1 .tell_me_more{
-  background-color:#264193;
-}
-
-.tier_2 .tell_me_more{
-  background-color:#2B0C43;
-}
-.tier_3 .tell_me_more{
-  background-color:#440930;
-}
-
 .tell_me_more a, a:hover, a:after {
   text-decoration:none;
   color: #FFF;
@@ -491,7 +552,6 @@ a {
   * {
       box-sizing: border-box;
   }
-
 
   /* 2 column layout */
 
@@ -531,8 +591,8 @@ a {
 
   /* Individual bars */
   .bar-5 {width: 100%; height: 1.3rem; background-color: #0E105B; border-radius:10px; text-align:left; font-weight:bold; padding-left:0.7rem;}
-  .bar-4 {width: 80%; height: 1.3rem; background-color: #2B0C43; border-radius:10px; text-align:left; font-weight:bold; padding-left:0.7rem;}
-  .bar-3 {width: 60%; height: 1.3rem; background-color: #440930; border-radius:10px; text-align:left; font-weight:bold; padding-left:0.7rem;}
+  .bar-4 {width: 80%; height: 1.3rem; background-color: $color-tier2; border-radius:10px; text-align:left; font-weight:bold; padding-left:0.7rem;}
+  .bar-3 {width: 60%; height: 1.3rem; background-color: $color-tier3; border-radius:10px; text-align:left; font-weight:bold; padding-left:0.7rem;}
   .bar-2 {width: 40%; height: 1.3rem; background-color: #5F051A; border-radius:10px; text-align:left; font-weight:bold; padding-left:0.7rem;}
   .bar-1 {width: 20%; height: 1.3rem; background-color: #750208; border-radius:10px; text-align:left; font-weight:bold; padding-left:0.7rem;}
 

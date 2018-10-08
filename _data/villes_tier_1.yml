@@ -7,6 +7,7 @@
  meteo: 5
  transport: 5
  coworking: 5
+ rang: 1
 -
  nom: Nantes
  loyer: 4
@@ -16,6 +17,7 @@
  meteo: 3
  transport: 4
  coworking: 5
+ rang: 2
 -
  nom: Tours
  loyer: 4
@@ -25,3 +27,4 @@
  meteo: 5
  transport: 4
  coworking: 5
+ rang: 3

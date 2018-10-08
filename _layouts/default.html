@@ -13,13 +13,14 @@
     <main id="content" class="main-content" role="main">
         <div class="project-tagline">{{ site.description }}</div>
 
-      <h2>Le podium</h2>
+      <h2 class="tier_1title">Le podium <img src="/assets/images/trophy1.png" class="trophy"><img src="/assets/images/trophy1.png" class="trophy"><img src="/assets/images/trophy1.png" class="trophy"><img src="/assets/images/trophy1.png" class="trophy"><img src="/assets/images/trophy1.png" class="trophy"></h2>
+      
       <p>Voici les villes avec les meilleurs classements à travers toutes les catégories. Commencez déjà à faire vos bagages, il y a tout ce qu'il vous faut dans ces villes !</p>
+      
       <div class="tier_1">
           {% for city in site.data.villes_tier_1 %}
             <div class="ville">
-              <h3>{{ city.nom }}</h3>
-              <img src="/assets/images/trophy1.png" class="trophy"><img src="/assets/images/trophy1.png" class="trophy"><img src="/assets/images/trophy1.png" class="trophy"><img src="/assets/images/trophy1.png" class="trophy"><img src="/assets/images/trophy1.png" class="trophy">
+              <h3><span class="classement">{{ city.rang }}</span>{{ city.nom }}</h3>
               <div class="row">
 
                 <div class="side">
@@ -93,13 +94,13 @@
           {% endfor %}
       </div>
 
-      <h2>Le peloton</h2>
+      <h2 class="tier_2title">Le peloton <img src="/assets/images/trophy2.png" class="trophy"><img src="/assets/images/trophy2.png" class="trophy"><img src="/assets/images/trophy2.png" class="trophy"><img src="/assets/images/trophy2.png" class="trophy"><img src="/assets/images/trophygrey.png" class="trophy"></h2>
       <p>Ces villes ont des forces indéniables. A regarder de près !</p>
       <div class="tier_2">
           {% for city in site.data.villes_tier_2 %}
             <div class="ville">
-              <h3>{{ city.nom }}</h3>
-              <img src="/assets/images/trophy2.png" class="trophy"><img src="/assets/images/trophy2.png" class="trophy"><img src="/assets/images/trophy2.png" class="trophy"><img src="/assets/images/trophy2.png" class="trophy"><img src="/assets/images/trophygrey.png" class="trophy">
+              <h3><span class="classement">{{ city.rang }}</span>{{ city.nom }}</h3>
+              
               <div class="row">
 
                 <div class="side">
@@ -173,13 +174,13 @@
           {% endfor %}
       </div>
 
-      <h2>Les poursuivants</h2>
+      <h2 class="tier_3title">Les poursuivants <img src="/assets/images/trophy3.png" class="trophy"><img src="/assets/images/trophy3.png" class="trophy"><img src="/assets/images/trophy3.png" class="trophy"><img src="/assets/images/trophygrey.png" class="trophy"><img src="/assets/images/trophygrey.png" class="trophy"></h2>
       <p>Encore, toujours plus de choix ! Notre algorythme (que dis-je, notre "<b>IA</b>") nous signale également ces villes françaises.</p>
         <div class="tier_3">
           {% for city in site.data.villes_tier_3 %}
             <div class="ville">
-              <h3>{{ city.nom }}</h3>
-              <img src="/assets/images/trophy3.png" class="trophy"><img src="/assets/images/trophy3.png" class="trophy"><img src="/assets/images/trophy3.png" class="trophy"><img src="/assets/images/trophygrey.png" class="trophy"><img src="/assets/images/trophygrey.png" class="trophy">
+              <h3><span class="classement">{{ city.rang }}</span>{{ city.nom }}</h3>
+              
               <div class="row">
 
                 <div class="side">

@@ -1,4 +1,14 @@
 -
+ nom: Mulhouse
+ loyer: 5
+ animation: 4
+ delinquance: 3
+ internet: 4
+ meteo: 3
+ transport: 5
+ coworking: 4
+ rang: 4
+-
  nom: Bordeaux
  loyer: 4
  animation: 5
@@ -7,6 +17,7 @@
  meteo: 3
  transport: 4
  coworking: 5
+ rang: 5
 -
  nom: Le Mans
  loyer: 5
@@ -16,6 +27,7 @@
  meteo: 4
  transport: 5
  coworking: 5
+ rang: 6
 -
  nom: Perpignan
  loyer: 5
@@ -25,33 +37,7 @@
  meteo: 5
  transport: 5
  coworking: 3
--
- nom: Mulhouse
- loyer: 5
- animation: 4
- delinquance: 3
- internet: 4
- meteo: 3
- transport: 5
- coworking: 4
--
- nom: Avignon
- loyer: 4
- animation: 5
- delinquance: 2
- internet: 3
- meteo: 5
- transport: 4
- coworking: 5
--
- nom: Poitiers
- loyer: 5
- animation: 3
- delinquance: 3
- internet: 2
- meteo: 5
- transport: 5
- coworking: 5
+ rang: 7
 -
  nom: Toulon
  loyer: 4
@@ -61,6 +47,7 @@
  meteo: 5
  transport: 4
  coworking: 5
+ rang: 8
 -
  nom: Lyon
  loyer: 3
@@ -70,3 +57,24 @@
  meteo: 4
  transport: 3
  coworking: 5
+ rang: 9
+-
+ nom: Avignon
+ loyer: 4
+ animation: 5
+ delinquance: 2
+ internet: 3
+ meteo: 5
+ transport: 4
+ coworking: 5
+ rang: 10
+-
+ nom: Poitiers
+ loyer: 5
+ animation: 3
+ delinquance: 3
+ internet: 2
+ meteo: 5
+ transport: 5
+ coworking: 5
+ rang: 12

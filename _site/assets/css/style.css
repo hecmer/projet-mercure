@@ -640,7 +640,8 @@ a {
   text-align: center;
   background-color: #FFF;
   background-image: linear-gradient(120deg, #780206, #061161);
-  box-shadow: 0px 5px 10px 0px #656565; }
+  box-shadow: 0px 5px 10px 0px #656565;
+  width: 100%; }
   @media screen and (min-width: 64em) {
     .page-header {
       padding: 1rem 6rem; } }
@@ -848,6 +849,15 @@ a {
   margin: auto;
   text-align: center; }
 
+.tier_1title {
+  color: #264193 !important; }
+
+.tier_2title {
+  color: #481F6B !important; }
+
+.tier_3title {
+  color: #602043 !important; }
+
 .tier_1 .ville {
   display: inline-block;
   width: 22rem;
@@ -856,45 +866,83 @@ a {
   padding: 0.5rem 1rem;
   margin: 0.75rem;
   font-size: 0.9rem; }
-
 .tier_1 h3 {
   color: #264193;
   text-align: center;
-  font-size: 1.5rem;
-  margin: 0.2rem auto; }
+  font-size: 1.5rem; }
+.tier_1 .tell_me_more {
+  background-color: #264193; }
+.tier_1 .classement {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 1.5rem;
+  color: #fff;
+  background-color: #264193;
+  margin: 0.5rem;
+  text-align: center;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 2.5rem;
+  font-size: 1.25rem; }
 
 .tier_2 .ville {
   display: inline-block;
   width: 17rem;
-  border: 2px solid #2B0C43;
+  border: 2px solid #481F6B;
   border-radius: 30px;
   padding: 0.5rem 1rem;
   margin: 1rem 0.5rem;
   font-size: 0.8rem; }
-
 .tier_2 h3 {
-  color: #2B0C43;
+  color: #481F6B;
   text-align: center;
   font-size: 1.3rem;
   margin: 0.2rem auto; }
+.tier_2 .classement {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 1rem;
+  color: #fff;
+  background-color: #481F6B;
+  margin: 0.5rem;
+  text-align: center;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 2rem;
+  font-size: 1rem; }
+.tier_2 .tell_me_more {
+  background-color: #481F6B; }
 
 .tier_3 .ville {
   display: inline-block;
   width: 17rem;
-  border: 2px solid #440930;
+  border: 2px solid #602043;
   border-radius: 30px;
   padding: 0.5rem 1rem;
   margin: 1rem 0.5rem;
   font-size: 0.8rem; }
-
 .tier_3 h3 {
-  color: #440930;
+  color: #602043;
   text-align: center;
   font-size: 1.3rem;
   margin: 0.2rem auto; }
+.tier_3 .classement {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 1rem;
+  color: #fff;
+  background-color: #481F6B;
+  margin: 0.5rem;
+  text-align: center;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 2rem;
+  font-size: 1rem; }
+.tier_3 .tell_me_more {
+  background-color: #602043; }
 
 .tell_me_more {
-  background-color: #2B0C43;
+  background-color: #481F6B;
   width: 15rem;
   height: 2.5rem;
   line-height: 2.5rem;
@@ -906,15 +954,6 @@ a {
   font-size: 1rem;
   vertical-align: middle;
   text-align: center; }
-
-.tier_1 .tell_me_more {
-  background-color: #264193; }
-
-.tier_2 .tell_me_more {
-  background-color: #2B0C43; }
-
-.tier_3 .tell_me_more {
-  background-color: #440930; }
 
 .tell_me_more a, a:hover, a:after {
   text-decoration: none;
@@ -961,7 +1000,7 @@ a {
   .ville .bar-4 {
     width: 80%;
     height: 1.3rem;
-    background-color: #2B0C43;
+    background-color: #481F6B;
     border-radius: 10px;
     text-align: left;
     font-weight: bold;
@@ -969,7 +1008,7 @@ a {
   .ville .bar-3 {
     width: 60%;
     height: 1.3rem;
-    background-color: #440930;
+    background-color: #602043;
     border-radius: 10px;
     text-align: left;
     font-weight: bold;

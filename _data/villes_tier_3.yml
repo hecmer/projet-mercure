@@ -1,4 +1,14 @@
 -
+ nom: Nîmes
+ loyer: 4
+ animation: 4
+ delinquance: 3
+ internet: 3
+ meteo: 4
+ transport: 4
+ coworking: 5
+ rang: 11
+-
  nom: Marseille
  loyer: 3
  animation: 5
@@ -7,6 +17,7 @@
  meteo: 5
  transport: 3
  coworking: 5
+ rang: 13
 -
  nom: Montpellier
  loyer: 3
@@ -16,6 +27,7 @@
  meteo: 5
  transport: 3
  coworking: 5
+ rang: 14
 -
  nom: La Rochelle
  loyer: 3
@@ -25,24 +37,7 @@
  meteo: 4
  transport: 3
  coworking: 5
--
- nom: Nîmes
- loyer: 4
- animation: 4
- delinquance: 3
- internet: 3
- meteo: 4
- transport: 4
- coworking: 5
--
- nom: Strasbourg
- loyer: 3
- animation: 4
- delinquance: 3
- internet: 3
- meteo: 4
- transport: 3
- coworking: 5
+ rang: 15
 -
  nom: Rennes
  loyer: 3
@@ -52,6 +47,7 @@
  meteo: 2
  transport: 3
  coworking: 5
+ rang: 16
 -
  nom: Angers
  loyer: 5
@@ -61,6 +57,17 @@
  meteo: 3
  transport: 5
  coworking: 5
+ rang: 17
+-
+ nom: Strasbourg
+ loyer: 3
+ animation: 4
+ delinquance: 3
+ internet: 3
+ meteo: 4
+ transport: 3
+ coworking: 5
+ rang: 18
 -
  nom: Nancy
  loyer: 4
@@ -70,6 +77,7 @@
  meteo: 1
  transport: 4
  coworking: 5
+ rang: 19
 -
  nom: Niort
  loyer: 5
@@ -79,15 +87,7 @@
  meteo: 4
  transport: 5
  coworking: 1
--
- nom: Narbonne
- loyer: 4
- animation: 5
- delinquance: 3
- internet: 1
- meteo: 5
- transport: 4
- coworking: 4
+ rang: 20
 -
  nom: Vannes
  loyer: 5
@@ -97,6 +97,17 @@
  meteo: 2
  transport: 5
  coworking: 3
+ rang: 21
+-
+ nom: Narbonne
+ loyer: 4
+ animation: 5
+ delinquance: 3
+ internet: 1
+ meteo: 5
+ transport: 4
+ coworking: 4
+ rang: 22
 -
  nom: Carcassonne
  loyer: 5
@@ -106,3 +117,4 @@
  meteo: 5
  transport: 5
  coworking: 1
+ rang: 23
