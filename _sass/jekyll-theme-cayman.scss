@@ -446,7 +446,6 @@ a {
     background-color:$color-tier1;
     margin: 0.5rem;
     text-align:center;
-    font-weight:bold;
     display:inline-block;
     line-height:2.5rem;
     font-size: 1.25rem;
@@ -480,7 +479,6 @@ a {
     background-color:$color-tier2;
     margin: 0.5rem;
     text-align:center;
-    font-weight:bold;
     display:inline-block;
     line-height:2rem;
     font-size: 1rem;
@@ -517,7 +515,6 @@ a {
     background-color:$color-tier2;
     margin: 0.5rem;
     text-align:center;
-    font-weight:bold;
     display:inline-block;
     line-height:2rem;
     font-size: 1rem;
@@ -549,6 +546,8 @@ a {
 }
 
 .ville{
+  box-shadow: 2px 2px 4px 0px #656565;
+
   * {
       box-sizing: border-box;
   }
