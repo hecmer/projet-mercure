@@ -610,3 +610,13 @@ a {
   width: auto;
   margin: auto 0.5rem;
 }
+
+.modal-body input[type=text]{
+  border-radius:0.3rem;
+  padding-left:0.3rem;
+  padding-right:0.3rem;
+}
+
+.modal-content{
+  border-radius:0.75rem;
+}
