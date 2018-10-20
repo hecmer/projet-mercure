@@ -63,7 +63,7 @@ a {
   }
 }
 
-.btn {
+.btn-jek {
   display: inline-block;
   margin: 1rem auto;
   color: rgba(255, 255, 255, 0.7);
@@ -81,7 +81,7 @@ a {
     border-color: rgba(255, 255, 255, 0.3);
   }
 
-  + .btn {
+  + .btn-jek {
     margin-left: 1rem;
   }
 
@@ -100,7 +100,7 @@ a {
     padding: 0.75rem;
     font-size: 0.9rem;
 
-    + .btn {
+    + .btn-jek {
       margin-top: 1rem;
       margin-left: 0;
     }
@@ -527,7 +527,9 @@ a {
 
 .tell_me_more {
   background-color:$color-tier2;
-  width:15rem;
+  max-width:15rem;
+  padding-left:2rem;
+  padding-right:2rem;
   height:2.5rem;
   line-height:2.5rem;
   margin: 1rem auto;
@@ -607,4 +609,14 @@ a {
   height: 1.5rem;
   width: auto;
   margin: auto 0.5rem;
+}
+
+.modal-body input[type=text]{
+  border-radius:0.3rem;
+  padding-left:0.3rem;
+  padding-right:0.3rem;
+}
+
+.modal-content{
+  border-radius:0.75rem;
 }

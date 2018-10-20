@@ -11,12 +11,12 @@
     {% include header.html %}
     
     <main id="content" class="main-content" role="main">
-        <div class="project-tagline">{{ site.description }}</div>
+      <div class="project-tagline">{{ site.description }}</div>
 
       <h2 class="tier_1title">Le podium <img src="/assets/images/trophy1.png" class="trophy"><img src="/assets/images/trophy1.png" class="trophy"><img src="/assets/images/trophy1.png" class="trophy"><img src="/assets/images/trophy1.png" class="trophy"><img src="/assets/images/trophy1.png" class="trophy"></h2>
       
       <p>Voici les villes avec les meilleurs classements à travers toutes les catégories. Commencez déjà à faire vos bagages, il y a tout ce qu'il vous faut dans ces villes !</p>
-      
+
       <div class="tier_1">
           {% for city in site.data.villes_tier_1 %}
             <div class="ville">
@@ -88,8 +88,25 @@
 
               </div>
 
-              <a href="#"><div class="tell_me_more">Dites m'en plus !</div></a>
-
+            <!-- Modal button -->
+              <a href="#Modal{{ city.rang }}"><div class="tell_me_more" data-toggle="modal" data-target="#Modal{{ city.rang }}">Dites m'en plus !</div></a>
+            </div>
+            <!-- Modal content -->
+            <div class="modal fade" id="Modal{{ city.rang }}" tabindex="-1" role="dialog" aria-labelledby="{{ city.nom }}ModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3 class="modal-title" id="{{ city.nom }}ModalLongTitle">Tout savoir sur {{ city.nom }}</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Donnez-nous votre adresse email et nous vous tiendrons au courrant dès que nous aurons plus d'information à vous communiquer sur  {{ city.nom }} !</p>
+                     <form style="text-align:center;" action="https://tinyletter.com/hectorm" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/hectorm', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><input type="text" style="width:15rem" name="email" id="tlemail" placeholder="Adresse email"/></p><input type="hidden" value="1" name="embed" /><input type="submit" value="S'inscrire" class="tell_me_more"/></form>
+                  </div>
+                </div>
+              </div>
             </div>
           {% endfor %}
       </div>
@@ -167,9 +184,27 @@
                 </div>
 
               </div>
-
-              <a href="#"><div class="tell_me_more">Dites m'en plus !</div></a>
-
+              <!-- Modal button -->
+              <a href="#Modal{{ city.rang }}"><div class="tell_me_more" data-toggle="modal" data-target="#Modal{{ city.rang }}">Dites m'en plus !</div></a>
+            </div>
+            <!-- Modal content -->
+            <div class="modal fade" id="Modal{{ city.rang }}" tabindex="-1" role="dialog" aria-labelledby="{{ city.nom }}ModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3 class="modal-title" id="{{ city.nom }}ModalLongTitle">Tout savoir sur {{ city.nom }}</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Donnez-nous votre adresse email et nous vous tiendrons au courrant dès que nous aurons plus d'information à vous communiquer sur  {{ city.nom }} !</p>
+                     <form style="text-align:center;" action="https://tinyletter.com/hectorm" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/hectorm', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><input type="text" style="width:15rem" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed" /><input type="submit" value="S'inscrire" class="tell_me_more"/></form>
+                  </div>
+                  <div class="modal-footer">
+                  </div>
+                </div>
+              </div>
             </div>
           {% endfor %}
       </div>
@@ -247,9 +282,27 @@
                 </div>
 
               </div>
-
-              <a href="#"><div class="tell_me_more">Dites m'en plus !</div></a>
-
+              <!-- Modal button -->
+              <a href="#Modal{{ city.rang }}"><div class="tell_me_more" data-toggle="modal" data-target="#Modal{{ city.rang }}">Dites m'en plus !</div></a>
+            </div>
+            <!-- Modal content -->
+            <div class="modal fade" id="Modal{{ city.rang }}" tabindex="-1" role="dialog" aria-labelledby="{{ city.nom }}ModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3 class="modal-title" id="{{ city.nom }}ModalLongTitle">Tout savoir sur {{ city.nom }}</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Donnez-nous votre adresse email et nous vous tiendrons au courrant dès que nous aurons plus d'information à vous communiquer sur  {{ city.nom }} !</p>
+                     <form style="text-align:center;" action="https://tinyletter.com/hectorm" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/hectorm', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><input type="text" style="width:15rem" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed" /><input type="submit" value="S'inscrire" class="tell_me_more"/></form>
+                  </div>
+                  <div class="modal-footer">
+                  </div>
+                </div>
+              </div>
             </div>
           {% endfor %}
         </div>
