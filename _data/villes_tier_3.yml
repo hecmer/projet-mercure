@@ -1,23 +1,27 @@
 -
- nom: Nîmes
+ nom: Avignon
  loyer: 4
- animation: 4
- delinquance: 3
- internet: 3
- meteo: 4
- transport: 4
- coworking: 5
- rang: 11
--
- nom: Marseille
- loyer: 3
  animation: 5
  delinquance: 2
+ internet: 3
+ meteo: 5
+ transport: 4
+ coworking: 5
+ rang: 12
+ longitude: 43.93524483
+ latitude: 4.840715725
+-
+ nom: Tours
+ loyer: 3
+ animation: 4
+ delinquance: 4
  internet: 3
  meteo: 5
  transport: 3
  coworking: 5
  rang: 13
+ longitude: 47.39863823
+ latitude: 0.6965263759999999
 -
  nom: Montpellier
  loyer: 3
@@ -28,6 +32,32 @@
  transport: 3
  coworking: 5
  rang: 14
+ longitude: 43.61344091
+ latitude: 3.8685165789999996
+-
+ nom: Lyon
+ loyer: 2
+ animation: 5
+ delinquance: 3
+ internet: 4
+ meteo: 4
+ transport: 2
+ coworking: 5
+ rang: 15
+ longitude: 45.77868676
+ latitude: 4.823961127
+-
+ nom: Marseille
+ loyer: 3
+ animation: 5
+ delinquance: 2
+ internet: 3
+ meteo: 5
+ transport: 3
+ coworking: 5
+ rang: 16
+ longitude: 43.23408349
+ latitude: 5.452496831
 -
  nom: La Rochelle
  loyer: 3
@@ -37,27 +67,9 @@
  meteo: 4
  transport: 3
  coworking: 5
- rang: 15
--
- nom: Rennes
- loyer: 3
- animation: 4
- delinquance: 4
- internet: 4
- meteo: 2
- transport: 3
- coworking: 5
- rang: 16
--
- nom: Angers
- loyer: 5
- animation: 3
- delinquance: 4
- internet: 4
- meteo: 3
- transport: 5
- coworking: 5
  rang: 17
+ longitude: 46.1620644
+ latitude: -1.174657028
 -
  nom: Strasbourg
  loyer: 3
@@ -68,6 +80,32 @@
  transport: 3
  coworking: 5
  rang: 18
+ longitude: 48.57126798
+ latitude: 7.767526795
+-
+ nom: Saint-Étienne
+ loyer: 5
+ animation: 4
+ delinquance: 3
+ internet: 3
+ meteo: 4
+ transport: 5
+ coworking: 5
+ rang: 19
+ longitude: 45.43012355
+ latitude: 4.379139971
+-
+ nom: Angers
+ loyer: 5
+ animation: 3
+ delinquance: 4
+ internet: 4
+ meteo: 3
+ transport: 5
+ coworking: 5
+ rang: 20
+ longitude: 47.47683742
+ latitude: -0.556125995
 -
  nom: Nancy
  loyer: 4
@@ -77,7 +115,9 @@
  meteo: 1
  transport: 4
  coworking: 5
- rang: 19
+ rang: 21
+ longitude: 48.69019955
+ latitude: 6.175882543999999
 -
  nom: Niort
  loyer: 5
@@ -87,7 +127,9 @@
  meteo: 4
  transport: 5
  coworking: 1
- rang: 20
+ rang: 22
+ longitude: 46.32826024
+ latitude: -0.465353019
 -
  nom: Vannes
  loyer: 5
@@ -97,24 +139,6 @@
  meteo: 2
  transport: 5
  coworking: 3
- rang: 21
--
- nom: Narbonne
- loyer: 4
- animation: 5
- delinquance: 3
- internet: 1
- meteo: 5
- transport: 4
- coworking: 4
- rang: 22
--
- nom: Carcassonne
- loyer: 5
- animation: 5
- delinquance: 3
- internet: 1
- meteo: 5
- transport: 5
- coworking: 1
  rang: 23
+ longitude: 47.65974938
+ latitude: -2.757143295

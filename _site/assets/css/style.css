@@ -1045,3 +1045,6 @@ a {
 
 .modal-content {
   border-radius: 0.75rem; }
+
+.modal-title {
+  text-align: center; }

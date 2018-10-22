@@ -1,13 +1,15 @@
 -
- nom: Mulhouse
+ nom: Perpignan
  loyer: 5
- animation: 4
- delinquance: 3
- internet: 4
- meteo: 3
+ animation: 5
+ delinquance: 2
+ internet: 3
+ meteo: 5
  transport: 5
- coworking: 4
+ coworking: 3
  rang: 4
+ longitude: 42.69659541
+ latitude: 2.89936954
 -
  nom: Bordeaux
  loyer: 4
@@ -18,26 +20,8 @@
  transport: 4
  coworking: 5
  rang: 5
--
- nom: Le Mans
- loyer: 5
- animation: 3
- delinquance: 4
- internet: 3
- meteo: 4
- transport: 5
- coworking: 5
- rang: 6
--
- nom: Perpignan
- loyer: 5
- animation: 5
- delinquance: 2
- internet: 3
- meteo: 5
- transport: 5
- coworking: 3
- rang: 7
+ longitude: 44.85724454
+ latitude: -0.573696781
 -
  nom: Toulon
  loyer: 4
@@ -47,27 +31,21 @@
  meteo: 5
  transport: 4
  coworking: 5
- rang: 8
+ rang: 6
+ longitude: 43.13615897
+ latitude: 5.9323963420000005
 -
- nom: Lyon
- loyer: 3
- animation: 5
- delinquance: 3
- internet: 4
- meteo: 4
- transport: 3
- coworking: 5
- rang: 9
--
- nom: Avignon
- loyer: 4
- animation: 5
- delinquance: 2
+ nom: Le Mans
+ loyer: 5
+ animation: 3
+ delinquance: 4
  internet: 3
- meteo: 5
- transport: 4
+ meteo: 4
+ transport: 5
  coworking: 5
- rang: 10
+ rang: 7
+ longitude: 47.98852567
+ latitude: 0.20003049399999998
 -
  nom: Poitiers
  loyer: 5
@@ -77,4 +55,42 @@
  meteo: 5
  transport: 5
  coworking: 5
- rang: 12
+ rang: 8
+ longitude: 46.58392077
+ latitude: 0.359947653
+-
+ nom: Narbonne
+ loyer: 5
+ animation: 5
+ delinquance: 3
+ internet: 1
+ meteo: 5
+ transport: 5
+ coworking: 4
+ rang: 9
+ longitude: 43.16523999
+ latitude: 3.020238687
+-
+ nom: Rennes
+ loyer: 4
+ animation: 4
+ delinquance: 4
+ internet: 4
+ meteo: 2
+ transport: 4
+ coworking: 5
+ rang: 10
+ longitude: 48.11197912
+ latitude: -1.681864491
+-
+ nom: Nîmes
+ loyer: 4
+ animation: 4
+ delinquance: 3
+ internet: 3
+ meteo: 4
+ transport: 4
+ coworking: 5
+ rang: 11
+ longitude: 43.84493839
+ latitude: 4.34806797

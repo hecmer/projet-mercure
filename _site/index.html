@@ -26,6 +26,11 @@
     
      <!--Bootstrap css-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!--leaflet css-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="crossorigin=""/>
+   <!--leaflet JS-->
+   <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
 
     <link rel="stylesheet" href="/assets/css/style.css?v=">
 
@@ -42,7 +47,6 @@
     
     <main id="content" class="main-content" role="main">
       <div class="project-tagline">Quelle ville française choisir pour le télétravail ?</div>
-
       <h2 class="tier_1title">Le podium <img src="/assets/images/trophy1.png" class="trophy"><img src="/assets/images/trophy1.png" class="trophy"><img src="/assets/images/trophy1.png" class="trophy"><img src="/assets/images/trophy1.png" class="trophy"><img src="/assets/images/trophy1.png" class="trophy"></h2>
       
       <p>Voici les villes avec les meilleurs classements à travers toutes les catégories. Commencez déjà à faire vos bagages, il y a tout ce qu'il vous faut dans ces villes !</p>
@@ -132,6 +136,21 @@
                     </button>
                   </div>
                   <div class="modal-body">
+                    <div id="map1" style="height:15rem; width:100%;position: inherited;"></div>
+                    <script>
+                      var mymap1 = L.map('map1').setView([45.785649299999996, 3.115545429], 5);
+                      L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiaHJlbW90ZWZyYW5jZSIsImEiOiJjam5qdmVoMGEwbWpiM2tzNXcwem5xZWUzIn0.EVnfakBtRnl9aQPunsM5fA', { /* set your personal MapBox Access Token */
+                        maxZoom: 20, /* zoom limit of the map */
+                        attribution: 'Données &copy; Contributeurs <a href="http://openstreetmap.org">OpenStreetMap</a> + ' +
+                          '<a href="http://mapbox.com">Mapbox</a> | ' +
+                          '<a href="https://creativecommons.org/licenses/by/2.0/"> ' +
+                          'Remote France', /* set the map's caption */
+                          id: 'mapbox.streets' /* mapbox.light / dark / streets / outdoors / satellite */
+                      }).addTo(mymap1);
+                      L.marker([45.785649299999996, 3.115545429]).addTo(mymap1); /* set your location's GPS Coordinates : [LAT,LON] */
+                    </script>
+
+
                     <p>Donnez-nous votre adresse email et nous vous tiendrons au courrant dès que nous aurons plus d'information à vous communiquer sur  Clermont-Ferrand !</p>
                      <form style="text-align:center;" action="https://tinyletter.com/hectorm" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/hectorm', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><input type="text" style="width:15rem" name="email" id="tlemail" placeholder="Adresse email"/></p><input type="hidden" value="1" name="embed" /><input type="submit" value="S'inscrire" class="tell_me_more"/></form>
                   </div>
@@ -222,6 +241,21 @@
                     </button>
                   </div>
                   <div class="modal-body">
+                    <div id="map2" style="height:15rem; width:100%;position: inherited;"></div>
+                    <script>
+                      var mymap2 = L.map('map2').setView([47.23163568, -1.5483100859999999], 5);
+                      L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiaHJlbW90ZWZyYW5jZSIsImEiOiJjam5qdmVoMGEwbWpiM2tzNXcwem5xZWUzIn0.EVnfakBtRnl9aQPunsM5fA', { /* set your personal MapBox Access Token */
+                        maxZoom: 20, /* zoom limit of the map */
+                        attribution: 'Données &copy; Contributeurs <a href="http://openstreetmap.org">OpenStreetMap</a> + ' +
+                          '<a href="http://mapbox.com">Mapbox</a> | ' +
+                          '<a href="https://creativecommons.org/licenses/by/2.0/"> ' +
+                          'Remote France', /* set the map's caption */
+                          id: 'mapbox.streets' /* mapbox.light / dark / streets / outdoors / satellite */
+                      }).addTo(mymap2);
+                      L.marker([47.23163568, -1.5483100859999999]).addTo(mymap2); /* set your location's GPS Coordinates : [LAT,LON] */
+                    </script>
+
+
                     <p>Donnez-nous votre adresse email et nous vous tiendrons au courrant dès que nous aurons plus d'information à vous communiquer sur  Nantes !</p>
                      <form style="text-align:center;" action="https://tinyletter.com/hectorm" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/hectorm', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><input type="text" style="width:15rem" name="email" id="tlemail" placeholder="Adresse email"/></p><input type="hidden" value="1" name="embed" /><input type="submit" value="S'inscrire" class="tell_me_more"/></form>
                   </div>
@@ -230,7 +264,7 @@
             </div>
           
             <div class="ville">
-              <h3><span class="classement">3</span>Tours</h3>
+              <h3><span class="classement">3</span>Mulhouse</h3>
               <div class="row">
 
                 <div class="side">
@@ -238,7 +272,7 @@
                 </div>
                 <div class="middle">
                   <div class="bar-container">
-                    <div class="bar-4">4 / 5</div>
+                    <div class="bar-5">5 / 5</div>
                   </div>
                 </div>
                 
@@ -256,7 +290,7 @@
                 </div>
                 <div class="middle">
                   <div class="bar-container">
-                    <div class="bar-4">4 / 5</div>
+                    <div class="bar-3">3 / 5</div>
                   </div>
                 </div>
                 
@@ -265,7 +299,7 @@
                 </div>
                 <div class="middle">
                   <div class="bar-container">
-                    <div class="bar-3">3 / 5</div>
+                    <div class="bar-4">4 / 5</div>
                   </div>
                 </div>
 
@@ -274,7 +308,7 @@
                 </div>
                 <div class="middle">
                   <div class="bar-container">
-                    <div class="bar-5">5 / 5</div>
+                    <div class="bar-3">3 / 5</div>
                   </div>
                 </div>
 
@@ -283,7 +317,7 @@
                 </div>
                 <div class="middle">
                   <div class="bar-container">
-                    <div class="bar-4">4 / 5</div>
+                    <div class="bar-5">5 / 5</div>
                   </div>
                 </div>
 
@@ -292,7 +326,7 @@
                 </div>
                 <div class="middle">
                   <div class="bar-container">
-                    <div class="bar-5">5 / 5</div>
+                    <div class="bar-4">4 / 5</div>
                   </div>
                 </div>
 
@@ -302,17 +336,32 @@
               <a href="#Modal3"><div class="tell_me_more" data-toggle="modal" data-target="#Modal3">Dites m'en plus !</div></a>
             </div>
             <!-- Modal content -->
-            <div class="modal fade" id="Modal3" tabindex="-1" role="dialog" aria-labelledby="ToursModalCenterTitle" aria-hidden="true">
+            <div class="modal fade" id="Modal3" tabindex="-1" role="dialog" aria-labelledby="MulhouseModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h3 class="modal-title" id="ToursModalLongTitle">Tout savoir sur Tours</h3>
+                    <h3 class="modal-title" id="MulhouseModalLongTitle">Tout savoir sur Mulhouse</h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
                   <div class="modal-body">
-                    <p>Donnez-nous votre adresse email et nous vous tiendrons au courrant dès que nous aurons plus d'information à vous communiquer sur  Tours !</p>
+                    <div id="map3" style="height:15rem; width:100%;position: inherited;"></div>
+                    <script>
+                      var mymap3 = L.map('map3').setView([47.7491633, 7.325700475], 5);
+                      L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiaHJlbW90ZWZyYW5jZSIsImEiOiJjam5qdmVoMGEwbWpiM2tzNXcwem5xZWUzIn0.EVnfakBtRnl9aQPunsM5fA', { /* set your personal MapBox Access Token */
+                        maxZoom: 20, /* zoom limit of the map */
+                        attribution: 'Données &copy; Contributeurs <a href="http://openstreetmap.org">OpenStreetMap</a> + ' +
+                          '<a href="http://mapbox.com">Mapbox</a> | ' +
+                          '<a href="https://creativecommons.org/licenses/by/2.0/"> ' +
+                          'Remote France', /* set the map's caption */
+                          id: 'mapbox.streets' /* mapbox.light / dark / streets / outdoors / satellite */
+                      }).addTo(mymap3);
+                      L.marker([47.7491633, 7.325700475]).addTo(mymap3); /* set your location's GPS Coordinates : [LAT,LON] */
+                    </script>
+
+
+                    <p>Donnez-nous votre adresse email et nous vous tiendrons au courrant dès que nous aurons plus d'information à vous communiquer sur  Mulhouse !</p>
                      <form style="text-align:center;" action="https://tinyletter.com/hectorm" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/hectorm', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><input type="text" style="width:15rem" name="email" id="tlemail" placeholder="Adresse email"/></p><input type="hidden" value="1" name="embed" /><input type="submit" value="S'inscrire" class="tell_me_more"/></form>
                   </div>
                 </div>
@@ -326,7 +375,7 @@
       <div class="tier_2">
           
             <div class="ville">
-              <h3><span class="classement">4</span>Mulhouse</h3>
+              <h3><span class="classement">4</span>Perpignan</h3>
               
               <div class="row">
 
@@ -344,7 +393,7 @@
                 </div>
                 <div class="middle">
                   <div class="bar-container">
-                    <div class="bar-4">4 / 5</div>
+                    <div class="bar-5">5 / 5</div>
                   </div>
                 </div>
 
@@ -353,7 +402,7 @@
                 </div>
                 <div class="middle">
                   <div class="bar-container">
-                    <div class="bar-3">3 / 5</div>
+                    <div class="bar-2">2 / 5</div>
                   </div>
                 </div>
                 
@@ -362,7 +411,7 @@
                 </div>
                 <div class="middle">
                   <div class="bar-container">
-                    <div class="bar-4">4 / 5</div>
+                    <div class="bar-3">3 / 5</div>
                   </div>
                 </div>
 
@@ -371,7 +420,7 @@
                 </div>
                 <div class="middle">
                   <div class="bar-container">
-                    <div class="bar-3">3 / 5</div>
+                    <div class="bar-5">5 / 5</div>
                   </div>
                 </div>
 
@@ -389,7 +438,7 @@
                 </div>
                 <div class="middle">
                   <div class="bar-container">
-                    <div class="bar-4">4 / 5</div>
+                    <div class="bar-3">3 / 5</div>
                   </div>
                 </div>
 
@@ -398,17 +447,17 @@
               <a href="#Modal4"><div class="tell_me_more" data-toggle="modal" data-target="#Modal4">Dites m'en plus !</div></a>
             </div>
             <!-- Modal content -->
-            <div class="modal fade" id="Modal4" tabindex="-1" role="dialog" aria-labelledby="MulhouseModalCenterTitle" aria-hidden="true">
+            <div class="modal fade" id="Modal4" tabindex="-1" role="dialog" aria-labelledby="PerpignanModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h3 class="modal-title" id="MulhouseModalLongTitle">Tout savoir sur Mulhouse</h3>
+                    <h3 class="modal-title" id="PerpignanModalLongTitle">Tout savoir sur Perpignan</h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
                   <div class="modal-body">
-                    <p>Donnez-nous votre adresse email et nous vous tiendrons au courrant dès que nous aurons plus d'information à vous communiquer sur  Mulhouse !</p>
+                    <p>Donnez-nous votre adresse email et nous vous tiendrons au courrant dès que nous aurons plus d'information à vous communiquer sur  Perpignan !</p>
                      <form style="text-align:center;" action="https://tinyletter.com/hectorm" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/hectorm', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><input type="text" style="width:15rem" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed" /><input type="submit" value="S'inscrire" class="tell_me_more"/></form>
                   </div>
                   <div class="modal-footer">
@@ -510,7 +559,7 @@
             </div>
           
             <div class="ville">
-              <h3><span class="classement">6</span>Le Mans</h3>
+              <h3><span class="classement">6</span>Toulon</h3>
               
               <div class="row">
 
@@ -519,7 +568,7 @@
                 </div>
                 <div class="middle">
                   <div class="bar-container">
-                    <div class="bar-5">5 / 5</div>
+                    <div class="bar-4">4 / 5</div>
                   </div>
                 </div>
                 
@@ -528,7 +577,7 @@
                 </div>
                 <div class="middle">
                   <div class="bar-container">
-                    <div class="bar-3">3 / 5</div>
+                    <div class="bar-4">4 / 5</div>
                   </div>
                 </div>
 
@@ -537,7 +586,7 @@
                 </div>
                 <div class="middle">
                   <div class="bar-container">
-                    <div class="bar-4">4 / 5</div>
+                    <div class="bar-3">3 / 5</div>
                   </div>
                 </div>
                 
@@ -555,7 +604,7 @@
                 </div>
                 <div class="middle">
                   <div class="bar-container">
-                    <div class="bar-4">4 / 5</div>
+                    <div class="bar-5">5 / 5</div>
                   </div>
                 </div>
 
@@ -564,7 +613,7 @@
                 </div>
                 <div class="middle">
                   <div class="bar-container">
-                    <div class="bar-5">5 / 5</div>
+                    <div class="bar-4">4 / 5</div>
                   </div>
                 </div>
 
@@ -582,191 +631,7 @@
               <a href="#Modal6"><div class="tell_me_more" data-toggle="modal" data-target="#Modal6">Dites m'en plus !</div></a>
             </div>
             <!-- Modal content -->
-            <div class="modal fade" id="Modal6" tabindex="-1" role="dialog" aria-labelledby="Le MansModalCenterTitle" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h3 class="modal-title" id="Le MansModalLongTitle">Tout savoir sur Le Mans</h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <p>Donnez-nous votre adresse email et nous vous tiendrons au courrant dès que nous aurons plus d'information à vous communiquer sur  Le Mans !</p>
-                     <form style="text-align:center;" action="https://tinyletter.com/hectorm" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/hectorm', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><input type="text" style="width:15rem" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed" /><input type="submit" value="S'inscrire" class="tell_me_more"/></form>
-                  </div>
-                  <div class="modal-footer">
-                  </div>
-                </div>
-              </div>
-            </div>
-          
-            <div class="ville">
-              <h3><span class="classement">7</span>Perpignan</h3>
-              
-              <div class="row">
-
-                <div class="side">
-                  <div>Loyer</div>
-                </div>
-                <div class="middle">
-                  <div class="bar-container">
-                    <div class="bar-5">5 / 5</div>
-                  </div>
-                </div>
-                
-                <div class="side">
-                  <div>Animation</div>
-                </div>
-                <div class="middle">
-                  <div class="bar-container">
-                    <div class="bar-5">5 / 5</div>
-                  </div>
-                </div>
-
-                <div class="side">
-                  <div>Sécurité</div>
-                </div>
-                <div class="middle">
-                  <div class="bar-container">
-                    <div class="bar-2">2 / 5</div>
-                  </div>
-                </div>
-                
-                <div class="side">
-                  <div>Internet</div>
-                </div>
-                <div class="middle">
-                  <div class="bar-container">
-                    <div class="bar-3">3 / 5</div>
-                  </div>
-                </div>
-
-                <div class="side">
-                  <div>Météo</div>
-                </div>
-                <div class="middle">
-                  <div class="bar-container">
-                    <div class="bar-5">5 / 5</div>
-                  </div>
-                </div>
-
-                <div class="side">
-                  <div>Transports</div>
-                </div>
-                <div class="middle">
-                  <div class="bar-container">
-                    <div class="bar-5">5 / 5</div>
-                  </div>
-                </div>
-
-                <div class="side">
-                  <div>Coworkings</div>
-                </div>
-                <div class="middle">
-                  <div class="bar-container">
-                    <div class="bar-3">3 / 5</div>
-                  </div>
-                </div>
-
-              </div>
-              <!-- Modal button -->
-              <a href="#Modal7"><div class="tell_me_more" data-toggle="modal" data-target="#Modal7">Dites m'en plus !</div></a>
-            </div>
-            <!-- Modal content -->
-            <div class="modal fade" id="Modal7" tabindex="-1" role="dialog" aria-labelledby="PerpignanModalCenterTitle" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h3 class="modal-title" id="PerpignanModalLongTitle">Tout savoir sur Perpignan</h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <p>Donnez-nous votre adresse email et nous vous tiendrons au courrant dès que nous aurons plus d'information à vous communiquer sur  Perpignan !</p>
-                     <form style="text-align:center;" action="https://tinyletter.com/hectorm" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/hectorm', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><input type="text" style="width:15rem" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed" /><input type="submit" value="S'inscrire" class="tell_me_more"/></form>
-                  </div>
-                  <div class="modal-footer">
-                  </div>
-                </div>
-              </div>
-            </div>
-          
-            <div class="ville">
-              <h3><span class="classement">8</span>Toulon</h3>
-              
-              <div class="row">
-
-                <div class="side">
-                  <div>Loyer</div>
-                </div>
-                <div class="middle">
-                  <div class="bar-container">
-                    <div class="bar-4">4 / 5</div>
-                  </div>
-                </div>
-                
-                <div class="side">
-                  <div>Animation</div>
-                </div>
-                <div class="middle">
-                  <div class="bar-container">
-                    <div class="bar-4">4 / 5</div>
-                  </div>
-                </div>
-
-                <div class="side">
-                  <div>Sécurité</div>
-                </div>
-                <div class="middle">
-                  <div class="bar-container">
-                    <div class="bar-3">3 / 5</div>
-                  </div>
-                </div>
-                
-                <div class="side">
-                  <div>Internet</div>
-                </div>
-                <div class="middle">
-                  <div class="bar-container">
-                    <div class="bar-3">3 / 5</div>
-                  </div>
-                </div>
-
-                <div class="side">
-                  <div>Météo</div>
-                </div>
-                <div class="middle">
-                  <div class="bar-container">
-                    <div class="bar-5">5 / 5</div>
-                  </div>
-                </div>
-
-                <div class="side">
-                  <div>Transports</div>
-                </div>
-                <div class="middle">
-                  <div class="bar-container">
-                    <div class="bar-4">4 / 5</div>
-                  </div>
-                </div>
-
-                <div class="side">
-                  <div>Coworkings</div>
-                </div>
-                <div class="middle">
-                  <div class="bar-container">
-                    <div class="bar-5">5 / 5</div>
-                  </div>
-                </div>
-
-              </div>
-              <!-- Modal button -->
-              <a href="#Modal8"><div class="tell_me_more" data-toggle="modal" data-target="#Modal8">Dites m'en plus !</div></a>
-            </div>
-            <!-- Modal content -->
-            <div class="modal fade" id="Modal8" tabindex="-1" role="dialog" aria-labelledby="ToulonModalCenterTitle" aria-hidden="true">
+            <div class="modal fade" id="Modal6" tabindex="-1" role="dialog" aria-labelledby="ToulonModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -786,7 +651,7 @@
             </div>
           
             <div class="ville">
-              <h3><span class="classement">9</span>Lyon</h3>
+              <h3><span class="classement">7</span>Le Mans</h3>
               
               <div class="row">
 
@@ -795,7 +660,7 @@
                 </div>
                 <div class="middle">
                   <div class="bar-container">
-                    <div class="bar-3">3 / 5</div>
+                    <div class="bar-5">5 / 5</div>
                   </div>
                 </div>
                 
@@ -804,7 +669,7 @@
                 </div>
                 <div class="middle">
                   <div class="bar-container">
-                    <div class="bar-5">5 / 5</div>
+                    <div class="bar-3">3 / 5</div>
                   </div>
                 </div>
 
@@ -813,7 +678,7 @@
                 </div>
                 <div class="middle">
                   <div class="bar-container">
-                    <div class="bar-3">3 / 5</div>
+                    <div class="bar-4">4 / 5</div>
                   </div>
                 </div>
                 
@@ -822,7 +687,7 @@
                 </div>
                 <div class="middle">
                   <div class="bar-container">
-                    <div class="bar-4">4 / 5</div>
+                    <div class="bar-3">3 / 5</div>
                   </div>
                 </div>
 
@@ -840,7 +705,7 @@
                 </div>
                 <div class="middle">
                   <div class="bar-container">
-                    <div class="bar-3">3 / 5</div>
+                    <div class="bar-5">5 / 5</div>
                   </div>
                 </div>
 
@@ -855,20 +720,20 @@
 
               </div>
               <!-- Modal button -->
-              <a href="#Modal9"><div class="tell_me_more" data-toggle="modal" data-target="#Modal9">Dites m'en plus !</div></a>
+              <a href="#Modal7"><div class="tell_me_more" data-toggle="modal" data-target="#Modal7">Dites m'en plus !</div></a>
             </div>
             <!-- Modal content -->
-            <div class="modal fade" id="Modal9" tabindex="-1" role="dialog" aria-labelledby="LyonModalCenterTitle" aria-hidden="true">
+            <div class="modal fade" id="Modal7" tabindex="-1" role="dialog" aria-labelledby="Le MansModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h3 class="modal-title" id="LyonModalLongTitle">Tout savoir sur Lyon</h3>
+                    <h3 class="modal-title" id="Le MansModalLongTitle">Tout savoir sur Le Mans</h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
                   <div class="modal-body">
-                    <p>Donnez-nous votre adresse email et nous vous tiendrons au courrant dès que nous aurons plus d'information à vous communiquer sur  Lyon !</p>
+                    <p>Donnez-nous votre adresse email et nous vous tiendrons au courrant dès que nous aurons plus d'information à vous communiquer sur  Le Mans !</p>
                      <form style="text-align:center;" action="https://tinyletter.com/hectorm" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/hectorm', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><input type="text" style="width:15rem" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed" /><input type="submit" value="S'inscrire" class="tell_me_more"/></form>
                   </div>
                   <div class="modal-footer">
@@ -878,7 +743,7 @@
             </div>
           
             <div class="ville">
-              <h3><span class="classement">10</span>Avignon</h3>
+              <h3><span class="classement">8</span>Poitiers</h3>
               
               <div class="row">
 
@@ -887,7 +752,99 @@
                 </div>
                 <div class="middle">
                   <div class="bar-container">
-                    <div class="bar-4">4 / 5</div>
+                    <div class="bar-5">5 / 5</div>
+                  </div>
+                </div>
+                
+                <div class="side">
+                  <div>Animation</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-3">3 / 5</div>
+                  </div>
+                </div>
+
+                <div class="side">
+                  <div>Sécurité</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-3">3 / 5</div>
+                  </div>
+                </div>
+                
+                <div class="side">
+                  <div>Internet</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-2">2 / 5</div>
+                  </div>
+                </div>
+
+                <div class="side">
+                  <div>Météo</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-5">5 / 5</div>
+                  </div>
+                </div>
+
+                <div class="side">
+                  <div>Transports</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-5">5 / 5</div>
+                  </div>
+                </div>
+
+                <div class="side">
+                  <div>Coworkings</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-5">5 / 5</div>
+                  </div>
+                </div>
+
+              </div>
+              <!-- Modal button -->
+              <a href="#Modal8"><div class="tell_me_more" data-toggle="modal" data-target="#Modal8">Dites m'en plus !</div></a>
+            </div>
+            <!-- Modal content -->
+            <div class="modal fade" id="Modal8" tabindex="-1" role="dialog" aria-labelledby="PoitiersModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3 class="modal-title" id="PoitiersModalLongTitle">Tout savoir sur Poitiers</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Donnez-nous votre adresse email et nous vous tiendrons au courrant dès que nous aurons plus d'information à vous communiquer sur  Poitiers !</p>
+                     <form style="text-align:center;" action="https://tinyletter.com/hectorm" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/hectorm', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><input type="text" style="width:15rem" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed" /><input type="submit" value="S'inscrire" class="tell_me_more"/></form>
+                  </div>
+                  <div class="modal-footer">
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="ville">
+              <h3><span class="classement">9</span>Narbonne</h3>
+              
+              <div class="row">
+
+                <div class="side">
+                  <div>Loyer</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-5">5 / 5</div>
                   </div>
                 </div>
                 
@@ -905,7 +862,7 @@
                 </div>
                 <div class="middle">
                   <div class="bar-container">
-                    <div class="bar-2">2 / 5</div>
+                    <div class="bar-3">3 / 5</div>
                   </div>
                 </div>
                 
@@ -914,7 +871,7 @@
                 </div>
                 <div class="middle">
                   <div class="bar-container">
-                    <div class="bar-3">3 / 5</div>
+                    <div class="bar-1">1 / 5</div>
                   </div>
                 </div>
 
@@ -924,6 +881,98 @@
                 <div class="middle">
                   <div class="bar-container">
                     <div class="bar-5">5 / 5</div>
+                  </div>
+                </div>
+
+                <div class="side">
+                  <div>Transports</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-5">5 / 5</div>
+                  </div>
+                </div>
+
+                <div class="side">
+                  <div>Coworkings</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-4">4 / 5</div>
+                  </div>
+                </div>
+
+              </div>
+              <!-- Modal button -->
+              <a href="#Modal9"><div class="tell_me_more" data-toggle="modal" data-target="#Modal9">Dites m'en plus !</div></a>
+            </div>
+            <!-- Modal content -->
+            <div class="modal fade" id="Modal9" tabindex="-1" role="dialog" aria-labelledby="NarbonneModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3 class="modal-title" id="NarbonneModalLongTitle">Tout savoir sur Narbonne</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Donnez-nous votre adresse email et nous vous tiendrons au courrant dès que nous aurons plus d'information à vous communiquer sur  Narbonne !</p>
+                     <form style="text-align:center;" action="https://tinyletter.com/hectorm" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/hectorm', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><input type="text" style="width:15rem" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed" /><input type="submit" value="S'inscrire" class="tell_me_more"/></form>
+                  </div>
+                  <div class="modal-footer">
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="ville">
+              <h3><span class="classement">10</span>Rennes</h3>
+              
+              <div class="row">
+
+                <div class="side">
+                  <div>Loyer</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-4">4 / 5</div>
+                  </div>
+                </div>
+                
+                <div class="side">
+                  <div>Animation</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-4">4 / 5</div>
+                  </div>
+                </div>
+
+                <div class="side">
+                  <div>Sécurité</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-4">4 / 5</div>
+                  </div>
+                </div>
+                
+                <div class="side">
+                  <div>Internet</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-4">4 / 5</div>
+                  </div>
+                </div>
+
+                <div class="side">
+                  <div>Météo</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-2">2 / 5</div>
                   </div>
                 </div>
 
@@ -950,17 +999,17 @@
               <a href="#Modal10"><div class="tell_me_more" data-toggle="modal" data-target="#Modal10">Dites m'en plus !</div></a>
             </div>
             <!-- Modal content -->
-            <div class="modal fade" id="Modal10" tabindex="-1" role="dialog" aria-labelledby="AvignonModalCenterTitle" aria-hidden="true">
+            <div class="modal fade" id="Modal10" tabindex="-1" role="dialog" aria-labelledby="RennesModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h3 class="modal-title" id="AvignonModalLongTitle">Tout savoir sur Avignon</h3>
+                    <h3 class="modal-title" id="RennesModalLongTitle">Tout savoir sur Rennes</h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
                   <div class="modal-body">
-                    <p>Donnez-nous votre adresse email et nous vous tiendrons au courrant dès que nous aurons plus d'information à vous communiquer sur  Avignon !</p>
+                    <p>Donnez-nous votre adresse email et nous vous tiendrons au courrant dès que nous aurons plus d'information à vous communiquer sur  Rennes !</p>
                      <form style="text-align:center;" action="https://tinyletter.com/hectorm" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/hectorm', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><input type="text" style="width:15rem" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed" /><input type="submit" value="S'inscrire" class="tell_me_more"/></form>
                   </div>
                   <div class="modal-footer">
@@ -968,104 +1017,6 @@
                 </div>
               </div>
             </div>
-          
-            <div class="ville">
-              <h3><span class="classement">12</span>Poitiers</h3>
-              
-              <div class="row">
-
-                <div class="side">
-                  <div>Loyer</div>
-                </div>
-                <div class="middle">
-                  <div class="bar-container">
-                    <div class="bar-5">5 / 5</div>
-                  </div>
-                </div>
-                
-                <div class="side">
-                  <div>Animation</div>
-                </div>
-                <div class="middle">
-                  <div class="bar-container">
-                    <div class="bar-3">3 / 5</div>
-                  </div>
-                </div>
-
-                <div class="side">
-                  <div>Sécurité</div>
-                </div>
-                <div class="middle">
-                  <div class="bar-container">
-                    <div class="bar-3">3 / 5</div>
-                  </div>
-                </div>
-                
-                <div class="side">
-                  <div>Internet</div>
-                </div>
-                <div class="middle">
-                  <div class="bar-container">
-                    <div class="bar-2">2 / 5</div>
-                  </div>
-                </div>
-
-                <div class="side">
-                  <div>Météo</div>
-                </div>
-                <div class="middle">
-                  <div class="bar-container">
-                    <div class="bar-5">5 / 5</div>
-                  </div>
-                </div>
-
-                <div class="side">
-                  <div>Transports</div>
-                </div>
-                <div class="middle">
-                  <div class="bar-container">
-                    <div class="bar-5">5 / 5</div>
-                  </div>
-                </div>
-
-                <div class="side">
-                  <div>Coworkings</div>
-                </div>
-                <div class="middle">
-                  <div class="bar-container">
-                    <div class="bar-5">5 / 5</div>
-                  </div>
-                </div>
-
-              </div>
-              <!-- Modal button -->
-              <a href="#Modal12"><div class="tell_me_more" data-toggle="modal" data-target="#Modal12">Dites m'en plus !</div></a>
-            </div>
-            <!-- Modal content -->
-            <div class="modal fade" id="Modal12" tabindex="-1" role="dialog" aria-labelledby="PoitiersModalCenterTitle" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h3 class="modal-title" id="PoitiersModalLongTitle">Tout savoir sur Poitiers</h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <p>Donnez-nous votre adresse email et nous vous tiendrons au courrant dès que nous aurons plus d'information à vous communiquer sur  Poitiers !</p>
-                     <form style="text-align:center;" action="https://tinyletter.com/hectorm" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/hectorm', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><input type="text" style="width:15rem" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed" /><input type="submit" value="S'inscrire" class="tell_me_more"/></form>
-                  </div>
-                  <div class="modal-footer">
-                  </div>
-                </div>
-              </div>
-            </div>
-          
-      </div>
-
-      <h2 class="tier_3title">Les poursuivants <img src="/assets/images/trophy3.png" class="trophy"><img src="/assets/images/trophy3.png" class="trophy"><img src="/assets/images/trophy3.png" class="trophy"><img src="/assets/images/trophygrey.png" class="trophy"><img src="/assets/images/trophygrey.png" class="trophy"></h2>
-      <p>Encore, toujours plus de choix ! Notre algorythme (que dis-je, notre "<b>IA</b>") nous signale également ces villes françaises.</p>
-        <div class="tier_3">
           
             <div class="ville">
               <h3><span class="classement">11</span>Nîmes</h3>
@@ -1159,8 +1110,14 @@
               </div>
             </div>
           
+      </div>
+
+      <h2 class="tier_3title">Les poursuivants <img src="/assets/images/trophy3.png" class="trophy"><img src="/assets/images/trophy3.png" class="trophy"><img src="/assets/images/trophy3.png" class="trophy"><img src="/assets/images/trophygrey.png" class="trophy"><img src="/assets/images/trophygrey.png" class="trophy"></h2>
+      <p>Encore, toujours plus de choix ! Notre algorythme (que dis-je, notre "<b>IA</b>") nous signale également ces villes françaises.</p>
+        <div class="tier_3">
+          
             <div class="ville">
-              <h3><span class="classement">13</span>Marseille</h3>
+              <h3><span class="classement">12</span>Avignon</h3>
               
               <div class="row">
 
@@ -1169,7 +1126,7 @@
                 </div>
                 <div class="middle">
                   <div class="bar-container">
-                    <div class="bar-3">3 / 5</div>
+                    <div class="bar-4">4 / 5</div>
                   </div>
                 </div>
                 
@@ -1214,6 +1171,98 @@
                 </div>
                 <div class="middle">
                   <div class="bar-container">
+                    <div class="bar-4">4 / 5</div>
+                  </div>
+                </div>
+
+                <div class="side">
+                  <div>Coworkings</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-5">5 / 5</div>
+                  </div>
+                </div>
+
+              </div>
+              <!-- Modal button -->
+              <a href="#Modal12"><div class="tell_me_more" data-toggle="modal" data-target="#Modal12">Dites m'en plus !</div></a>
+            </div>
+            <!-- Modal content -->
+            <div class="modal fade" id="Modal12" tabindex="-1" role="dialog" aria-labelledby="AvignonModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3 class="modal-title" id="AvignonModalLongTitle">Tout savoir sur Avignon</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Donnez-nous votre adresse email et nous vous tiendrons au courrant dès que nous aurons plus d'information à vous communiquer sur  Avignon !</p>
+                     <form style="text-align:center;" action="https://tinyletter.com/hectorm" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/hectorm', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><input type="text" style="width:15rem" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed" /><input type="submit" value="S'inscrire" class="tell_me_more"/></form>
+                  </div>
+                  <div class="modal-footer">
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="ville">
+              <h3><span class="classement">13</span>Tours</h3>
+              
+              <div class="row">
+
+                <div class="side">
+                  <div>Loyer</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-3">3 / 5</div>
+                  </div>
+                </div>
+                
+                <div class="side">
+                  <div>Animation</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-4">4 / 5</div>
+                  </div>
+                </div>
+
+                <div class="side">
+                  <div>Sécurité</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-4">4 / 5</div>
+                  </div>
+                </div>
+                
+                <div class="side">
+                  <div>Internet</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-3">3 / 5</div>
+                  </div>
+                </div>
+
+                <div class="side">
+                  <div>Météo</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-5">5 / 5</div>
+                  </div>
+                </div>
+
+                <div class="side">
+                  <div>Transports</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
                     <div class="bar-3">3 / 5</div>
                   </div>
                 </div>
@@ -1232,17 +1281,17 @@
               <a href="#Modal13"><div class="tell_me_more" data-toggle="modal" data-target="#Modal13">Dites m'en plus !</div></a>
             </div>
             <!-- Modal content -->
-            <div class="modal fade" id="Modal13" tabindex="-1" role="dialog" aria-labelledby="MarseilleModalCenterTitle" aria-hidden="true">
+            <div class="modal fade" id="Modal13" tabindex="-1" role="dialog" aria-labelledby="ToursModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h3 class="modal-title" id="MarseilleModalLongTitle">Tout savoir sur Marseille</h3>
+                    <h3 class="modal-title" id="ToursModalLongTitle">Tout savoir sur Tours</h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
                   <div class="modal-body">
-                    <p>Donnez-nous votre adresse email et nous vous tiendrons au courrant dès que nous aurons plus d'information à vous communiquer sur  Marseille !</p>
+                    <p>Donnez-nous votre adresse email et nous vous tiendrons au courrant dès que nous aurons plus d'information à vous communiquer sur  Tours !</p>
                      <form style="text-align:center;" action="https://tinyletter.com/hectorm" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/hectorm', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><input type="text" style="width:15rem" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed" /><input type="submit" value="S'inscrire" class="tell_me_more"/></form>
                   </div>
                   <div class="modal-footer">
@@ -1344,7 +1393,7 @@
             </div>
           
             <div class="ville">
-              <h3><span class="classement">15</span>La Rochelle</h3>
+              <h3><span class="classement">15</span>Lyon</h3>
               
               <div class="row">
 
@@ -1353,7 +1402,7 @@
                 </div>
                 <div class="middle">
                   <div class="bar-container">
-                    <div class="bar-3">3 / 5</div>
+                    <div class="bar-2">2 / 5</div>
                   </div>
                 </div>
                 
@@ -1371,7 +1420,7 @@
                 </div>
                 <div class="middle">
                   <div class="bar-container">
-                    <div class="bar-4">4 / 5</div>
+                    <div class="bar-3">3 / 5</div>
                   </div>
                 </div>
                 
@@ -1380,7 +1429,7 @@
                 </div>
                 <div class="middle">
                   <div class="bar-container">
-                    <div class="bar-2">2 / 5</div>
+                    <div class="bar-4">4 / 5</div>
                   </div>
                 </div>
 
@@ -1398,7 +1447,7 @@
                 </div>
                 <div class="middle">
                   <div class="bar-container">
-                    <div class="bar-3">3 / 5</div>
+                    <div class="bar-2">2 / 5</div>
                   </div>
                 </div>
 
@@ -1416,17 +1465,17 @@
               <a href="#Modal15"><div class="tell_me_more" data-toggle="modal" data-target="#Modal15">Dites m'en plus !</div></a>
             </div>
             <!-- Modal content -->
-            <div class="modal fade" id="Modal15" tabindex="-1" role="dialog" aria-labelledby="La RochelleModalCenterTitle" aria-hidden="true">
+            <div class="modal fade" id="Modal15" tabindex="-1" role="dialog" aria-labelledby="LyonModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h3 class="modal-title" id="La RochelleModalLongTitle">Tout savoir sur La Rochelle</h3>
+                    <h3 class="modal-title" id="LyonModalLongTitle">Tout savoir sur Lyon</h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
                   <div class="modal-body">
-                    <p>Donnez-nous votre adresse email et nous vous tiendrons au courrant dès que nous aurons plus d'information à vous communiquer sur  La Rochelle !</p>
+                    <p>Donnez-nous votre adresse email et nous vous tiendrons au courrant dès que nous aurons plus d'information à vous communiquer sur  Lyon !</p>
                      <form style="text-align:center;" action="https://tinyletter.com/hectorm" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/hectorm', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><input type="text" style="width:15rem" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed" /><input type="submit" value="S'inscrire" class="tell_me_more"/></form>
                   </div>
                   <div class="modal-footer">
@@ -1436,7 +1485,7 @@
             </div>
           
             <div class="ville">
-              <h3><span class="classement">16</span>Rennes</h3>
+              <h3><span class="classement">16</span>Marseille</h3>
               
               <div class="row">
 
@@ -1454,7 +1503,7 @@
                 </div>
                 <div class="middle">
                   <div class="bar-container">
-                    <div class="bar-4">4 / 5</div>
+                    <div class="bar-5">5 / 5</div>
                   </div>
                 </div>
 
@@ -1463,7 +1512,7 @@
                 </div>
                 <div class="middle">
                   <div class="bar-container">
-                    <div class="bar-4">4 / 5</div>
+                    <div class="bar-2">2 / 5</div>
                   </div>
                 </div>
                 
@@ -1472,7 +1521,7 @@
                 </div>
                 <div class="middle">
                   <div class="bar-container">
-                    <div class="bar-4">4 / 5</div>
+                    <div class="bar-3">3 / 5</div>
                   </div>
                 </div>
 
@@ -1481,7 +1530,7 @@
                 </div>
                 <div class="middle">
                   <div class="bar-container">
-                    <div class="bar-2">2 / 5</div>
+                    <div class="bar-5">5 / 5</div>
                   </div>
                 </div>
 
@@ -1508,17 +1557,17 @@
               <a href="#Modal16"><div class="tell_me_more" data-toggle="modal" data-target="#Modal16">Dites m'en plus !</div></a>
             </div>
             <!-- Modal content -->
-            <div class="modal fade" id="Modal16" tabindex="-1" role="dialog" aria-labelledby="RennesModalCenterTitle" aria-hidden="true">
+            <div class="modal fade" id="Modal16" tabindex="-1" role="dialog" aria-labelledby="MarseilleModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h3 class="modal-title" id="RennesModalLongTitle">Tout savoir sur Rennes</h3>
+                    <h3 class="modal-title" id="MarseilleModalLongTitle">Tout savoir sur Marseille</h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
                   <div class="modal-body">
-                    <p>Donnez-nous votre adresse email et nous vous tiendrons au courrant dès que nous aurons plus d'information à vous communiquer sur  Rennes !</p>
+                    <p>Donnez-nous votre adresse email et nous vous tiendrons au courrant dès que nous aurons plus d'information à vous communiquer sur  Marseille !</p>
                      <form style="text-align:center;" action="https://tinyletter.com/hectorm" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/hectorm', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><input type="text" style="width:15rem" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed" /><input type="submit" value="S'inscrire" class="tell_me_more"/></form>
                   </div>
                   <div class="modal-footer">
@@ -1528,7 +1577,7 @@
             </div>
           
             <div class="ville">
-              <h3><span class="classement">17</span>Angers</h3>
+              <h3><span class="classement">17</span>La Rochelle</h3>
               
               <div class="row">
 
@@ -1537,7 +1586,7 @@
                 </div>
                 <div class="middle">
                   <div class="bar-container">
-                    <div class="bar-5">5 / 5</div>
+                    <div class="bar-3">3 / 5</div>
                   </div>
                 </div>
                 
@@ -1546,7 +1595,7 @@
                 </div>
                 <div class="middle">
                   <div class="bar-container">
-                    <div class="bar-3">3 / 5</div>
+                    <div class="bar-5">5 / 5</div>
                   </div>
                 </div>
 
@@ -1564,7 +1613,7 @@
                 </div>
                 <div class="middle">
                   <div class="bar-container">
-                    <div class="bar-4">4 / 5</div>
+                    <div class="bar-2">2 / 5</div>
                   </div>
                 </div>
 
@@ -1573,7 +1622,7 @@
                 </div>
                 <div class="middle">
                   <div class="bar-container">
-                    <div class="bar-3">3 / 5</div>
+                    <div class="bar-4">4 / 5</div>
                   </div>
                 </div>
 
@@ -1582,7 +1631,7 @@
                 </div>
                 <div class="middle">
                   <div class="bar-container">
-                    <div class="bar-5">5 / 5</div>
+                    <div class="bar-3">3 / 5</div>
                   </div>
                 </div>
 
@@ -1600,17 +1649,17 @@
               <a href="#Modal17"><div class="tell_me_more" data-toggle="modal" data-target="#Modal17">Dites m'en plus !</div></a>
             </div>
             <!-- Modal content -->
-            <div class="modal fade" id="Modal17" tabindex="-1" role="dialog" aria-labelledby="AngersModalCenterTitle" aria-hidden="true">
+            <div class="modal fade" id="Modal17" tabindex="-1" role="dialog" aria-labelledby="La RochelleModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h3 class="modal-title" id="AngersModalLongTitle">Tout savoir sur Angers</h3>
+                    <h3 class="modal-title" id="La RochelleModalLongTitle">Tout savoir sur La Rochelle</h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
                   <div class="modal-body">
-                    <p>Donnez-nous votre adresse email et nous vous tiendrons au courrant dès que nous aurons plus d'information à vous communiquer sur  Angers !</p>
+                    <p>Donnez-nous votre adresse email et nous vous tiendrons au courrant dès que nous aurons plus d'information à vous communiquer sur  La Rochelle !</p>
                      <form style="text-align:center;" action="https://tinyletter.com/hectorm" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/hectorm', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><input type="text" style="width:15rem" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed" /><input type="submit" value="S'inscrire" class="tell_me_more"/></form>
                   </div>
                   <div class="modal-footer">
@@ -1712,7 +1761,191 @@
             </div>
           
             <div class="ville">
-              <h3><span class="classement">19</span>Nancy</h3>
+              <h3><span class="classement">19</span>Saint-Étienne</h3>
+              
+              <div class="row">
+
+                <div class="side">
+                  <div>Loyer</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-5">5 / 5</div>
+                  </div>
+                </div>
+                
+                <div class="side">
+                  <div>Animation</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-4">4 / 5</div>
+                  </div>
+                </div>
+
+                <div class="side">
+                  <div>Sécurité</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-3">3 / 5</div>
+                  </div>
+                </div>
+                
+                <div class="side">
+                  <div>Internet</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-3">3 / 5</div>
+                  </div>
+                </div>
+
+                <div class="side">
+                  <div>Météo</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-4">4 / 5</div>
+                  </div>
+                </div>
+
+                <div class="side">
+                  <div>Transports</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-5">5 / 5</div>
+                  </div>
+                </div>
+
+                <div class="side">
+                  <div>Coworkings</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-5">5 / 5</div>
+                  </div>
+                </div>
+
+              </div>
+              <!-- Modal button -->
+              <a href="#Modal19"><div class="tell_me_more" data-toggle="modal" data-target="#Modal19">Dites m'en plus !</div></a>
+            </div>
+            <!-- Modal content -->
+            <div class="modal fade" id="Modal19" tabindex="-1" role="dialog" aria-labelledby="Saint-ÉtienneModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3 class="modal-title" id="Saint-ÉtienneModalLongTitle">Tout savoir sur Saint-Étienne</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Donnez-nous votre adresse email et nous vous tiendrons au courrant dès que nous aurons plus d'information à vous communiquer sur  Saint-Étienne !</p>
+                     <form style="text-align:center;" action="https://tinyletter.com/hectorm" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/hectorm', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><input type="text" style="width:15rem" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed" /><input type="submit" value="S'inscrire" class="tell_me_more"/></form>
+                  </div>
+                  <div class="modal-footer">
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="ville">
+              <h3><span class="classement">20</span>Angers</h3>
+              
+              <div class="row">
+
+                <div class="side">
+                  <div>Loyer</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-5">5 / 5</div>
+                  </div>
+                </div>
+                
+                <div class="side">
+                  <div>Animation</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-3">3 / 5</div>
+                  </div>
+                </div>
+
+                <div class="side">
+                  <div>Sécurité</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-4">4 / 5</div>
+                  </div>
+                </div>
+                
+                <div class="side">
+                  <div>Internet</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-4">4 / 5</div>
+                  </div>
+                </div>
+
+                <div class="side">
+                  <div>Météo</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-3">3 / 5</div>
+                  </div>
+                </div>
+
+                <div class="side">
+                  <div>Transports</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-5">5 / 5</div>
+                  </div>
+                </div>
+
+                <div class="side">
+                  <div>Coworkings</div>
+                </div>
+                <div class="middle">
+                  <div class="bar-container">
+                    <div class="bar-5">5 / 5</div>
+                  </div>
+                </div>
+
+              </div>
+              <!-- Modal button -->
+              <a href="#Modal20"><div class="tell_me_more" data-toggle="modal" data-target="#Modal20">Dites m'en plus !</div></a>
+            </div>
+            <!-- Modal content -->
+            <div class="modal fade" id="Modal20" tabindex="-1" role="dialog" aria-labelledby="AngersModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3 class="modal-title" id="AngersModalLongTitle">Tout savoir sur Angers</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Donnez-nous votre adresse email et nous vous tiendrons au courrant dès que nous aurons plus d'information à vous communiquer sur  Angers !</p>
+                     <form style="text-align:center;" action="https://tinyletter.com/hectorm" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/hectorm', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><input type="text" style="width:15rem" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed" /><input type="submit" value="S'inscrire" class="tell_me_more"/></form>
+                  </div>
+                  <div class="modal-footer">
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="ville">
+              <h3><span class="classement">21</span>Nancy</h3>
               
               <div class="row">
 
@@ -1781,10 +2014,10 @@
 
               </div>
               <!-- Modal button -->
-              <a href="#Modal19"><div class="tell_me_more" data-toggle="modal" data-target="#Modal19">Dites m'en plus !</div></a>
+              <a href="#Modal21"><div class="tell_me_more" data-toggle="modal" data-target="#Modal21">Dites m'en plus !</div></a>
             </div>
             <!-- Modal content -->
-            <div class="modal fade" id="Modal19" tabindex="-1" role="dialog" aria-labelledby="NancyModalCenterTitle" aria-hidden="true">
+            <div class="modal fade" id="Modal21" tabindex="-1" role="dialog" aria-labelledby="NancyModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -1804,7 +2037,7 @@
             </div>
           
             <div class="ville">
-              <h3><span class="classement">20</span>Niort</h3>
+              <h3><span class="classement">22</span>Niort</h3>
               
               <div class="row">
 
@@ -1873,10 +2106,10 @@
 
               </div>
               <!-- Modal button -->
-              <a href="#Modal20"><div class="tell_me_more" data-toggle="modal" data-target="#Modal20">Dites m'en plus !</div></a>
+              <a href="#Modal22"><div class="tell_me_more" data-toggle="modal" data-target="#Modal22">Dites m'en plus !</div></a>
             </div>
             <!-- Modal content -->
-            <div class="modal fade" id="Modal20" tabindex="-1" role="dialog" aria-labelledby="NiortModalCenterTitle" aria-hidden="true">
+            <div class="modal fade" id="Modal22" tabindex="-1" role="dialog" aria-labelledby="NiortModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -1896,7 +2129,7 @@
             </div>
           
             <div class="ville">
-              <h3><span class="classement">21</span>Vannes</h3>
+              <h3><span class="classement">23</span>Vannes</h3>
               
               <div class="row">
 
@@ -1965,10 +2198,10 @@
 
               </div>
               <!-- Modal button -->
-              <a href="#Modal21"><div class="tell_me_more" data-toggle="modal" data-target="#Modal21">Dites m'en plus !</div></a>
+              <a href="#Modal23"><div class="tell_me_more" data-toggle="modal" data-target="#Modal23">Dites m'en plus !</div></a>
             </div>
             <!-- Modal content -->
-            <div class="modal fade" id="Modal21" tabindex="-1" role="dialog" aria-labelledby="VannesModalCenterTitle" aria-hidden="true">
+            <div class="modal fade" id="Modal23" tabindex="-1" role="dialog" aria-labelledby="VannesModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -1987,190 +2220,6 @@
               </div>
             </div>
           
-            <div class="ville">
-              <h3><span class="classement">22</span>Narbonne</h3>
-              
-              <div class="row">
-
-                <div class="side">
-                  <div>Loyer</div>
-                </div>
-                <div class="middle">
-                  <div class="bar-container">
-                    <div class="bar-4">4 / 5</div>
-                  </div>
-                </div>
-                
-                <div class="side">
-                  <div>Animation</div>
-                </div>
-                <div class="middle">
-                  <div class="bar-container">
-                    <div class="bar-5">5 / 5</div>
-                  </div>
-                </div>
-
-                <div class="side">
-                  <div>Sécurité</div>
-                </div>
-                <div class="middle">
-                  <div class="bar-container">
-                    <div class="bar-3">3 / 5</div>
-                  </div>
-                </div>
-                
-                <div class="side">
-                  <div>Internet</div>
-                </div>
-                <div class="middle">
-                  <div class="bar-container">
-                    <div class="bar-1">1 / 5</div>
-                  </div>
-                </div>
-
-                <div class="side">
-                  <div>Météo</div>
-                </div>
-                <div class="middle">
-                  <div class="bar-container">
-                    <div class="bar-5">5 / 5</div>
-                  </div>
-                </div>
-
-                <div class="side">
-                  <div>Transports</div>
-                </div>
-                <div class="middle">
-                  <div class="bar-container">
-                    <div class="bar-4">4 / 5</div>
-                  </div>
-                </div>
-
-                <div class="side">
-                  <div>Coworkings</div>
-                </div>
-                <div class="middle">
-                  <div class="bar-container">
-                    <div class="bar-4">4 / 5</div>
-                  </div>
-                </div>
-
-              </div>
-              <!-- Modal button -->
-              <a href="#Modal22"><div class="tell_me_more" data-toggle="modal" data-target="#Modal22">Dites m'en plus !</div></a>
-            </div>
-            <!-- Modal content -->
-            <div class="modal fade" id="Modal22" tabindex="-1" role="dialog" aria-labelledby="NarbonneModalCenterTitle" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h3 class="modal-title" id="NarbonneModalLongTitle">Tout savoir sur Narbonne</h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <p>Donnez-nous votre adresse email et nous vous tiendrons au courrant dès que nous aurons plus d'information à vous communiquer sur  Narbonne !</p>
-                     <form style="text-align:center;" action="https://tinyletter.com/hectorm" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/hectorm', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><input type="text" style="width:15rem" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed" /><input type="submit" value="S'inscrire" class="tell_me_more"/></form>
-                  </div>
-                  <div class="modal-footer">
-                  </div>
-                </div>
-              </div>
-            </div>
-          
-            <div class="ville">
-              <h3><span class="classement">23</span>Carcassonne</h3>
-              
-              <div class="row">
-
-                <div class="side">
-                  <div>Loyer</div>
-                </div>
-                <div class="middle">
-                  <div class="bar-container">
-                    <div class="bar-5">5 / 5</div>
-                  </div>
-                </div>
-                
-                <div class="side">
-                  <div>Animation</div>
-                </div>
-                <div class="middle">
-                  <div class="bar-container">
-                    <div class="bar-5">5 / 5</div>
-                  </div>
-                </div>
-
-                <div class="side">
-                  <div>Sécurité</div>
-                </div>
-                <div class="middle">
-                  <div class="bar-container">
-                    <div class="bar-3">3 / 5</div>
-                  </div>
-                </div>
-                
-                <div class="side">
-                  <div>Internet</div>
-                </div>
-                <div class="middle">
-                  <div class="bar-container">
-                    <div class="bar-1">1 / 5</div>
-                  </div>
-                </div>
-
-                <div class="side">
-                  <div>Météo</div>
-                </div>
-                <div class="middle">
-                  <div class="bar-container">
-                    <div class="bar-5">5 / 5</div>
-                  </div>
-                </div>
-
-                <div class="side">
-                  <div>Transports</div>
-                </div>
-                <div class="middle">
-                  <div class="bar-container">
-                    <div class="bar-5">5 / 5</div>
-                  </div>
-                </div>
-
-                <div class="side">
-                  <div>Coworkings</div>
-                </div>
-                <div class="middle">
-                  <div class="bar-container">
-                    <div class="bar-1">1 / 5</div>
-                  </div>
-                </div>
-
-              </div>
-              <!-- Modal button -->
-              <a href="#Modal23"><div class="tell_me_more" data-toggle="modal" data-target="#Modal23">Dites m'en plus !</div></a>
-            </div>
-            <!-- Modal content -->
-            <div class="modal fade" id="Modal23" tabindex="-1" role="dialog" aria-labelledby="CarcassonneModalCenterTitle" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h3 class="modal-title" id="CarcassonneModalLongTitle">Tout savoir sur Carcassonne</h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <p>Donnez-nous votre adresse email et nous vous tiendrons au courrant dès que nous aurons plus d'information à vous communiquer sur  Carcassonne !</p>
-                     <form style="text-align:center;" action="https://tinyletter.com/hectorm" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/hectorm', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><input type="text" style="width:15rem" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed" /><input type="submit" value="S'inscrire" class="tell_me_more"/></form>
-                  </div>
-                  <div class="modal-footer">
-                  </div>
-                </div>
-              </div>
-            </div>
-          
         </div>
 
       <footer class="site-footer">
@@ -2180,6 +2229,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 
       </footer>
     </main>
