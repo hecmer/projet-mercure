@@ -12,7 +12,6 @@
     
     <main id="content" class="main-content" role="main">
       <div class="project-tagline">{{ site.description }}</div>
-
       <h2 class="tier_1title">Le podium <img src="/assets/images/trophy1.png" class="trophy"><img src="/assets/images/trophy1.png" class="trophy"><img src="/assets/images/trophy1.png" class="trophy"><img src="/assets/images/trophy1.png" class="trophy"><img src="/assets/images/trophy1.png" class="trophy"></h2>
       
       <p>Voici les villes avec les meilleurs classements à travers toutes les catégories. Commencez déjà à faire vos bagages, il y a tout ce qu'il vous faut dans ces villes !</p>
@@ -102,6 +101,21 @@
                     </button>
                   </div>
                   <div class="modal-body">
+                    <div id="map{{ city.rang }}" style="height:15rem; width:100%;position: inherited;"></div>
+                    <script>
+                      var mymap{{ city.rang }} = L.map('map{{ city.rang }}').setView([{{ city.longitude }}, {{ city.latitude }}], 5);
+                      L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiaHJlbW90ZWZyYW5jZSIsImEiOiJjam5qdmVoMGEwbWpiM2tzNXcwem5xZWUzIn0.EVnfakBtRnl9aQPunsM5fA', { /* set your personal MapBox Access Token */
+                        maxZoom: 20, /* zoom limit of the map */
+                        attribution: 'Données &copy; Contributeurs <a href="http://openstreetmap.org">OpenStreetMap</a> + ' +
+                          '<a href="http://mapbox.com">Mapbox</a> | ' +
+                          '<a href="https://creativecommons.org/licenses/by/2.0/"> ' +
+                          'Remote France', /* set the map's caption */
+                          id: 'mapbox.streets' /* mapbox.light / dark / streets / outdoors / satellite */
+                      }).addTo(mymap{{ city.rang }});
+                      L.marker([{{ city.longitude }}, {{ city.latitude }}]).addTo(mymap{{ city.rang }}); /* set your location's GPS Coordinates : [LAT,LON] */
+                    </script>
+
+
                     <p>Donnez-nous votre adresse email et nous vous tiendrons au courrant dès que nous aurons plus d'information à vous communiquer sur  {{ city.nom }} !</p>
                      <form style="text-align:center;" action="https://tinyletter.com/hectorm" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/hectorm', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><input type="text" style="width:15rem" name="email" id="tlemail" placeholder="Adresse email"/></p><input type="hidden" value="1" name="embed" /><input type="submit" value="S'inscrire" class="tell_me_more"/></form>
                   </div>

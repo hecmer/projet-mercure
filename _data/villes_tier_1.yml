@@ -8,6 +8,8 @@
  transport: 5
  coworking: 5
  rang: 1
+ longitude: 45.785649299999996
+ latitude: 3.115545429
 -
  nom: Nantes
  loyer: 4
@@ -18,13 +20,17 @@
  transport: 4
  coworking: 5
  rang: 2
+ longitude: 47.23163568
+ latitude: -1.5483100859999999
 -
- nom: Tours
- loyer: 4
+ nom: Mulhouse
+ loyer: 5
  animation: 4
- delinquance: 4
- internet: 3
- meteo: 5
- transport: 4
- coworking: 5
+ delinquance: 3
+ internet: 4
+ meteo: 3
+ transport: 5
+ coworking: 4
  rang: 3
+ longitude: 47.7491633
+ latitude: 7.325700475
