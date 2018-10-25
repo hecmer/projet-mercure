@@ -1,0 +1,70 @@
+<div class="ville">
+<h3><span class="classement">{{ city.rang }}</span>{{ city.nom }}</h3>
+<div class="row">
+
+  <div class="side">
+    <div>Loyer</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-{{ city.loyer }}">{{ city.loyer }} / 5</div>
+    </div>
+  </div>
+  
+  <div class="side">
+    <div>Animation</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-{{ city.animation }}">{{ city.animation }} / 5</div>
+    </div>
+  </div>
+
+  <div class="side">
+    <div>Sécurité</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-{{ city.delinquance }}">{{ city.delinquance }} / 5</div>
+    </div>
+  </div>
+  
+  <div class="side">
+    <div>Internet</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-{{ city.internet }}">{{ city.internet }} / 5</div>
+    </div>
+  </div>
+
+  <div class="side">
+    <div>Météo</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-{{ city.meteo }}">{{ city.meteo }} / 5</div>
+    </div>
+  </div>
+
+  <div class="side">
+    <div>Transports</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-{{ city.transport }}">{{ city.transport }} / 5</div>
+    </div>
+  </div>
+
+  <div class="side">
+    <div>Coworkings</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-{{ city.coworking }}">{{ city.coworking }} / 5</div>
+    </div>
+  </div>
+</div>
+<!-- Modal button -->
+<a href="#Modal{{ city.rang }}"><div class="tell_me_more" data-toggle="modal" data-target="#Modal{{ city.rang }}">Dites m'en plus !</div></a>
+</div>

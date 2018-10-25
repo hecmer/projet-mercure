@@ -1,0 +1,16 @@
+<script>
+  var mymap{{ city.rang }} = L.map('map{{ city.rang }}').setView([{{ city.longitude }}, {{ city.latitude }}], 5);
+  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiaHJlbW90ZWZyYW5jZSIsImEiOiJjam5qdmVoMGEwbWpiM2tzNXcwem5xZWUzIn0.EVnfakBtRnl9aQPunsM5fA', { /* set your personal MapBox Access Token */
+    maxZoom: 20, /* zoom limit of the map */
+    attribution: 'Données &copy; Contributeurs <a href="http://openstreetmap.org">OpenStreetMap</a> + ' +
+      '<a href="http://mapbox.com">Mapbox</a> | ' +
+      '<a href="https://creativecommons.org/licenses/by/2.0/"> ' +
+      'Remote France', /* set the map's caption */
+      id: 'mapbox.streets' /* mapbox.light / dark / streets / outdoors / satellite */
+  }).addTo(mymap{{ city.rang }});
+  L.marker([{{ city.longitude }}, {{ city.latitude }}]).addTo(mymap{{ city.rang }}); /* set your location's GPS Coordinates : [LAT,LON] */
+
+  $("#Modal{{ city.rang }}").on('shown.bs.modal', function(e) {
+    mymap{{ city.rang }}.invalidateSize();
+  });
+</script>
