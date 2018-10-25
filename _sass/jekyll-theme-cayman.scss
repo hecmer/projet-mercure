@@ -548,8 +548,10 @@ a {
 }
 
 .ville{
-  box-shadow: 2px 2px 4px 0px #656565;
+    box-shadow: 1px 1px 3px 0px #656565;
+}
 
+.ville, .ranking{
   * {
       box-sizing: border-box;
   }
@@ -623,4 +625,22 @@ a {
 
 .modal-title{
   text-align:center;
+}
+
+.mapbox{
+  display: inline-block;
+  vertical-align:middle;
+  height:21rem;
+  width:25rem;
+  position: inherited;
+  margin: 1rem;
+}
+
+.ranking{
+  display: inline-block;
+  vertical-align: middle;
+  width: 18rem;
+  margin: 1rem;
+  border: none;
+
 }

@@ -959,37 +959,39 @@ a {
   color: #FFF; }
 
 .ville {
-  box-shadow: 2px 2px 4px 0px #656565;
+  box-shadow: 1px 1px 3px 0px #656565; }
+
+.ville, .ranking {
   /* 2 column layout */
   /* Clear floats after the columns */
   /* The bar container */
   /* Individual bars */
   /* Responsive layout - make the columns stack on top of each other instead of next to each other */ }
-  .ville * {
+  .ville *, .ranking * {
     box-sizing: border-box; }
-  .ville .row {
+  .ville .row, .ranking .row {
     max-width: 20rem;
     margin: 1rem auto; }
-  .ville .side {
+  .ville .side, .ranking .side {
     float: left;
     width: 35%;
     height: 1.8rem;
     text-align: left; }
-  .ville .middle {
+  .ville .middle, .ranking .middle {
     float: left;
     width: 65%;
     height: 1.8rem; }
-  .ville .row:after {
+  .ville .row:after, .ranking .row:after {
     content: "";
     display: table;
     clear: both; }
-  .ville .bar-container {
+  .ville .bar-container, .ranking .bar-container {
     width: 100%;
     background-color: #DADDE8;
     text-align: center;
     color: white;
     border-radius: 10px; }
-  .ville .bar-5 {
+  .ville .bar-5, .ranking .bar-5 {
     width: 100%;
     height: 1.3rem;
     background-color: #0E105B;
@@ -997,7 +999,7 @@ a {
     text-align: left;
     font-weight: bold;
     padding-left: 0.7rem; }
-  .ville .bar-4 {
+  .ville .bar-4, .ranking .bar-4 {
     width: 80%;
     height: 1.3rem;
     background-color: #481F6B;
@@ -1005,7 +1007,7 @@ a {
     text-align: left;
     font-weight: bold;
     padding-left: 0.7rem; }
-  .ville .bar-3 {
+  .ville .bar-3, .ranking .bar-3 {
     width: 60%;
     height: 1.3rem;
     background-color: #602043;
@@ -1013,7 +1015,7 @@ a {
     text-align: left;
     font-weight: bold;
     padding-left: 0.7rem; }
-  .ville .bar-2 {
+  .ville .bar-2, .ranking .bar-2 {
     width: 40%;
     height: 1.3rem;
     background-color: #5F051A;
@@ -1021,7 +1023,7 @@ a {
     text-align: left;
     font-weight: bold;
     padding-left: 0.7rem; }
-  .ville .bar-1 {
+  .ville .bar-1, .ranking .bar-1 {
     width: 20%;
     height: 1.3rem;
     background-color: #750208;
@@ -1030,7 +1032,7 @@ a {
     font-weight: bold;
     padding-left: 0.7rem; }
   @media (max-width: 400px) {
-    .ville .side, .ville .middle {
+    .ville .side, .ville .middle, .ranking .side, .ranking .middle {
       width: 100%; } }
 
 .trophy {
@@ -1048,3 +1050,18 @@ a {
 
 .modal-title {
   text-align: center; }
+
+.mapbox {
+  display: inline-block;
+  vertical-align: middle;
+  height: 21rem;
+  width: 25rem;
+  position: inherited;
+  margin: 1rem; }
+
+.ranking {
+  display: inline-block;
+  vertical-align: middle;
+  width: 18rem;
+  margin: 1rem;
+  border: none; }

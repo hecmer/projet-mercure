@@ -32,7 +32,12 @@
 
       <div class="tier_1">
           {% for city in site.data.villes_tier_1 %}
-            {% include city_card.html %}
+          <div class="ville">
+            <h3><span class="classement">{{ city.rang }}</span>{{ city.nom }}</h3>
+            {% include city_ratings.html %}            
+            <!-- Modal button -->
+            <a href="#Modal{{ city.rang }}"><div class="tell_me_more" data-toggle="modal" data-target="#Modal{{ city.rang }}">Dites m'en plus !</div></a>
+          </div>
           {% endfor %}
       </div>
 
@@ -40,15 +45,25 @@
       <p>Ces villes ont des forces indéniables. A regarder de près !</p>
       <div class="tier_2">
           {% for city in site.data.villes_tier_2 %}
-            {% include city_card.html %}
+          <div class="ville">
+            <h3><span class="classement">{{ city.rang }}</span>{{ city.nom }}</h3>
+            {% include city_ratings.html %}            
+            <!-- Modal button -->
+            <a href="#Modal{{ city.rang }}"><div class="tell_me_more" data-toggle="modal" data-target="#Modal{{ city.rang }}">Dites m'en plus !</div></a>
+          </div>
           {% endfor %}
       </div>
 
       <h2 class="tier_3title">Les poursuivants <img src="/assets/images/trophy3.png" class="trophy"><img src="/assets/images/trophy3.png" class="trophy"><img src="/assets/images/trophy3.png" class="trophy"><img src="/assets/images/trophygrey.png" class="trophy"><img src="/assets/images/trophygrey.png" class="trophy"></h2>
       <p>Encore, toujours plus de choix ! Notre algorythme (que dis-je, notre "<b>IA</b>") nous signale également ces villes françaises.</p>
         <div class="tier_3">
-          {% for city in site.data.villes_tier_2 %}
-            {% include city_card.html %}
+          {% for city in site.data.villes_tier_3 %}
+          <div class="ville">
+            <h3><span class="classement">{{ city.rang }}</span>{{ city.nom }}</h3>
+            {% include city_ratings.html %}            
+            <!-- Modal button -->
+            <a href="#Modal{{ city.rang }}"><div class="tell_me_more" data-toggle="modal" data-target="#Modal{{ city.rang }}">Dites m'en plus !</div></a>
+          </div>
           {% endfor %}
         </div>
 
