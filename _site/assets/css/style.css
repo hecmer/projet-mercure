@@ -1055,9 +1055,12 @@ a {
   display: inline-block;
   vertical-align: middle;
   height: 21rem;
-  width: 25rem;
+  width: 21rem;
   position: inherited;
   margin: 1rem; }
+  @media screen and (max-width: 42em) {
+    .mapbox {
+      width: 18rem; } }
 
 .ranking {
   display: inline-block;
