@@ -724,8 +724,11 @@ a {
     font-family: "Montserrat";
     font-weight: 800;
     color: #EA5663; }
+  .main-content h1 {
+    text-align: center; }
   .main-content h2 {
-    font-size: 2rem; }
+    font-size: 1.5rem;
+    font-weight: 600; }
   .main-content p {
     margin-bottom: 1em; }
   .main-content code {
@@ -821,13 +824,13 @@ a {
     height: 2px;
     padding: 0;
     margin: 1rem 0;
-    background-color: #eff0f1;
+    background-color: #777777;
     border: 0; }
 
 .site-footer {
   padding-top: 2rem;
   margin-top: 2rem;
-  border-top: solid 1px #eff0f1; }
+  /*border-top: solid 1px $hr-border-color;*/ }
   @media screen and (min-width: 64em) {
     .site-footer {
       font-size: 1rem; } }
@@ -866,7 +869,7 @@ a {
   padding: 0.5rem 1rem;
   margin: 0.75rem;
   font-size: 0.9rem; }
-.tier_1 h3 {
+.tier_1 h2 {
   color: #264193;
   text-align: center;
   font-size: 1.5rem; }
@@ -892,7 +895,7 @@ a {
   padding: 0.5rem 1rem;
   margin: 1rem 0.5rem;
   font-size: 0.8rem; }
-.tier_2 h3 {
+.tier_2 h2 {
   color: #481F6B;
   text-align: center;
   font-size: 1.3rem;
@@ -919,7 +922,7 @@ a {
   padding: 0.5rem 1rem;
   margin: 1rem 0.5rem;
   font-size: 0.8rem; }
-.tier_3 h3 {
+.tier_3 h2 {
   color: #602043;
   text-align: center;
   font-size: 1.3rem;
@@ -1058,9 +1061,6 @@ a {
   width: 21rem;
   position: inherited;
   margin: 1rem; }
-  @media screen and (max-width: 42em) {
-    .mapbox {
-      width: 18rem; } }
 
 .ranking {
   display: inline-block;
@@ -1085,3 +1085,25 @@ a {
   font-size: 1rem;
   vertical-align: middle;
   text-align: center; }
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: #333333; }
+
+.fa:hover {
+  opacity: 0.7;
+  color: #333333; }
+
+.social_networks {
+  text-align: center;
+  margin: auto;
+  max-width: 50rem;
+  vertical-align: middle;
+  border: solid 0.1rem #777777;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 3px 0px #656565;
+  background: #f7f7f7; }

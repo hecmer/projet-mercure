@@ -35,7 +35,7 @@ Pouvoir se déplacer facilement, et si possible sans voiture, est un critère qu
 ## Coworkings
 Travailler à la maison, ce n'est pas pour tous le monde. D'ailleurs, ce n'est pas pour moi, je préfère de loin les coworkings ! Les villes avec le plus grand nombre de coworkings finissent avec le plus de point sur ce classement, pour vous permettre d'identifier rapidement où ce sera le plus facile de trouver une place ! A noter, les prix sont remarquablement uniformes à travers la France : 160-250€ pour un poste fixe avec accès 24/7 est la norme partout en France, sauf à paris où il faut compter une centaine d'euros de plus pour le même service (eh oui, les coworkings doivent payer un loyer ou rembourser leur emprunt !)
 
-# Les Sources
+# Les sources
 Nous utilisons uniquement des sources ouvertes. Les informations sont récupérées grâce à des scrapers, et sont aggrégées par un algorythme. Très franchement, nous sommes tentés de parler d'IA. C'est super intelligent de collecter de l'information d'un nombre de sources limitées, et de les aggréger toujours de la même manière, non ? C'est même du Machine Learning, que dis-je du Deep Learning ! On se sert même d'une Blockch... Sorry j'en peux plus il est trois heures du mat.
 
 # Les notes
