@@ -10,27 +10,48 @@
  rang: 1
  longitude: 45.785649299999996
  latitude: 3.115545429
+ population: 141398
+ rentprice: 444€
+ timetoparis: 210 minutes
+ proportionrestaurants: 7
+ 4gcoverage: 95%
+ minavginternet: 94Gb/s
+ nbcoworkings: 7
 -
- nom: Nantes
+ nom: Tours
  loyer: 4
  animation: 4
  delinquance: 4
- internet: 4
- meteo: 3
+ internet: 3
+ meteo: 5
  transport: 4
  coworking: 5
  rang: 2
- longitude: 47.23163568
- latitude: -1.5483100859999999
--
- nom: Mulhouse
+ longitude: 47.39863823
+ latitude: 0.6965263759999999
+ population: 136252
+ rentprice: 528€
+ timetoparis: 84 minutes
+ proportionrestaurants: 7
+ 4gcoverage: 96%
+ minavginternet: 100Gb/s
+ nbcoworkings: 4
+ -
+ nom: Le Mans
  loyer: 5
- animation: 4
- delinquance: 3
- internet: 4
- meteo: 3
+ animation: 3
+ delinquance: 4
+ internet: 3
+ meteo: 4
  transport: 5
- coworking: 4
+ coworking: 5
  rang: 3
- longitude: 47.7491633
- latitude: 7.325700475
+ longitude: 47.98852567
+ latitude: 0.20003049399999998
+ population: 143325
+ rentprice: 395€
+ timetoparis: 62 minutes
+ proportionrestaurants: 4
+ 4gcoverage: 96%
+ minavginternet: 92Gb/s
+ nbcoworkings: 4
