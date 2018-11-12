@@ -14,6 +14,46 @@
             {% include city_ratings.html %}
           </div>
         </div>
+        <table class="table table-striped table-hover table-sm" style="max-width:30rem;margin:2rem auto;">
+          <tbody>
+            <tr>
+              <td><span class="fa fa-female"></span></td>
+              <td>Nombre d'habitants</td>
+              <td align="right">{{ city.population }}</td>
+            </tr>
+            <tr>
+              <td><span class="fa fa-bed"></span></td>
+              <td>Loyer médian d'un appartement 1 chambre</td>
+              <td align="right">{{ city.rentprice }}</td>
+            </tr>
+            <tr>
+              <td><span class="fa fa-cocktail"></span></td>
+              <td>Nombre de restaurants/habitant</td>
+              <td align="right">{{ city.proportionrestaurants }}</td>
+            </tr>
+            <tr>
+              <td><span class="fa fa-train"></span></td>
+              <td>Temps de Trajet en train Paris-{{ city.nom }}</td>
+              <td align="right">{{ city.timetoparis }}</td>
+            </tr>
+            <tr>
+              <td><span class="fa fa-wifi"></span></td>
+              <td>Couverture 4G</td>
+              <td align="right">{{ city.4gcoverage }}</td>
+            </tr>
+            <tr>
+              <td><span class="fa fa-desktop"></span></td>
+              <td>Vitesse ADSL/Fibre moyenne</td>
+              <td align="right">{{ city.minavginternet }}</td>
+            </tr>
+            <tr>
+              <td><span class="fa fa-train"></span></td>
+              <td>Nombre de coworkings</td>
+              <td align="right">{{ city.nbcoworkings }}</td>
+            </tr>
+          </tbody>
+        </table>
+
         <p>Donnez-nous votre adresse email et nous vous tiendrons au courrant dès que nous aurons plus d'information à vous communiquer sur  {{ city.nom }} !</p>
         <form style="text-align:center;" action="https://tinyletter.com/hectorm" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/hectorm', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><input type="text" style="width:18rem" name="email" id="tlemail" placeholder="Adresse email"/></p><input type="hidden" value="1" name="embed" /><input type="submit" value="S'inscrire" class="submitbutton"/></form>
       </div>

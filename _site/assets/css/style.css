@@ -1086,19 +1086,17 @@ a {
   vertical-align: middle;
   text-align: center; }
 
-.fa {
+footer .fab {
   padding: 20px;
   font-size: 30px;
   width: 50px;
   text-align: center;
   text-decoration: none;
   color: #333333; }
-
-.fa:hover {
+footer .fab:hover {
   opacity: 0.7;
   color: #333333; }
-
-.social_networks {
+footer .social_networks {
   text-align: center;
   margin: auto;
   max-width: 50rem;

@@ -10,7 +10,7 @@
  rang: 1
  longitude: 45.785649299999996
  latitude: 3.115545429
- population: 141398
+ population: 141 398
  rentprice: 444€
  timetoparis: 210 minutes
  proportionrestaurants: 7
@@ -29,7 +29,7 @@
  rang: 2
  longitude: 47.39863823
  latitude: 0.6965263759999999
- population: 136252
+ population: 136 252
  rentprice: 528€
  timetoparis: 84 minutes
  proportionrestaurants: 7
@@ -48,7 +48,7 @@
  rang: 3
  longitude: 47.98852567
  latitude: 0.20003049399999998
- population: 143325
+ population: 143 325
  rentprice: 395€
  timetoparis: 62 minutes
  proportionrestaurants: 4

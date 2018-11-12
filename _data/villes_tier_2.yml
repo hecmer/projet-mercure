@@ -10,7 +10,7 @@
  rang: 4
  longitude: 47.23163568
  latitude: -1.5483100859999999
- population: 303382
+ population: 303 382
  rentprice: 530€
  timetoparis: 151 minutes
  proportionrestaurants: 7
@@ -29,7 +29,7 @@
  rang: 5
  longitude: 43.13615897
  latitude: 5.9323963420000005
- population: 167479
+ population: 167 479
  rentprice: 524€
  timetoparis: 301 minutes
  proportionrestaurants: 7
@@ -48,7 +48,7 @@
  rang: 6
  longitude: 42.69659541
  latitude: 2.89936954
- population: 121934
+ population: 121 934
  rentprice: 405€
  timetoparis: 332 minutes
  proportionrestaurants: 8
@@ -67,7 +67,7 @@
  rang: 7
  longitude: 47.7491633
  latitude: 7.325700475
- population: 110370
+ population: 110 370
  rentprice: 430€
  timetoparis: 161 minutes
  proportionrestaurants: 6
@@ -86,7 +86,7 @@
  rang: 8
  longitude: 46.58392077
  latitude: 0.359947653
- population: 87918
+ population: 87 918
  rentprice: 421.415€
  timetoparis: 96 minutes
  proportionrestaurants: 5
@@ -105,7 +105,7 @@
  rang: 9
  longitude: 46.1620644
  latitude: -1.174657028
- population: 75404
+ population: 75 404
  rentprice: 545.395€
  timetoparis: 187 minutes
  proportionrestaurants: 9
@@ -124,7 +124,7 @@
  rang: 10
  longitude: 48.57126798
  latitude: 7.767526795
- population: 277270
+ population: 277 270
  rentprice: 550€
  timetoparis: 106 minutes
  proportionrestaurants: 7
@@ -143,7 +143,7 @@
  rang: 11
  longitude: 48.11197912
  latitude: -1.681864491
- population: 215366
+ population: 215 366
  rentprice: 514€
  timetoparis: 91 minutes
  proportionrestaurants: 6
