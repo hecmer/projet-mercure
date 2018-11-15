@@ -10,12 +10,18 @@
     
     {% include header.html %}
     
-    <main id="content" class="main-content" role="main" style="width:65rem;text-align:justify;";>
-      <div class="project-tagline">La méthodologie du classement Projet Mercure</div>
+    <main id="content" class="main-content" role="main">
+    <div class="project-tagline">Découvrez nos derniers articles</div>
 
-      {{ content }}
-    
-      {% include footer.html %}
+    {{ content }}
+
+    <p>L'arbitrage géographique, le télétravail, l'activité freelance, ça vous parle ? Inscrivez-vous à notre newsletter pour être les premiers avertis de la publication de nos articles :</p>
+
+    <form style="text-align:center;" action="https://tinyletter.com/hectorm" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/hectorm', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><input type="text" style="width:18rem" name="email" id="tlemail" placeholder="Adresse email"/></p><input type="hidden" value="1" name="embed" /><input type="submit" value="S'inscrire" class="submitbutton"/></form>
+
+    <div style="margin:15% auto; width:0;"></div>
+
+    {% include footer.html %}
     </main>
   </body>
 </html>
