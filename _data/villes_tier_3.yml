@@ -1,54 +1,35 @@
 -
- nom: Nîmes
+ nom: Toulon
  loyer: 4
  animation: 4
  delinquance: 3
  internet: 3
- meteo: 4
+ meteo: 5
  transport: 4
  coworking: 5
- rang: 12
- longitude: 43.84493839
- latitude: 4.34806797
- population: 150 672
- rentprice: 496€
- timetoparis: 227 minutes
+ rang: 8
+ longitude: 43.13615897
+ latitude: 5.9323963420000005
+ population: 167479
+ rentprice: 524€
+ timetoparis: 301 minutes
  proportionrestaurants: 7
- 4gcoverage: 98%
- minavginternet: 82Gb/s
+ 4gcoverage: 97%
+ minavginternet: 91Gb/s
  nbcoworkings: 3
--
- nom: Marseille
- loyer: 3
- animation: 5
- delinquance: 2
- internet: 3
- meteo: 5
- transport: 3
- coworking: 5
- rang: 13
- longitude: 43.23408349
- latitude: 5.452496831
- population: 861 635
- rentprice: 583.93€
- timetoparis: 185 minutes
- proportionrestaurants: 7
- 4gcoverage: 99%
- minavginternet: 92Gb/s
- nbcoworkings: 23
 -
  nom: Montpellier
  loyer: 3
  animation: 5
  delinquance: 2
- internet: 3
+ internet: 4
  meteo: 5
  transport: 3
  coworking: 5
- rang: 14
+ rang: 13
  longitude: 43.61344091
  latitude: 3.8685165789999996
- population: 277 639
+ population: 277639
  rentprice: 567.805€
  timetoparis: 256 minutes
  proportionrestaurants: 8
@@ -60,14 +41,14 @@
  loyer: 3
  animation: 5
  delinquance: 4
- internet: 3
+ internet: 4
  meteo: 3
  transport: 3
  coworking: 5
- rang: 15
+ rang: 14
  longitude: 44.85724454
  latitude: -0.573696781
- population: 249 712
+ population: 249712
  rentprice: 552.5€
  timetoparis: 128 minutes
  proportionrestaurants: 12
@@ -75,37 +56,18 @@
  minavginternet: 90Gb/s
  nbcoworkings: 10
 -
- nom: Grenoble
- loyer: 4
- animation: 5
- delinquance: 4
- internet: 3
- meteo: 1
- transport: 4
- coworking: 5
- rang: 16
- longitude: 45.18212152
- latitude: 5.721330517999999
- population: 160 649
- rentprice: 519€
- timetoparis: 183 minutes
- proportionrestaurants: 10
- 4gcoverage: 94%
- minavginternet: 96Gb/s
- nbcoworkings: 6
--
  nom: Angers
  loyer: 5
- animation: 3
+ animation: 4
  delinquance: 4
  internet: 4
  meteo: 3
  transport: 5
  coworking: 5
- rang: 17
+ rang: 15
  longitude: 47.47683742
  latitude: -0.556125995
- population: 151 520
+ population: 151520
  rentprice: 437€
  timetoparis: 109 minutes
  proportionrestaurants: 5
@@ -113,37 +75,75 @@
  minavginternet: 100Gb/s
  nbcoworkings: 4
 -
- nom: Niort
- loyer: 5
- animation: 3
- delinquance: 5
+ nom: Nîmes
+ loyer: 4
+ animation: 4
+ delinquance: 3
  internet: 3
  meteo: 4
- transport: 5
- coworking: 1
- rang: 18
- longitude: 46.32826024
- latitude: -0.465353019
- population: 58 952
- rentprice: 400€
- timetoparis: 145 minutes
- proportionrestaurants: 5
+ transport: 4
+ coworking: 5
+ rang: 16
+ longitude: 43.84493839
+ latitude: 4.34806797
+ population: 150672
+ rentprice: 496€
+ timetoparis: 227 minutes
+ proportionrestaurants: 7
+ 4gcoverage: 98%
+ minavginternet: 82Gb/s
+ nbcoworkings: 3
+-
+ nom: Marseille
+ loyer: 3
+ animation: 4
+ delinquance: 2
+ internet: 4
+ meteo: 5
+ transport: 3
+ coworking: 5
+ rang: 17
+ longitude: 43.23408349
+ latitude: 5.452496831
+ population: 861635
+ rentprice: 583.93€
+ timetoparis: 185 minutes
+ proportionrestaurants: 7
  4gcoverage: 99%
- minavginternet: 97Gb/s
- nbcoworkings: 0
+ minavginternet: 92Gb/s
+ nbcoworkings: 23
+-
+ nom: Lyon
+ loyer: 2
+ animation: 5
+ delinquance: 3
+ internet: 5
+ meteo: 4
+ transport: 2
+ coworking: 5
+ rang: 18
+ longitude: 45.77868676
+ latitude: 4.823961127
+ population: 513275
+ rentprice: 652€
+ timetoparis: 131 minutes
+ proportionrestaurants: 9
+ 4gcoverage: 99%
+ minavginternet: 98Gb/s
+ nbcoworkings: 31
 -
  nom: Saint-Étienne
  loyer: 5
  animation: 4
  delinquance: 3
- internet: 3
+ internet: 4
  meteo: 4
  transport: 5
  coworking: 5
  rang: 19
  longitude: 45.43012355
  latitude: 4.379139971
- population: 171 057
+ population: 171057
  rentprice: 377€
  timetoparis: 170 minutes
  proportionrestaurants: 7
@@ -155,14 +155,14 @@
  loyer: 5
  animation: 3
  delinquance: 3
- internet: 3
+ internet: 4
  meteo: 1
  transport: 5
  coworking: 5
  rang: 20
  longitude: 45.85425496
  latitude: 1.248757902
- population: 133 627
+ population: 133627
  rentprice: 380€
  timetoparis: 204 minutes
  proportionrestaurants: 5
@@ -174,14 +174,14 @@
  loyer: 4
  animation: 4
  delinquance: 3
- internet: 3
+ internet: 4
  meteo: 3
  transport: 4
  coworking: 4
  rang: 21
  longitude: 49.10811333
  latitude: 6.195524542
- population: 117 492
+ population: 117492
  rentprice: 487€
  timetoparis: 84 minutes
  proportionrestaurants: 6
@@ -193,14 +193,14 @@
  loyer: 4
  animation: 5
  delinquance: 3
- internet: 3
+ internet: 4
  meteo: 1
  transport: 4
  coworking: 5
  rang: 22
  longitude: 48.69019955
  latitude: 6.175882543999999
- population: 105 162
+ population: 105162
  rentprice: 467€
  timetoparis: 90 minutes
  proportionrestaurants: 8
@@ -212,14 +212,14 @@
  loyer: 4
  animation: 5
  delinquance: 2
- internet: 3
+ internet: 4
  meteo: 5
  transport: 4
  coworking: 5
  rang: 23
  longitude: 43.93524483
  latitude: 4.840715725
- population: 92 130
+ population: 92130
  rentprice: 500€
  timetoparis: 207 minutes
  proportionrestaurants: 9

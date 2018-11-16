@@ -1,54 +1,92 @@
 -
- nom: Nantes
+ nom: Strasbourg
  loyer: 4
- animation: 4
- delinquance: 4
+ animation: 5
+ delinquance: 3
  internet: 4
- meteo: 3
+ meteo: 4
  transport: 4
  coworking: 5
  rang: 4
- longitude: 47.23163568
- latitude: -1.5483100859999999
- population: 303 382
- rentprice: 530€
- timetoparis: 151 minutes
+ longitude: 48.57126798
+ latitude: 7.767526795
+ population: 277270
+ rentprice: 550€
+ timetoparis: 106 minutes
  proportionrestaurants: 7
- 4gcoverage: 99%
- minavginternet: 95Gb/s
- nbcoworkings: 25
+ 4gcoverage: 98%
+ minavginternet: 96Gb/s
+ nbcoworkings: 4
 -
- nom: Toulon
- loyer: 4
- animation: 4
- delinquance: 3
+ nom: Le Mans
+ loyer: 5
+ animation: 3
+ delinquance: 4
  internet: 3
- meteo: 5
- transport: 4
+ meteo: 4
+ transport: 5
  coworking: 5
  rang: 5
- longitude: 43.13615897
- latitude: 5.9323963420000005
- population: 167 479
- rentprice: 524€
- timetoparis: 301 minutes
- proportionrestaurants: 7
+ longitude: 47.98852567
+ latitude: 0.20003049399999998
+ population: 143325
+ rentprice: 395€
+ timetoparis: 62 minutes
+ proportionrestaurants: 4
+ 4gcoverage: 96%
+ minavginternet: 92Gb/s
+ nbcoworkings: 4
+-
+ nom: Poitiers
+ loyer: 5
+ animation: 4
+ delinquance: 3
+ internet: 2
+ meteo: 5
+ transport: 5
+ coworking: 5
+ rang: 6
+ longitude: 46.58392077
+ latitude: 0.359947653
+ population: 87918
+ rentprice: 421.415€
+ timetoparis: 96 minutes
+ proportionrestaurants: 5
  4gcoverage: 97%
- minavginternet: 91Gb/s
- nbcoworkings: 3
+ minavginternet: 42Gb/s
+ nbcoworkings: 4
+-
+ nom: Rennes
+ loyer: 4
+ animation: 4
+ delinquance: 4
+ internet: 5
+ meteo: 2
+ transport: 4
+ coworking: 5
+ rang: 7
+ longitude: 48.11197912
+ latitude: -1.681864491
+ population: 215366
+ rentprice: 514€
+ timetoparis: 91 minutes
+ proportionrestaurants: 6
+ 4gcoverage: 99%
+ minavginternet: 99Gb/s
+ nbcoworkings: 4
 -
  nom: Perpignan
  loyer: 5
- animation: 5
+ animation: 4
  delinquance: 2
- internet: 3
+ internet: 4
  meteo: 5
  transport: 5
  coworking: 3
- rang: 6
+ rang: 9
  longitude: 42.69659541
  latitude: 2.89936954
- population: 121 934
+ population: 121934
  rentprice: 405€
  timetoparis: 332 minutes
  proportionrestaurants: 8
@@ -64,10 +102,10 @@
  meteo: 3
  transport: 5
  coworking: 4
- rang: 7
+ rang: 10
  longitude: 47.7491633
  latitude: 7.325700475
- population: 110 370
+ population: 110370
  rentprice: 430€
  timetoparis: 161 minutes
  proportionrestaurants: 6
@@ -75,37 +113,18 @@
  minavginternet: 100Gb/s
  nbcoworkings: 2
 -
- nom: Poitiers
- loyer: 5
- animation: 3
- delinquance: 3
- internet: 2
- meteo: 5
- transport: 5
- coworking: 5
- rang: 8
- longitude: 46.58392077
- latitude: 0.359947653
- population: 87 918
- rentprice: 421.415€
- timetoparis: 96 minutes
- proportionrestaurants: 5
- 4gcoverage: 97%
- minavginternet: 42Gb/s
- nbcoworkings: 4
--
  nom: La Rochelle
  loyer: 4
- animation: 5
+ animation: 4
  delinquance: 4
- internet: 2
+ internet: 3
  meteo: 4
  transport: 4
  coworking: 5
- rang: 9
+ rang: 11
  longitude: 46.1620644
  latitude: -1.174657028
- population: 75 404
+ population: 75404
  rentprice: 545.395€
  timetoparis: 187 minutes
  proportionrestaurants: 9
@@ -113,40 +132,21 @@
  minavginternet: 50Gb/s
  nbcoworkings: 3
 -
- nom: Strasbourg
- loyer: 4
- animation: 4
- delinquance: 3
- internet: 3
+ nom: Niort
+ loyer: 5
+ animation: 3
+ delinquance: 5
+ internet: 5
  meteo: 4
- transport: 4
- coworking: 5
- rang: 10
- longitude: 48.57126798
- latitude: 7.767526795
- population: 277 270
- rentprice: 550€
- timetoparis: 106 minutes
- proportionrestaurants: 7
- 4gcoverage: 98%
- minavginternet: 96Gb/s
- nbcoworkings: 4
--
- nom: Rennes
- loyer: 4
- animation: 4
- delinquance: 4
- internet: 4
- meteo: 2
- transport: 4
- coworking: 5
- rang: 11
- longitude: 48.11197912
- latitude: -1.681864491
- population: 215 366
- rentprice: 514€
- timetoparis: 91 minutes
- proportionrestaurants: 6
+ transport: 5
+ coworking: 1
+ rang: 12
+ longitude: 46.32826024
+ latitude: -0.465353019
+ population: 58952
+ rentprice: 400€
+ timetoparis: 145 minutes
+ proportionrestaurants: 5
  4gcoverage: 99%
- minavginternet: 99Gb/s
- nbcoworkings: 4
+ minavginternet: 97Gb/s
+ nbcoworkings: 0
