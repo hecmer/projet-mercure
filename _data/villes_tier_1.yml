@@ -1,5 +1,6 @@
 -
  nom: Clermont-Ferrand
+ simplename: clermontferrand
  loyer: 5
  animation: 5
  delinquance: 3
@@ -15,10 +16,12 @@
  timetoparis: 210 minutes
  proportionrestaurants: 7
  4gcoverage: 95%
+ students: 38%
  minavginternet: 94Gb/s
  nbcoworkings: 7
 -
  nom: Tours
+ simplename: tours
  loyer: 4
  animation: 4
  delinquance: 4
@@ -34,10 +37,12 @@
  timetoparis: 84 minutes
  proportionrestaurants: 7
  4gcoverage: 96%
+ students: 44%
  minavginternet: 100Gb/s
  nbcoworkings: 4
 -
  nom: Nantes
+ simplename: nantes
  loyer: 4
  animation: 4
  delinquance: 4
@@ -53,5 +58,6 @@
  timetoparis: 151 minutes
  proportionrestaurants: 7
  4gcoverage: 99%
+ students: 37%
  minavginternet: 95Gb/s
  nbcoworkings: 25

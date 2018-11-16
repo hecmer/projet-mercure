@@ -1,10 +1,10 @@
 <script>
-  var mymap{{ city.rang }} = L.map('map{{ city.rang }}').setView([46.2901, 2.3135], 5);
+  var mymap{{ city.simplename }} = L.map('map{{ city.simplename }}').setView([46.2901, 2.3135], 5);
   L.tileLayer('https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png', { 
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(mymap{{ city.rang }});
-  L.marker([{{ city.longitude }}, {{ city.latitude }}]).bindPopup("{{ city.nom }}").addTo(mymap{{ city.rang }}); /* set your location's GPS Coordinates : [LAT,LON] */
-  $("#Modal{{ city.rang }}").on('shown.bs.modal', function(e) {
-    mymap{{ city.rang }}.invalidateSize();
+}).addTo(mymap{{ city.simplename }});
+  L.marker([{{ city.longitude }}, {{ city.latitude }}]).bindPopup("{{ city.nom }}").addTo(mymap{{ city.simplename }}); /* set your location's GPS Coordinates : [LAT,LON] */
+  $("#detail-{{ city.simplename }}").on('shown.bs.modal', function(e) {
+    mymap{{ city.simplename }}.invalidateSize();
   });
 </script>

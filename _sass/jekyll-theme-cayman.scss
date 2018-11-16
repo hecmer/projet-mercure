@@ -420,6 +420,15 @@ a {
   color:$color-tier3 !important;
 }
 
+h1 span{
+  margin:auto 0.3rem;
+  font-size: 1.5rem;
+}
+
+.lightsoff{
+  color:grey;
+}
+
 .tier_1 {
   .ville{
     display: inline-block;

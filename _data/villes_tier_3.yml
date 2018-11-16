@@ -1,138 +1,27 @@
 -
- nom: Toulon
- loyer: 4
- animation: 4
- delinquance: 3
- internet: 3
- meteo: 5
- transport: 4
- coworking: 5
- rang: 8
- longitude: 43.13615897
- latitude: 5.9323963420000005
- population: 167479
- rentprice: 524€
- timetoparis: 301 minutes
- proportionrestaurants: 7
- 4gcoverage: 97%
- minavginternet: 91Gb/s
- nbcoworkings: 3
--
- nom: Montpellier
- loyer: 3
- animation: 5
- delinquance: 2
- internet: 4
- meteo: 5
- transport: 3
- coworking: 5
- rang: 13
- longitude: 43.61344091
- latitude: 3.8685165789999996
- population: 277639
- rentprice: 567.805€
- timetoparis: 256 minutes
- proportionrestaurants: 8
- 4gcoverage: 98%
- minavginternet: 94Gb/s
- nbcoworkings: 9
--
- nom: Bordeaux
- loyer: 3
- animation: 5
- delinquance: 4
- internet: 4
- meteo: 3
- transport: 3
- coworking: 5
- rang: 14
- longitude: 44.85724454
- latitude: -0.573696781
- population: 249712
- rentprice: 552.5€
- timetoparis: 128 minutes
- proportionrestaurants: 12
- 4gcoverage: 99%
- minavginternet: 90Gb/s
- nbcoworkings: 10
--
- nom: Angers
+ nom: Poitiers
+ simplename: poitiers
  loyer: 5
  animation: 4
- delinquance: 4
- internet: 4
- meteo: 3
+ delinquance: 3
+ internet: 2
+ meteo: 5
  transport: 5
  coworking: 5
- rang: 15
- longitude: 47.47683742
- latitude: -0.556125995
- population: 151520
- rentprice: 437€
- timetoparis: 109 minutes
+ rang: 12
+ longitude: 46.58392077
+ latitude: 0.359947653
+ population: 87918
+ rentprice: 421.415€
+ timetoparis: 96 minutes
  proportionrestaurants: 5
- 4gcoverage: 98%
- minavginternet: 100Gb/s
+ 4gcoverage: 97%
+ students: 62%
+ minavginternet: 42Gb/s
  nbcoworkings: 4
 -
- nom: Nîmes
- loyer: 4
- animation: 4
- delinquance: 3
- internet: 3
- meteo: 4
- transport: 4
- coworking: 5
- rang: 16
- longitude: 43.84493839
- latitude: 4.34806797
- population: 150672
- rentprice: 496€
- timetoparis: 227 minutes
- proportionrestaurants: 7
- 4gcoverage: 98%
- minavginternet: 82Gb/s
- nbcoworkings: 3
--
- nom: Marseille
- loyer: 3
- animation: 4
- delinquance: 2
- internet: 4
- meteo: 5
- transport: 3
- coworking: 5
- rang: 17
- longitude: 43.23408349
- latitude: 5.452496831
- population: 861635
- rentprice: 583.93€
- timetoparis: 185 minutes
- proportionrestaurants: 7
- 4gcoverage: 99%
- minavginternet: 92Gb/s
- nbcoworkings: 23
--
- nom: Lyon
- loyer: 2
- animation: 5
- delinquance: 3
- internet: 5
- meteo: 4
- transport: 2
- coworking: 5
- rang: 18
- longitude: 45.77868676
- latitude: 4.823961127
- population: 513275
- rentprice: 652€
- timetoparis: 131 minutes
- proportionrestaurants: 9
- 4gcoverage: 99%
- minavginternet: 98Gb/s
- nbcoworkings: 31
--
  nom: Saint-Étienne
+ simplename: saintétienne
  loyer: 5
  animation: 4
  delinquance: 3
@@ -140,7 +29,7 @@
  meteo: 4
  transport: 5
  coworking: 5
- rang: 19
+ rang: 13
  longitude: 45.43012355
  latitude: 4.379139971
  population: 171057
@@ -148,18 +37,41 @@
  timetoparis: 170 minutes
  proportionrestaurants: 7
  4gcoverage: 97%
+ students: 26%
  minavginternet: 96Gb/s
  nbcoworkings: 4
 -
- nom: Limoges
+ nom: Angers
+ simplename: angers
  loyer: 5
- animation: 3
+ animation: 4
+ delinquance: 4
+ internet: 4
+ meteo: 3
+ transport: 5
+ coworking: 5
+ rang: 14
+ longitude: 47.47683742
+ latitude: -0.556125995
+ population: 151520
+ rentprice: 437€
+ timetoparis: 109 minutes
+ proportionrestaurants: 5
+ 4gcoverage: 98%
+ students: 48%
+ minavginternet: 100Gb/s
+ nbcoworkings: 4
+-
+ nom: Limoges
+ simplename: limoges
+ loyer: 5
+ animation: 4
  delinquance: 3
  internet: 4
  meteo: 1
  transport: 5
  coworking: 5
- rang: 20
+ rang: 15
  longitude: 45.85425496
  latitude: 1.248757902
  population: 133627
@@ -167,48 +79,12 @@
  timetoparis: 204 minutes
  proportionrestaurants: 5
  4gcoverage: 97%
+ students: 27%
  minavginternet: 98Gb/s
  nbcoworkings: 3
 -
- nom: Metz
- loyer: 4
- animation: 4
- delinquance: 3
- internet: 4
- meteo: 3
- transport: 4
- coworking: 4
- rang: 21
- longitude: 49.10811333
- latitude: 6.195524542
- population: 117492
- rentprice: 487€
- timetoparis: 84 minutes
- proportionrestaurants: 6
- 4gcoverage: 98%
- minavginternet: 99Gb/s
- nbcoworkings: 2
--
- nom: Nancy
- loyer: 4
- animation: 5
- delinquance: 3
- internet: 4
- meteo: 1
- transport: 4
- coworking: 5
- rang: 22
- longitude: 48.69019955
- latitude: 6.175882543999999
- population: 105162
- rentprice: 467€
- timetoparis: 90 minutes
- proportionrestaurants: 8
- 4gcoverage: 98%
- minavginternet: 97Gb/s
- nbcoworkings: 5
--
  nom: Avignon
+ simplename: avignon
  loyer: 4
  animation: 5
  delinquance: 2
@@ -216,7 +92,7 @@
  meteo: 5
  transport: 4
  coworking: 5
- rang: 23
+ rang: 16
  longitude: 43.93524483
  latitude: 4.840715725
  population: 92130
@@ -224,5 +100,153 @@
  timetoparis: 207 minutes
  proportionrestaurants: 9
  4gcoverage: 99%
+ students: 22%
  minavginternet: 93Gb/s
  nbcoworkings: 4
+-
+ nom: Nîmes
+ simplename: nîmes
+ loyer: 4
+ animation: 4
+ delinquance: 3
+ internet: 3
+ meteo: 4
+ transport: 4
+ coworking: 5
+ rang: 17
+ longitude: 43.84493839
+ latitude: 4.34806797
+ population: 150672
+ rentprice: 496€
+ timetoparis: 227 minutes
+ proportionrestaurants: 7
+ 4gcoverage: 98%
+ students: 17%
+ minavginternet: 82Gb/s
+ nbcoworkings: 3
+-
+ nom: Metz
+ simplename: metz
+ loyer: 4
+ animation: 4
+ delinquance: 3
+ internet: 4
+ meteo: 3
+ transport: 4
+ coworking: 4
+ rang: 18
+ longitude: 49.10811333
+ latitude: 6.195524542
+ population: 117492
+ rentprice: 487€
+ timetoparis: 84 minutes
+ proportionrestaurants: 6
+ 4gcoverage: 98%
+ students: 36%
+ minavginternet: 99Gb/s
+ nbcoworkings: 2
+-
+ nom: Nancy
+ simplename: nancy
+ loyer: 4
+ animation: 5
+ delinquance: 3
+ internet: 4
+ meteo: 1
+ transport: 4
+ coworking: 5
+ rang: 19
+ longitude: 48.69019955
+ latitude: 6.175882543999999
+ population: 105162
+ rentprice: 467€
+ timetoparis: 90 minutes
+ proportionrestaurants: 8
+ 4gcoverage: 98%
+ students: 61%
+ minavginternet: 97Gb/s
+ nbcoworkings: 5
+-
+ nom: Montpellier
+ simplename: montpellier
+ loyer: 3
+ animation: 5
+ delinquance: 2
+ internet: 4
+ meteo: 5
+ transport: 3
+ coworking: 5
+ rang: 20
+ longitude: 43.61344091
+ latitude: 3.8685165789999996
+ population: 277639
+ rentprice: 567.805€
+ timetoparis: 256 minutes
+ proportionrestaurants: 8
+ 4gcoverage: 98%
+ students: 52%
+ minavginternet: 94Gb/s
+ nbcoworkings: 9
+-
+ nom: Marseille
+ simplename: marseille
+ loyer: 3
+ animation: 4
+ delinquance: 2
+ internet: 4
+ meteo: 5
+ transport: 3
+ coworking: 5
+ rang: 21
+ longitude: 43.23408349
+ latitude: 5.452496831
+ population: 861635
+ rentprice: 583.93€
+ timetoparis: 185 minutes
+ proportionrestaurants: 7
+ 4gcoverage: 99%
+ students: 13%
+ minavginternet: 92Gb/s
+ nbcoworkings: 23
+-
+ nom: Bordeaux
+ simplename: bordeaux
+ loyer: 3
+ animation: 5
+ delinquance: 4
+ internet: 4
+ meteo: 3
+ transport: 3
+ coworking: 5
+ rang: 22
+ longitude: 44.85724454
+ latitude: -0.573696781
+ population: 249712
+ rentprice: 552.5€
+ timetoparis: 128 minutes
+ proportionrestaurants: 12
+ 4gcoverage: 99%
+ students: 28%
+ minavginternet: 90Gb/s
+ nbcoworkings: 10
+-
+ nom: Lyon
+ simplename: lyon
+ loyer: 2
+ animation: 5
+ delinquance: 3
+ internet: 5
+ meteo: 4
+ transport: 2
+ coworking: 5
+ rang: 23
+ longitude: 45.77868676
+ latitude: 4.823961127
+ population: 513275
+ rentprice: 652€
+ timetoparis: 131 minutes
+ proportionrestaurants: 9
+ 4gcoverage: 99%
+ students: 38%
+ minavginternet: 98Gb/s
+ nbcoworkings: 31

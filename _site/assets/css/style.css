@@ -859,6 +859,13 @@ a {
 .tier_3title {
   color: #602043 !important; }
 
+h1 span {
+  margin: auto 0.3rem;
+  font-size: 1.5rem; }
+
+.lightsoff {
+  color: grey; }
+
 .tier_1 .ville {
   display: inline-block;
   width: 22rem;

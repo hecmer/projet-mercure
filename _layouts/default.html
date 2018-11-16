@@ -26,7 +26,7 @@
     <!-- the maps -->
     <main id="content" class="main-content" role="main">
       <div class="project-tagline">{{ site.description }}</div>
-      <h1 class="tier_1title">Le podium <img src="/assets/images/trophy1.png" class="trophy"><img src="/assets/images/trophy1.png" class="trophy"><img src="/assets/images/trophy1.png" class="trophy"><img src="/assets/images/trophy1.png" class="trophy"><img src="/assets/images/trophy1.png" class="trophy"></h1>
+      <h1 class="tier_1title">Le podium <span class="fa fa-trophy"></span><span class="fa fa-trophy"></span><span class="fa fa-trophy"></span><span class="fa fa-trophy"></span><span class="fa fa-trophy"></span></h1>
       <p>Voici les villes avec les meilleurs classements à travers toutes les catégories. Commencez déjà à faire vos bagages, il y a tout ce qu'il vous faut dans ces villes !</p>
       <div class="tier_1">
           {% for city in site.data.villes_tier_1 %}
@@ -34,12 +34,12 @@
             <h2><span class="classement">{{ city.rang }}</span>{{ city.nom }}</h2>
             {% include city_ratings.html %}            
             <!-- Modal button -->
-            <a href="#Modal{{ city.rang }}"><div class="tell_me_more" data-toggle="modal" data-target="#Modal{{ city.rang }}">Dites m'en plus !</div></a>
+            <a href="#detail-{{ city.simplename }}"><div class="tell_me_more" data-toggle="modal" data-target="#detail-{{ city.simplename }}">Dites m'en plus !</div></a>
           </div>
           {% endfor %}
       </div>
 
-      <h1 class="tier_2title">Le peloton <img src="/assets/images/trophy2.png" class="trophy"><img src="/assets/images/trophy2.png" class="trophy"><img src="/assets/images/trophy2.png" class="trophy"><img src="/assets/images/trophy2.png" class="trophy"><img src="/assets/images/trophygrey.png" class="trophy"></h1>
+      <h1 class="tier_2title">Le peloton <span class="fa fa-trophy"></span><span class="fa fa-trophy"></span><span class="fa fa-trophy"></span><span class="fa fa-trophy"></span><span class="fa fa-trophy lightsoff"></span></h1>
       <p>Ces villes ont des forces indéniables. A regarder de près !</p>
       <div class="tier_2">
           {% for city in site.data.villes_tier_2 %}
@@ -47,12 +47,12 @@
             <h2><span class="classement">{{ city.rang }}</span>{{ city.nom }}</h2>
             {% include city_ratings.html %}            
             <!-- Modal button -->
-            <a href="#Modal{{ city.rang }}"><div class="tell_me_more" data-toggle="modal" data-target="#Modal{{ city.rang }}">Dites m'en plus !</div></a>
+            <a href="#detail-{{ city.simplename }}"><div class="tell_me_more" data-toggle="modal" data-target="#detail-{{ city.simplename }}">Dites m'en plus !</div></a>
           </div>
           {% endfor %}
       </div>
 
-      <h1 class="tier_3title">Les poursuivants <img src="/assets/images/trophy3.png" class="trophy"><img src="/assets/images/trophy3.png" class="trophy"><img src="/assets/images/trophy3.png" class="trophy"><img src="/assets/images/trophygrey.png" class="trophy"><img src="/assets/images/trophygrey.png" class="trophy"></h1>
+      <h1 class="tier_3title">Les poursuivants <span class="fa fa-trophy"></span><span class="fa fa-trophy"></span><span class="fa fa-trophy"></span><span class="fa fa-trophy lightsoff"></span><span class="fa fa-trophy lightsoff"></span></h1>
       <p>Encore, toujours plus de choix ! Notre algorythme (que dis-je, notre "<b>IA</b>") nous signale également ces villes françaises.</p>
         <div class="tier_3">
           {% for city in site.data.villes_tier_3 %}
@@ -60,7 +60,7 @@
             <h2><span class="classement">{{ city.rang }}</span>{{ city.nom }}</h2>
             {% include city_ratings.html %}            
             <!-- Modal button -->
-            <a href="#Modal{{ city.rang }}"><div class="tell_me_more" data-toggle="modal" data-target="#Modal{{ city.rang }}">Dites m'en plus !</div></a>
+            <a href="#detail-{{ city.simplename }}"><div class="tell_me_more" data-toggle="modal" data-target="#detail-{{ city.simplename }}">Dites m'en plus !</div></a>
           </div>
           {% endfor %}
         </div>

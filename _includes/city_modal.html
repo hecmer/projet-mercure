@@ -1,15 +1,15 @@
-<div class="modal fade" id="Modal{{ city.rang }}" tabindex="-1" role="dialog" aria-labelledby="{{ city.nom }}ModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="detail-{{ city.simplename }}" tabindex="-1" role="dialog" aria-labelledby="{{ city.nom }}ModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h3 class="modal-title" id="{{ city.nom }}ModalLongTitle">Tout savoir sur {{ city.nom }}</h3>
+        <h3 class="modal-title">Tout savoir sur {{ city.nom }}</h3>
         <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
         <div style="text-align:center">
-          <div class="mapbox" id="map{{ city.rang }}"></div>
+          <div class="mapbox" id="map{{ city.simplename }}"></div>
           <div class="ranking">
             {% include city_ratings.html %}
           </div>
@@ -20,6 +20,11 @@
               <td><span class="fa fa-female"></span></td>
               <td>Nombre d'habitants</td>
               <td align="right">{{ city.population }}</td>
+            </tr>
+            <tr>
+              <td><span class="fa fa-graduation-cap"></span></td>
+              <td>Population étudiante</td>
+              <td align="right">{{ city.students }}</td>
             </tr>
             <tr>
               <td><span class="fa fa-bed"></span></td>
@@ -47,14 +52,14 @@
               <td align="right">{{ city.minavginternet }}</td>
             </tr>
             <tr>
-              <td><span class="fa fa-train"></span></td>
+              <td><span class="fa fa-building"></span></td>
               <td>Nombre de coworkings</td>
               <td align="right">{{ city.nbcoworkings }}</td>
             </tr>
           </tbody>
         </table>
 
-        <p>Donnez-nous votre adresse email et nous vous tiendrons au courrant dès que nous aurons plus d'information à vous communiquer sur  {{ city.nom }} !</p>
+        <p style="text-align:center;">Donnez-nous votre adresse email et nous vous tiendrons au courrant dès que nous aurons plus d'information à vous communiquer sur  {{ city.nom }} !</p>
         <form style="text-align:center;" action="https://tinyletter.com/hectorm" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/hectorm', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><input type="text" style="width:18rem" name="email" id="tlemail" placeholder="Adresse email"/></p><input type="hidden" value="1" name="embed" /><input type="submit" value="S'inscrire" class="submitbutton"/></form>
       </div>
     </div>
