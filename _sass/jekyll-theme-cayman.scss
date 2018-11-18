@@ -634,6 +634,15 @@ h1 span{
   margin: auto 0.5rem;
 }
 
+.trophies{
+  width:auto;
+  display: inline-block;
+  
+  @include small{
+    width:100%;
+  }
+}
+
 .modal-body input[type=text]{
   border-radius:0.3rem;
   padding-left:0.3rem;
