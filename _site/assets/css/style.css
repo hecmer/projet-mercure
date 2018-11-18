@@ -874,6 +874,9 @@ h1 span {
   padding: 0.5rem 1rem;
   margin: 0.75rem;
   font-size: 0.9rem; }
+  @media screen and (max-width: 42em) {
+    .tier_1 .ville {
+      width: 17rem; } }
 .tier_1 h2 {
   color: #264193;
   text-align: center;
@@ -974,12 +977,20 @@ h1 span {
   /* Clear floats after the columns */
   /* The bar container */
   /* Individual bars */
-  /* Responsive layout - make the columns stack on top of each other instead of next to each other */ }
+  /* Responsive layout - make the columns stack on top of each other instead of next to each other 
+  @media (max-width: 400px) {
+      .side, .middle {
+          width: 100%;
+      }
+  }*/ }
   .ville *, .ranking * {
     box-sizing: border-box; }
   .ville .row, .ranking .row {
     max-width: 20rem;
     margin: 1rem auto; }
+    @media screen and (max-width: 42em) {
+      .ville .row, .ranking .row {
+        max-width: 15rem; } }
   .ville .side, .ranking .side {
     float: left;
     width: 35%;
@@ -1039,9 +1050,6 @@ h1 span {
     text-align: left;
     font-weight: bold;
     padding-left: 0.7rem; }
-  @media (max-width: 400px) {
-    .ville .side, .ville .middle, .ranking .side, .ranking .middle {
-      width: 100%; } }
 
 .trophy {
   height: 1.5rem;
