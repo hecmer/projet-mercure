@@ -11,8 +11,8 @@
  rang: 1
  longitude: 45.785649299999996
  latitude: 3.115545429
- population: 141398
- rentprice: 444€
+ population: 141,398
+ rentprice: 436€
  timetoparis: 210 minutes
  proportionrestaurants: 7
  4gcoverage: 95%
@@ -23,17 +23,17 @@
  nom: Tours
  simplename: tours
  loyer: 4
- animation: 4
+ animation: 5
  delinquance: 4
  internet: 4
  meteo: 5
- transport: 4
+ transport: 5
  coworking: 5
  rang: 2
  longitude: 47.39863823
  latitude: 0.6965263759999999
- population: 136252
- rentprice: 528€
+ population: 136,252
+ rentprice: 519€
  timetoparis: 84 minutes
  proportionrestaurants: 7
  4gcoverage: 96%
@@ -48,13 +48,13 @@
  delinquance: 4
  internet: 5
  meteo: 3
- transport: 4
+ transport: 5
  coworking: 5
  rang: 3
  longitude: 47.23163568
  latitude: -1.5483100859999999
- population: 303382
- rentprice: 530€
+ population: 303,382
+ rentprice: 529€
  timetoparis: 151 minutes
  proportionrestaurants: 7
  4gcoverage: 99%
