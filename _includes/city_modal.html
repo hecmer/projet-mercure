@@ -22,24 +22,19 @@
               <td align="right">{{ city.population }}</td>
             </tr>
             <tr>
-              <td><span class="fa fa-graduation-cap"></span></td>
-              <td>Population étudiante</td>
-              <td align="right">{{ city.students }}</td>
-            </tr>
-            <tr>
               <td><span class="fa fa-bed"></span></td>
               <td>Loyer médian d'un appartement 1 chambre</td>
               <td align="right">{{ city.rentprice }}</td>
             </tr>
             <tr>
+              <td><span class="fa fa-graduation-cap"></span></td>
+              <td>Population étudiante</td>
+              <td align="right">{{ city.students }}</td>
+            </tr>
+            <tr>
               <td><span class="fa fa-cocktail"></span></td>
               <td>Nombre de restaurants pour 1000 habitants</td>
               <td align="right">{{ city.proportionrestaurants }}</td>
-            </tr>
-            <tr>
-              <td><span class="fa fa-train"></span></td>
-              <td>Temps de Trajet en train Paris-{{ city.nom }}</td>
-              <td align="right">{{ city.timetoparis }}</td>
             </tr>
             <tr>
               <td><span class="fa fa-wifi"></span></td>
@@ -50,6 +45,21 @@
               <td><span class="fa fa-desktop"></span></td>
               <td>Vitesse ADSL/Fibre moyenne</td>
               <td align="right">{{ city.minavginternet }}</td>
+            </tr>
+            <tr>
+              <td><span class="fa fa-temperature-high"></span></td>
+              <td>Température moyenne</td>
+              <td align="right">{{ city.temperature }}</td>
+            </tr>
+            <tr>
+              <td><span class="fa fa-cloud-showers-heavy"></span></td>
+              <td>Précipitations annuelles</td>
+              <td align="right">{{ city.precipitations }}</td>
+            </tr>
+            <tr>
+              <td><span class="fa fa-train"></span></td>
+              <td>Temps de Trajet en train Paris-{{ city.nom }}</td>
+              <td align="right">{{ city.timetoparis }}</td>
             </tr>
             <tr>
               <td><span class="fa fa-building"></span></td>
