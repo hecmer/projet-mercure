@@ -1,10 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-12-28T19:41:34+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Remote France</title><subtitle>Quelle ville française choisir pour le télétravail ?</subtitle><entry><title type="html">Mise à jour de la météo</title><link href="http://localhost:4000/2018/12/28/mise-a-jour-meteo.html" rel="alternate" type="text/html" title="Mise à jour de la météo" /><published>2018-12-28T00:00:00+01:00</published><updated>2018-12-28T00:00:00+01:00</updated><id>http://localhost:4000/2018/12/28/mise-a-jour-meteo</id><content type="html" xml:base="http://localhost:4000/2018/12/28/mise-a-jour-meteo.html">&lt;h1 id=&quot;notre-indice-de-météo-est-maintenant-plus-fiable-&quot;&gt;Notre indice de météo est maintenant plus fiable !&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-12-28T19:51:28+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Remote France</title><subtitle>Quelle ville française choisir pour le télétravail ?</subtitle><entry><title type="html">Mise à jour de la météo</title><link href="http://localhost:4000/2018/12/28/mise-a-jour-meteo.html" rel="alternate" type="text/html" title="Mise à jour de la météo" /><published>2018-12-28T00:00:00+01:00</published><updated>2018-12-28T00:00:00+01:00</updated><id>http://localhost:4000/2018/12/28/mise-a-jour-meteo</id><content type="html" xml:base="http://localhost:4000/2018/12/28/mise-a-jour-meteo.html">&lt;h1 id=&quot;notre-indice-de-météo-est-maintenant-plus-fiable-&quot;&gt;Notre indice de météo est maintenant plus fiable !&lt;/h1&gt;
 
 &lt;p&gt;Auparavant, notre indice de météo n’intégrait que deux variables : les précipitations annuelles, ainsi qu’un bonus conféré par l’environement (montagne ou mer).&lt;/p&gt;
 
 &lt;!--more--&gt;
 
-&lt;p&gt;Nous avons conservé ces deux indicateurs, et ajouté une nouvelle variable : la température moyenne. A précipitations similaires, cela permet de mettre en valeur les villes relativement plus chaudes !&lt;/p&gt;</content><author><name></name></author><summary type="html">Notre indice de météo est maintenant plus fiable ! Auparavant, notre indice de météo n’intégrait que deux variables : les précipitations annuelles, ainsi qu’un bonus conféré par l’environement (montagne ou mer).</summary></entry><entry><title type="html">Bienvenue sur Remote France !</title><link href="http://localhost:4000/2018/12/10/bienvenue-sur-remote-france.html" rel="alternate" type="text/html" title="Bienvenue sur Remote France !" /><published>2018-12-10T00:00:00+01:00</published><updated>2018-12-10T00:00:00+01:00</updated><id>http://localhost:4000/2018/12/10/bienvenue-sur-remote-france</id><content type="html" xml:base="http://localhost:4000/2018/12/10/bienvenue-sur-remote-france.html">&lt;h1 id=&quot;bienvenue-sur-remote-france&quot;&gt;Bienvenue sur Remote France&lt;/h1&gt;
+&lt;p&gt;Nous avons conservé ces deux indicateurs, et ajouté une nouvelle variable : la température moyenne. A précipitations similaires, cela permet de mettre en valeur les villes relativement plus chaudes !&lt;/p&gt;
+
+&lt;p&gt;Par la même occasion, nous avons mis à jour les données de loyer, et fait quelques ajustements pour rendre le calcul de la note de transport plus juste et représentative. L’ancienne méthode était en effet trop complaisante avec des villes isolées mais ayant un aéroport. C’est à présent réglé !&lt;/p&gt;
+
+&lt;p&gt;Les conséquences de cette mise à jour ont été assez drastiques : Lyon et Bordeau ont sauté tout en haut du classement ! Le top 10 est à présent le suivant :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Lyon&lt;/li&gt;
+  &lt;li&gt;Bordeau&lt;/li&gt;
+  &lt;li&gt;Nantes&lt;/li&gt;
+  &lt;li&gt;Clermont-Ferrand&lt;/li&gt;
+  &lt;li&gt;Tours&lt;/li&gt;
+  &lt;li&gt;La Rochelle&lt;/li&gt;
+  &lt;li&gt;Narbonne&lt;/li&gt;
+  &lt;li&gt;Nancy&lt;/li&gt;
+  &lt;li&gt;Avignon&lt;/li&gt;
+  &lt;li&gt;Le Mans&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Bon travail en remote à tous !&lt;/p&gt;
+
+&lt;p&gt;Hector&lt;/p&gt;</content><author><name></name></author><summary type="html">Notre indice de météo est maintenant plus fiable ! Auparavant, notre indice de météo n’intégrait que deux variables : les précipitations annuelles, ainsi qu’un bonus conféré par l’environement (montagne ou mer).</summary></entry><entry><title type="html">Bienvenue sur Remote France !</title><link href="http://localhost:4000/2018/12/10/bienvenue-sur-remote-france.html" rel="alternate" type="text/html" title="Bienvenue sur Remote France !" /><published>2018-12-10T00:00:00+01:00</published><updated>2018-12-10T00:00:00+01:00</updated><id>http://localhost:4000/2018/12/10/bienvenue-sur-remote-france</id><content type="html" xml:base="http://localhost:4000/2018/12/10/bienvenue-sur-remote-france.html">&lt;h1 id=&quot;bienvenue-sur-remote-france&quot;&gt;Bienvenue sur Remote France&lt;/h1&gt;
 
 &lt;p&gt;Remote France est l’outils de référence pour choisir où s’installer en France.&lt;/p&gt;
 
