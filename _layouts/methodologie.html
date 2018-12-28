@@ -6,15 +6,14 @@
   </head>
 
   <body>
-    <a id="skip-to-content" href="#content">Skip to the content.</a>
     
     {% include header.html %}
-      <main id="content" class="main-content" role="main">
-      <div class="project-tagline">La méthodologie du classement Projet Mercure</div>
+    <div class="lead text-center py-4 text-light motivation-lead">Découvrez la méthodologie du classement des villes Remote France</div>
 
-      {{ content }}
-    
-        {% include footer.html %}
+    <main id="content" class="main-content standard-page-container" role="main">
+    {{ content }}
+  
     </main>
+    {% include footer.html %}
   </body>
 </html>

@@ -1,27 +1,35 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  
-  <head>
-    {% include head.html %}
-  </head>
+---
+layout: default
+---
 
-  <body>
-    <a id="skip-to-content" href="#content">Skip to the content.</a>
-    
-    {% include header.html %}
-    
-    <main id="content" class="main-content" role="main">
-    <div class="project-tagline">Découvrez nos derniers articles</div>
+<div class="lead text-center py-4 text-light motivation-lead">Découvrez toutes les actualités de Remote France</div>
 
-    {{ content }}
+<main id="content" class="main-content standard-page-container" role="main">
+  <div id="postslist">
+    {% for post in paginator.posts %}
+      <div class="postpreview border mx-auto my-4 p-3 w-75 shadow-sm">
+        <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
+        <small>{{ post.date | date: "%Y-%m-%d" }}</small>
+        <p>{{ post.description }} <a href="{{ post.url }}"><em>Lire la suite</em></a></p>
+      </div>
+    {% endfor %}
+  </div>
 
-    <p>L'arbitrage géographique, le télétravail, l'activité freelance, ça vous parle ? Inscrivez-vous à notre newsletter pour être les premiers avertis de la publication de nos articles :</p>
+  <!-- Pagination links -->
+  {% if paginator.total_pages > 1 %}
+  <ul class="pager">
+      {% if paginator.previous_page %}
+      <li class="previous">
+          <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+      </li>
+      {% endif %}
+      {% if paginator.next_page %}
+      <li class="next">
+          <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+      </li>
+      {% endif %}
+  </ul>
+  {% endif %}
 
-    <form style="text-align:center;" action="https://tinyletter.com/hectorm" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/hectorm', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><input type="text" style="width:18rem" name="email" id="tlemail" placeholder="Adresse email"/></p><input type="hidden" value="1" name="embed" /><input type="submit" value="S'inscrire" class="submitbutton"/></form>
-
-    <div style="margin:15% auto; width:0;"></div>
-
-    {% include footer.html %}
-    </main>
-  </body>
-</html>
+</main>
+{% include footer.html %}

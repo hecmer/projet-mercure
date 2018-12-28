@@ -6,6 +6,7 @@
  */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,900");
+@import url("https://fonts.googleapis.com/css?family=Exo 2:200,300,400,500,600,700,800,900");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -719,14 +720,15 @@ a {
   .main-content h6 {
     margin-top: 2rem;
     margin-bottom: 1rem;
-    font-family: "Montserrat";
-    font-weight: 800;
+    font-family: "Exo 2";
     color: #EA5663; }
   .main-content h1 {
-    text-align: center; }
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700; }
   .main-content h2 {
-    font-size: 1.5rem;
-    font-weight: 600; }
+    font-size: 2rem;
+    font-weight: 700; }
   .main-content p {
     margin-bottom: 1em; }
   .main-content code {
@@ -880,7 +882,7 @@ h1 span {
 .tier_1 h2 {
   color: #264193;
   text-align: center;
-  font-size: 1.5rem; }
+  font-size: 1.75rem; }
 .tier_1 .tell_me_more {
   background-color: #264193; }
 .tier_1 .classement {
@@ -906,7 +908,7 @@ h1 span {
 .tier_2 h2 {
   color: #481F6B;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin: 0.2rem auto; }
 .tier_2 .classement {
   width: 2rem;
@@ -933,7 +935,7 @@ h1 span {
 .tier_3 h2 {
   color: #602043;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin: 0.2rem auto; }
 .tier_3 .classement {
   width: 2rem;
@@ -1125,3 +1127,12 @@ footer .social_networks {
   border-radius: 1rem;
   box-shadow: 1px 1px 3px 0px #656565;
   background: #f7f7f7; }
+
+.standard-page-container {
+  margin: auto;
+  width: 70rem; }
+
+.motivation-lead {
+  background-image: linear-gradient(120deg, #780206, #061161);
+  opacity: 0.6;
+  font-family: "Exo 2"; }

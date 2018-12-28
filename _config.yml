@@ -3,3 +3,18 @@ description: Quelle ville française choisir pour le télétravail ?
 show_downloads: true
 google_analytics: UA-129160412-1
 theme: jekyll-theme-cayman
+
+
+gems:
+  - jekyll-paginate-v2
+
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: '/page/:num/'
+  title_suffix: ' - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+
+permalink: /:year/:month/:title.html
