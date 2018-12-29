@@ -6,13 +6,13 @@ date: "2018-12-28 00:00:00"
 description: Une variable supplémentaire vient renforcer la note de météo !
 ---
 
-# Notre indice de météo est maintenant plus fiable !
+# Mise à jour de la météo
 
-Auparavant, notre indice de météo n'intégrait que deux variables : les précipitations annuelles, ainsi qu'un bonus conféré par l'environement (montagne ou mer).
-
-<!--more-->
+Auparavant, notre indice de météo n'intégrait que deux variables : les précipitations annuelles, ainsi qu'un bonus conféré par l'environement (montagne ou mer). Nous avons renforcé cet indice pour le rendre plus **fiable**.
 
 Nous avons conservé ces deux indicateurs, et ajouté une nouvelle variable : la température moyenne. A précipitations similaires, cela permet de mettre en valeur les villes relativement plus chaudes !
+
+<!--more-->
 
 Par la même occasion, nous avons mis à jour les données de loyer, et fait quelques ajustements pour rendre le calcul de la note de transport plus juste et représentative. L'ancienne méthode était en effet trop complaisante avec des villes isolées mais ayant un aéroport. C'est à présent réglé !
 
