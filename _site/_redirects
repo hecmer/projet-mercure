@@ -1,2 +1,0 @@
-# Redirect default Netlify subdomain to primary domain
-http://remotefrance.netlify.com/* http://remotefrance.fr/:splat 301!
