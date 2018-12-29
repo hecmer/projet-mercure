@@ -224,18 +224,18 @@ a {
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-family:"Exo 2";
-    color: $section-headings-color;
+    color: $header-bg-color;
   }
 
   h1{
     text-align:center;
+    font-weight:500;
     font-size:2.5rem;
-    font-weight:700;
   }
 
   h2{
-    font-size: 2rem;
-    font-weight: 700;
+    font-weight: 500;
+    color:#264193;
   }
 
   p {
@@ -451,6 +451,7 @@ h1 span{
     color:$color-tier1;
     text-align: center;
     font-size: 1.75rem;
+    font-weight:700;
   }
 
   .tell_me_more{
@@ -488,6 +489,7 @@ h1 span{
     text-align: center;
     font-size: 1.5rem;
     margin: 0.2rem auto;
+    font-weight:700;
   }
 
   .classement{
@@ -524,6 +526,7 @@ h1 span{
     text-align: center;
     font-size: 1.5rem;
     margin: 0.2rem auto;
+    font-weight:700;
     }
 
   .classement{
@@ -730,6 +733,6 @@ footer{
 
 .motivation-lead{
   background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
-  opacity:0.6;
+  opacity:0.7;
   font-family:"Exo 2";
 }

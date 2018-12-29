@@ -721,14 +721,14 @@ a {
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-family: "Exo 2";
-    color: #EA5663; }
+    color: #061161; }
   .main-content h1 {
     text-align: center;
-    font-size: 2.5rem;
-    font-weight: 700; }
+    font-weight: 500;
+    font-size: 2.5rem; }
   .main-content h2 {
-    font-size: 2rem;
-    font-weight: 700; }
+    font-weight: 500;
+    color: #264193; }
   .main-content p {
     margin-bottom: 1em; }
   .main-content code {
@@ -882,7 +882,8 @@ h1 span {
 .tier_1 h2 {
   color: #264193;
   text-align: center;
-  font-size: 1.75rem; }
+  font-size: 1.75rem;
+  font-weight: 700; }
 .tier_1 .tell_me_more {
   background-color: #264193; }
 .tier_1 .classement {
@@ -909,7 +910,8 @@ h1 span {
   color: #481F6B;
   text-align: center;
   font-size: 1.5rem;
-  margin: 0.2rem auto; }
+  margin: 0.2rem auto;
+  font-weight: 700; }
 .tier_2 .classement {
   width: 2rem;
   height: 2rem;
@@ -936,7 +938,8 @@ h1 span {
   color: #602043;
   text-align: center;
   font-size: 1.5rem;
-  margin: 0.2rem auto; }
+  margin: 0.2rem auto;
+  font-weight: 700; }
 .tier_3 .classement {
   width: 2rem;
   height: 2rem;
@@ -1134,5 +1137,5 @@ footer .social_networks {
 
 .motivation-lead {
   background-image: linear-gradient(120deg, #780206, #061161);
-  opacity: 0.6;
+  opacity: 0.7;
   font-family: "Exo 2"; }
