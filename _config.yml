@@ -4,7 +4,6 @@ show_downloads: true
 google_analytics: UA-129160412-1
 theme: jekyll-theme-cayman
 
-
 gems:
   - jekyll-paginate-v2
 
@@ -18,3 +17,5 @@ pagination:
   sort_reverse: true
 
 permalink: /:year/:month/:title.html
+
+include: ['_redirects']
