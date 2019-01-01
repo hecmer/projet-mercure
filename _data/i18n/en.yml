@@ -1,0 +1,47 @@
+lang:
+  french: Français
+  english: English
+
+menu:
+  ranking: Ranking
+  methodology: Methodology
+  blog: Blog
+  developer: Developer
+
+# Ranking
+ranking:
+  lead: 
+  top3:
+    title: The podium
+    description: Here are the cities with the best ratings throuhgout all categories. Pack your bags, there's everything you'll need in these cities!
+  top11:
+    title: The pack
+    description: These cities have singificant strengths. Have a look, they are definitely worth your attention!
+  top25:
+    title: The underdogs
+    description: Not enough choice above? Dwelve into these cities. Our algorythm (what am I saying? our <b>AI</b>) suggests that these cities have a very high potential!
+  tellmemore: Tell me more!
+  modal:
+    title: Everything about
+    numberinhabitants: Number of Inhabitants
+    medianrent: Median Rent (1 bedroom appartment)
+    studentpop: Student Population
+    numberrestaurants: Number of restaurants per 1000 Inhabitants
+    4gcoverage: 4G Coverage
+    internetspeed: Average internet speed
+    averagetemp: Average Temperature
+    rain: Annual precipitations
+    trainparis: Length of a trip to Paris
+    numbercoworkings: Number of coworkings
+    subscribe:
+      value: Submit
+      description: Leave us your email address, and we'll make sure to let you know when we'll have more information to tell you about
+
+  ratings:
+    rent: Rent
+    life: Life
+    safety: safety
+    internet: internet
+    weather: Weather
+    transportation: Transportation
+    corowkings: Coworkings
