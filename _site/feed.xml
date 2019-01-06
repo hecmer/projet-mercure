@@ -1,4 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-01-06T16:14:58+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Remote France</title><subtitle>Quelle ville française choisir pour le télétravail ?</subtitle><entry xml:lang="fr"><title type="html">Mise à jour de la météo</title><link href="http://localhost:4000/2018/12/mise-a-jour-meteo.html" rel="alternate" type="text/html" title="Mise à jour de la météo" /><published>2018-12-28T00:00:00+01:00</published><updated>2018-12-28T00:00:00+01:00</updated><id>http://localhost:4000/2018/12/mise-a-jour-meteo</id><content type="html" xml:base="http://localhost:4000/2018/12/mise-a-jour-meteo.html">&lt;h1 id=&quot;mise-à-jour-de-la-météo&quot;&gt;Mise à jour de la météo&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-01-06T19:00:29+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Remote France</title><subtitle>Quelle ville française choisir pour le télétravail ?</subtitle><entry xml:lang="en"><title type="html">Remote France Translated</title><link href="http://localhost:4000/2019/01/remote-france-translated-Copy.html" rel="alternate" type="text/html" title="Remote France Translated" /><published>2019-01-06T00:00:00+01:00</published><updated>2019-01-06T00:00:00+01:00</updated><id>http://localhost:4000/2019/01/remote-france-translated%20-%20Copy</id><content type="html" xml:base="http://localhost:4000/2019/01/remote-france-translated-Copy.html">&lt;h1 id=&quot;remote-france-translated&quot;&gt;Remote France Translated&lt;/h1&gt;
+
+&lt;p&gt;At last! Remote France is available in english. To all our friends who are looking for a new home in France, you can now browse our ranking with ease.&lt;/p&gt;
+
+&lt;p&gt;We wish you all a very happy and productive year 2019 - bonus points to you if you settle up in one of our recommended cities!&lt;/p&gt;
+
+&lt;p&gt;Have fun,&lt;/p&gt;
+
+&lt;p&gt;Hector&lt;/p&gt;</content><author><name></name></author><summary type="html">Remote France Translated At last! Remote France is available in english. To all our friends who are looking for a new home in France, you can now browse our ranking with ease. We wish you all a very happy and productive year 2019 - bonus points to you if you settle up in one of our recommended cities! Have fun, Hector</summary></entry><entry xml:lang="fr"><title type="html">Remote France en Anglais</title><link href="http://localhost:4000/2019/01/remote-france-en-anglais.html" rel="alternate" type="text/html" title="Remote France en Anglais" /><published>2019-01-06T00:00:00+01:00</published><updated>2019-01-06T00:00:00+01:00</updated><id>http://localhost:4000/2019/01/remote-france-en-anglais</id><content type="html" xml:base="http://localhost:4000/2019/01/remote-france-en-anglais.html">&lt;h1 id=&quot;remote-france-en-anglais&quot;&gt;Remote France en Anglais&lt;/h1&gt;
+
+&lt;p&gt;Remote France est maintenant disponible en anglais ! A tous nos amis anglophones : vous pouvez maintenant parcourir notre classement sans soucis, la langue n’est plus un obstacle ni une excuse !&lt;/p&gt;
+
+&lt;p&gt;Nous vous souhaitons à tous une excellente et productive année 2019 - d’autant plus si vous vous installez dans une des villes que nous recommandons à travers notre classement !&lt;/p&gt;
+
+&lt;p&gt;Hector&lt;/p&gt;</content><author><name></name></author><summary type="html">Remote France en Anglais Remote France est maintenant disponible en anglais ! A tous nos amis anglophones : vous pouvez maintenant parcourir notre classement sans soucis, la langue n’est plus un obstacle ni une excuse ! Nous vous souhaitons à tous une excellente et productive année 2019 - d’autant plus si vous vous installez dans une des villes que nous recommandons à travers notre classement ! Hector</summary></entry><entry xml:lang="en"><title type="html">Weather Update</title><link href="http://localhost:4000/2018/12/weather-update.html" rel="alternate" type="text/html" title="Weather Update" /><published>2018-12-28T00:00:00+01:00</published><updated>2018-12-28T00:00:00+01:00</updated><id>http://localhost:4000/2018/12/weather-update</id><content type="html" xml:base="http://localhost:4000/2018/12/weather-update.html">&lt;h1 id=&quot;weather-update&quot;&gt;Weather Update&lt;/h1&gt;
+
+&lt;p&gt;Before, our weather rating only included 2 variables: annual precipitations, and a bonus given from the location of the city, it is located near the mountains or the sea. We have updated this rating to make it more &lt;strong&gt;reliable&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;We have indeed kept the two pre-existing variables, and we have added a new one: the average temperature. Now, when precipitations are similar, warmer cities rank higher… Which makes a lot of sense!&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;We have also seized this opportunity to update the rent data, and made a few adjustements to the Transports rating, in order to make it fairer. The old Transport rating was to complacent to isolated cities which still had an airport. Now, this issue is solved!&lt;/p&gt;
+
+&lt;p&gt;The consequences of this update have been massive - the biggest move since the inception of our rating. The new top 10 cities are now:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Lyon&lt;/li&gt;
+  &lt;li&gt;Bordeau&lt;/li&gt;
+  &lt;li&gt;Nantes&lt;/li&gt;
+  &lt;li&gt;Clermont-Ferrand&lt;/li&gt;
+  &lt;li&gt;Tours&lt;/li&gt;
+  &lt;li&gt;La Rochelle&lt;/li&gt;
+  &lt;li&gt;Narbonne&lt;/li&gt;
+  &lt;li&gt;Nancy&lt;/li&gt;
+  &lt;li&gt;Avignon&lt;/li&gt;
+  &lt;li&gt;Le Mans&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Work well, work remote !&lt;/p&gt;
+
+&lt;p&gt;Hector&lt;/p&gt;</content><author><name></name></author><summary type="html">Weather Update Before, our weather rating only included 2 variables: annual precipitations, and a bonus given from the location of the city, it is located near the mountains or the sea. We have updated this rating to make it more reliable. We have indeed kept the two pre-existing variables, and we have added a new one: the average temperature. Now, when precipitations are similar, warmer cities rank higher… Which makes a lot of sense!</summary></entry><entry xml:lang="fr"><title type="html">Mise à jour de la météo</title><link href="http://localhost:4000/2018/12/mise-a-jour-meteo.html" rel="alternate" type="text/html" title="Mise à jour de la météo" /><published>2018-12-28T00:00:00+01:00</published><updated>2018-12-28T00:00:00+01:00</updated><id>http://localhost:4000/2018/12/mise-a-jour-meteo</id><content type="html" xml:base="http://localhost:4000/2018/12/mise-a-jour-meteo.html">&lt;h1 id=&quot;mise-à-jour-de-la-météo&quot;&gt;Mise à jour de la météo&lt;/h1&gt;
 
 &lt;p&gt;Auparavant, notre indice de météo n’intégrait que deux variables : les précipitations annuelles, ainsi qu’un bonus conféré par l’environement (montagne ou mer). Nous avons renforcé cet indice pour le rendre plus &lt;strong&gt;fiable&lt;/strong&gt;.&lt;/p&gt;
 
@@ -25,7 +66,7 @@
 
 &lt;p&gt;Bon travail en remote à tous !&lt;/p&gt;
 
-&lt;p&gt;Hector&lt;/p&gt;</content><author><name></name></author><summary type="html">Mise à jour de la météo Auparavant, notre indice de météo n’intégrait que deux variables : les précipitations annuelles, ainsi qu’un bonus conféré par l’environement (montagne ou mer). Nous avons renforcé cet indice pour le rendre plus fiable. Nous avons conservé ces deux indicateurs, et ajouté une nouvelle variable : la température moyenne. A précipitations similaires, cela permet de mettre en valeur les villes relativement plus chaudes !</summary></entry><entry xml:lang="fr"><title type="html">Bienvenue sur Remote France !</title><link href="http://localhost:4000/2018/12/bienvenue-sur-remote-france.html" rel="alternate" type="text/html" title="Bienvenue sur Remote France !" /><published>2018-12-10T00:00:00+01:00</published><updated>2018-12-10T00:00:00+01:00</updated><id>http://localhost:4000/2018/12/bienvenue-sur-remote-france</id><content type="html" xml:base="http://localhost:4000/2018/12/bienvenue-sur-remote-france.html">&lt;h1 id=&quot;bienvenue-sur-remote-france-&quot;&gt;Bienvenue sur Remote France !&lt;/h1&gt;
+&lt;p&gt;Hector&lt;/p&gt;</content><author><name></name></author><summary type="html">Mise à jour de la météo Auparavant, notre indice de météo n’intégrait que deux variables : les précipitations annuelles, ainsi qu’un bonus conféré par l’environement (montagne ou mer). Nous avons renforcé cet indice pour le rendre plus fiable. Nous avons conservé ces deux indicateurs, et ajouté une nouvelle variable : la température moyenne. A précipitations similaires, cela permet de mettre en valeur les villes relativement plus chaudes !</summary></entry><entry xml:lang="fr"><title type="html">Bienvenue sur Remote France !</title><link href="http://localhost:4000/2018/12/bienvenue-sur-remote-france-Copy.html" rel="alternate" type="text/html" title="Bienvenue sur Remote France !" /><published>2018-12-10T00:00:00+01:00</published><updated>2018-12-10T00:00:00+01:00</updated><id>http://localhost:4000/2018/12/bienvenue-sur-remote-france%20-%20Copy</id><content type="html" xml:base="http://localhost:4000/2018/12/bienvenue-sur-remote-france-Copy.html">&lt;h1 id=&quot;bienvenue-sur-remote-france-&quot;&gt;Bienvenue sur Remote France !&lt;/h1&gt;
 
 &lt;p&gt;Remote France est l’outil de référence pour choisir où s’installer en France.&lt;/p&gt;
 
@@ -37,4 +78,16 @@
 
 &lt;p&gt;Nous proposons donc des alternatives qui mettent en valeur l’ensemble du territoire français, sans oublier personne. Nous ne faisons aucun choix ou préférentisme pour aucune ville ni aucune région, mais il se trouve que le classement fait souvent remonter des villes de différentes régions : de l’Auvergne-Rhône-Alpes (Lyon) à la Bretagne (Rennes) en passant par le Grand Est (Nancy), la Nouvelle Aquitaine (Bordeau), ou encore l’Occitanie (Narbonne) et le Centre-Val de Loire (Tours).&lt;/p&gt;
 
-&lt;p&gt;Ce classement est une occasion pour nous tous de découvrir plus en profondeurs les différentes régions !&lt;/p&gt;</content><author><name></name></author><summary type="html">Bienvenue sur Remote France ! Remote France est l’outil de référence pour choisir où s’installer en France. Nous vous proposons une sélection des meilleures villes de France où s’installer, selon des critères objectifs. Dans un esprit d’ouverture, nous mettons également à disposition notre méthodologie. Il n’y a aucun secret, aucune sauce magique : ces villes méritent objectivement et empiriquement de figurer à leur place dans le classement !</summary></entry></feed>
+&lt;p&gt;Ce classement est une occasion pour nous tous de découvrir plus en profondeurs les différentes régions !&lt;/p&gt;</content><author><name></name></author><summary type="html">Bienvenue sur Remote France ! Remote France est l’outil de référence pour choisir où s’installer en France. Nous vous proposons une sélection des meilleures villes de France où s’installer, selon des critères objectifs. Dans un esprit d’ouverture, nous mettons également à disposition notre méthodologie. Il n’y a aucun secret, aucune sauce magique : ces villes méritent objectivement et empiriquement de figurer à leur place dans le classement !</summary></entry><entry xml:lang="en"><title type="html">Welcome to Remote France !</title><link href="http://localhost:4000/2018/12/welcome-to-remote-france.html" rel="alternate" type="text/html" title="Welcome to Remote France !" /><published>2018-12-10T00:00:00+01:00</published><updated>2018-12-10T00:00:00+01:00</updated><id>http://localhost:4000/2018/12/welcome-to-remote-france</id><content type="html" xml:base="http://localhost:4000/2018/12/welcome-to-remote-france.html">&lt;h1 id=&quot;welcome-to-remote-france-&quot;&gt;Welcome to Remote France !&lt;/h1&gt;
+
+&lt;p&gt;Remote France is the best tool to choose the ideal french city for you to work &amp;amp; live.&lt;/p&gt;
+
+&lt;p&gt;We provide a comprehensive list of the best french cities according to objective criteria. In a spirit of openness, we give you access to our methodology. There’s no secret : the cities in our ranking are objectively and empirically the best, and all deserve precisely their place in the ranking!&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;France has always been a very centralized country. Paris is indeed the heart of the country, this cannot be denied. However, the Capital city is not necessarly the perfect place for everyone. Rents are very expensive, the weather is not great. And, if you don’t like big cities, it is fair to say that it is a Hell!&lt;/p&gt;
+
+&lt;p&gt;We offer alternatives which highlight the strenghts of the whole french territory, without omitting any location. We do not apply any bonus to any city or region. We remain strictly objective. But it so happens that our ranking brings up cities from a lot of french regions : from Auvergne-Rhône-Alpes (Lyon) to Bretagne (Rennes), Grand Est (Nancy), Nouvelle Aquitaine (Bordeau), or Occitanie (Narbonne) and Centre-Val de Loire (Tours).&lt;/p&gt;
+
+&lt;p&gt;This ranking is an opportunity for all of us to discover in depth the treasures of the various french regions!&lt;/p&gt;</content><author><name></name></author><summary type="html">Welcome to Remote France ! Remote France is the best tool to choose the ideal french city for you to work &amp;amp; live. We provide a comprehensive list of the best french cities according to objective criteria. In a spirit of openness, we give you access to our methodology. There’s no secret : the cities in our ranking are objectively and empirically the best, and all deserve precisely their place in the ranking!</summary></entry></feed>
