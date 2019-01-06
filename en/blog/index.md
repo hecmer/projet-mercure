@@ -1,8 +1,8 @@
 ---
 layout: blog
-title: Le Blog Remote France
+title: Remote France Blog
 pagination: 
   enabled: true
-permalink: /blog/
+permalink: /en/blog/
 lang: en
 ---

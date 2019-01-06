@@ -3,4 +3,15 @@
 	<a href="/{{ page.lang }}/" class="btn-jek">{{ site.data.i18n[page.lang].menu.ranking }}</a>
 	<a href="/{{ page.lang }}/methodology" class="btn-jek">{{ site.data.i18n[page.lang].menu.methodology }}</a>
 	<a href="/{{ page.lang }}/blog" class="btn-jek">{{ site.data.i18n[page.lang].menu.blog }}</a>
+
+	<div class="langselector">
+	{% if page.lang == "en" %}
+	<a class="btn-lang" href="/fr/">Français</a>
+	{% endif %}
+
+	{% if page.lang == "fr" %}
+	<a class="btn-lang" href="/en/">English</a>
+	{% endif %}
+	</div>
+
 </header>
