@@ -6,11 +6,10 @@ menu:
   ranking: Ranking
   methodology: Methodology
   blog: Blog
-  developer: Developer
 
 # Ranking
 ranking:
-  lead: 
+  lead: With Remote France, find the best city to set yourself up and work from France !
   top3:
     title: The podium
     description: Here are the cities with the best ratings throuhgout all categories. Pack your bags, there's everything you'll need in these cities!
@@ -37,11 +36,21 @@ ranking:
       value: Submit
       description: Leave us your email address, and we'll make sure to let you know when we'll have more information to tell you about
 
-  ratings:
-    rent: Rent
-    life: Life
-    safety: safety
-    internet: internet
-    weather: Weather
-    transportation: Transportation
-    corowkings: Coworkings
+# Ratings
+ratings:
+  rent: Rent
+  life: Life
+  safety: safety
+  internet: internet
+  weather: Weather
+  transportation: Transports
+  coworkings: Coworkings
+
+# Methodology
+methodology:
+  lead: Discover the methodology behind our ranking of french cities
+
+# Blog
+blog:
+  lead: Read all the news about Remote France
+  readmore: Read More

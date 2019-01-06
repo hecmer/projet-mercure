@@ -2,14 +2,14 @@
 layout: default
 ---
 
-<div class="lead text-center py-4 text-light motivation-lead">Découvrez toutes les actualités de Remote France</div>
+<div class="lead text-center py-4 text-light motivation-lead">{{ site.data.i18n[page.lang].blog.lead }}</div>
 
 <main id="content" class="main-content standard-page-container" role="main">
   <div id="postslist">
     {% for post in paginator.posts %}
       <div class="postpreview border mx-auto my-4 p-3 w-75 shadow-sm">
         <a href="{{ post.url }}">{{ post.title }}</a> - <small>{{ post.date | date: "%Y-%m-%d" }}</small>
-        <p>{{ post.excerpt }} <a href="{{ post.url }}"><em>Lire la suite</em></a></p>
+        <p>{{ post.excerpt }} <a href="{{ post.url }}"><em>{{ site.data.i18n[page.lang].blog.readmore }}</em></a></p>
       </div>
     {% endfor %}
   </div>

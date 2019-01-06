@@ -2,7 +2,7 @@
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h3 class="modal-title">Tout savoir sur {{ city.nom }}</h3>
+        <h3 class="modal-title">{{ site.data.i18n[page.lang].ranking.modal.title }} {{ city.nom }}</h3>
         <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -18,59 +18,59 @@
           <tbody>
             <tr>
               <td><span class="fa fa-female"></span></td>
-              <td>Nombre d'habitants</td>
+              <td>{{ site.data.i18n[page.lang].ranking.modal.numberinhabitants }}</td>
               <td align="right">{{ city.population }}</td>
             </tr>
             <tr>
               <td><span class="fa fa-bed"></span></td>
-              <td>Loyer médian d'un appartement 1 chambre</td>
+              <td>{{ site.data.i18n[page.lang].ranking.modal.medianrent }}</td>
               <td align="right">{{ city.rentprice }}</td>
             </tr>
             <tr>
               <td><span class="fa fa-graduation-cap"></span></td>
-              <td>Population étudiante</td>
+              <td>{{ site.data.i18n[page.lang].ranking.modal.studentpop }}</td>
               <td align="right">{{ city.students }}</td>
             </tr>
             <tr>
               <td><span class="fa fa-cocktail"></span></td>
-              <td>Nombre de restaurants pour 1000 habitants</td>
+              <td>{{ site.data.i18n[page.lang].ranking.modal.numberrestaurants }}</td>
               <td align="right">{{ city.proportionrestaurants }}</td>
             </tr>
             <tr>
               <td><span class="fa fa-wifi"></span></td>
-              <td>Couverture 4G</td>
+              <td>{{ site.data.i18n[page.lang].ranking.modal.4gcoverage }}</td>
               <td align="right">{{ city.4gcoverage }}</td>
             </tr>
             <tr>
               <td><span class="fa fa-desktop"></span></td>
-              <td>Vitesse ADSL/Fibre moyenne</td>
+              <td>{{ site.data.i18n[page.lang].ranking.modal.internetspeed }}</td>
               <td align="right">{{ city.minavginternet }}</td>
             </tr>
             <tr>
               <td><span class="fa fa-temperature-high"></span></td>
-              <td>Température moyenne</td>
+              <td>{{ site.data.i18n[page.lang].ranking.modal.averagetemp }}</td>
               <td align="right">{{ city.temperature }}</td>
             </tr>
             <tr>
               <td><span class="fa fa-cloud-showers-heavy"></span></td>
-              <td>Précipitations annuelles</td>
+              <td>{{ site.data.i18n[page.lang].ranking.modal.rain }}</td>
               <td align="right">{{ city.precipitations }}</td>
             </tr>
             <tr>
               <td><span class="fa fa-train"></span></td>
-              <td>Temps de Trajet en train Paris-{{ city.nom }}</td>
+              <td>{{ site.data.i18n[page.lang].ranking.modal.trainparis }}</td>
               <td align="right">{{ city.timetoparis }}</td>
             </tr>
             <tr>
               <td><span class="fa fa-building"></span></td>
-              <td>Nombre de coworkings</td>
+              <td>{{ site.data.i18n[page.lang].ranking.modal.numbercoworkings }}</td>
               <td align="right">{{ city.nbcoworkings }}</td>
             </tr>
           </tbody>
         </table>
 
-        <p style="text-align:center;">Donnez-nous votre adresse email et nous vous tiendrons au courrant dès que nous aurons plus d'information à vous communiquer sur  {{ city.nom }} !</p>
-        <form style="text-align:center;" action="https://tinyletter.com/hectorm" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/hectorm', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><input type="text" style="width:18rem" name="email" id="tlemail" placeholder="Adresse email"/></p><input type="hidden" value="1" name="embed" /><input type="submit" value="S'inscrire" class="submitbutton"/></form>
+        <p style="text-align:center;">{{ site.data.i18n[page.lang].ranking.modal.subscribe.description }}  {{ city.nom }} !</p>
+        <form style="text-align:center;" action="https://tinyletter.com/hectorm" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/hectorm', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><input type="text" style="width:18rem" name="email" id="tlemail" placeholder="Adresse email"/></p><input type="hidden" value="1" name="embed" /><input type="submit" value="{{ site.data.i18n[page.lang].ranking.modal.subscribe.value }}" class="submitbutton"/></form>
       </div>
     </div>
   </div>

@@ -1,75 +1,16 @@
----
-layout: default
----
-
-<!-- include the modals -->
-{% for city in site.data.city.villes_tier_1 %}
-  {% include city_modal.html %}
-{% endfor %}
-
-{% for city in site.data.city.villes_tier_2 %}
-  {% include city_modal.html %}
-{% endfor %}
-
-{% for city in site.data.city.villes_tier_3 %}
-  {% include city_modal.html %}
-{% endfor %}
-
-
-<div class="lead text-center py-4 text-light motivation-lead">Avec Remote France, trouvez la ville française idéale pour vous installer et travailler en freelance !</div>
-
-<main id="content" class="main-content" role="main">
-  <h1 class="tier_1title">Le podium <div class="trophies"><span class="fa fa-trophy"></span><span class="fa fa-trophy"></span><span class="fa fa-trophy"></span><span class="fa fa-trophy"></span><span class="fa fa-trophy"></span></div></h1>
-  <p>Voici les villes avec les meilleurs classements à travers toutes les catégories. Commencez déjà à faire vos bagages, il y a tout ce qu'il vous faut dans ces villes !</p>
-  <div class="tier_1">
-      {% for city in site.data.city.villes_tier_1 %}
-      <div class="ville">
-        <h2><span class="classement">{{ city.rang }}</span>{{ city.nom }}</h2>
-        {% include city_ratings.html %}            
-        <!-- Modal button -->
-        <a href="#detail-{{ city.simplename }}"><div class="tell_me_more" data-toggle="modal" data-target="#detail-{{ city.simplename }}">Dites m'en plus !</div></a>
-      </div>
-      {% endfor %}
-  </div>
-
-  <h1 class="tier_2title">Le peloton <div class="trophies"><span class="fa fa-trophy"></span><span class="fa fa-trophy"></span><span class="fa fa-trophy"></span><span class="fa fa-trophy"></span><span class="fa fa-trophy lightsoff"></span></div></h1>
-  <p>Ces villes ont des forces indéniables. A regarder de près !</p>
-  <div class="tier_2">
-      {% for city in site.data.city.villes_tier_2 %}
-      <div class="ville">
-        <h2><span class="classement">{{ city.rang }}</span>{{ city.nom }}</h2>
-        {% include city_ratings.html %}            
-        <!-- Modal button -->
-        <a href="#detail-{{ city.simplename }}"><div class="tell_me_more" data-toggle="modal" data-target="#detail-{{ city.simplename }}">Dites m'en plus !</div></a>
-      </div>
-      {% endfor %}
-  </div>
-
-  <h1 class="tier_3title">Les poursuivants <div class="trophies"><span class="fa fa-trophy"></span><span class="fa fa-trophy"></span><span class="fa fa-trophy"></span><span class="fa fa-trophy lightsoff"></span><span class="fa fa-trophy lightsoff"></span></div></h1>
-  <p>Encore, toujours plus de choix ! Notre algorythme (que dis-je, notre "<b>IA</b>") nous signale également ces villes françaises.</p>
-    <div class="tier_3">
-      {% for city in site.data.city.villes_tier_3 %}
-      <div class="ville">
-        <h2><span class="classement">{{ city.rang }}</span>{{ city.nom }}</h2>
-        {% include city_ratings.html %}            
-        <!-- Modal button -->
-        <a href="#detail-{{ city.simplename }}"><div class="tell_me_more" data-toggle="modal" data-target="#detail-{{ city.simplename }}">Dites m'en plus !</div></a>
-      </div>
-      {% endfor %}
-    </div>
-</main>
-
-{% include footer.html %}
-
-<!-- include the modals -->
-{% for city in site.data.city.villes_tier_1 %}
-  {% include map_script.html %}
-{% endfor %}
-
-{% for city in site.data.city.villes_tier_2 %}
-  {% include map_script.html %}
-{% endfor %}
-
-{% for city in site.data.city.villes_tier_3 %}
-  {% include map_script.html %}
-{% endfor %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Gladys Project</title>
+</head>
+<body>
+<script>
+    var lang = navigator.language || navigator.userLanguage;
+    if (lang.indexOf('fr') == 0)
+        window.location = '/fr/';
+    else
+        window.location = '/en/';
+</script>
+</body>
+</html>

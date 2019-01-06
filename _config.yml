@@ -19,3 +19,19 @@ pagination:
 permalink: /:year/:month/:title.html
 
 include: ['_redirects']
+
+## I18N
+languages: ["en", "fr"]
+exclude_from_localizations: ["assets", "CNAME"]
+defaultLang: fr
+languageNames:
+  fr: Français
+  en: English
+
+  
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - Gemfile
+  - Gemfile.lock
