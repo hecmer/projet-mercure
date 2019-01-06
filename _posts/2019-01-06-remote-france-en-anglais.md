@@ -14,4 +14,6 @@ Remote France est maintenant disponible en anglais ! A tous nos amis anglophones
 
 Nous vous souhaitons à tous une excellente et productive année 2019 - d'autant plus si vous vous installez dans une des villes que nous recommandons à travers notre classement !
 
+<!--more-->
+
 Hector

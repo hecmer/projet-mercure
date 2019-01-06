@@ -14,6 +14,8 @@ At last! Remote France is available in english. To all our friends who are looki
 
 We wish you all a very happy and productive year 2019 - bonus points to you if you settle up in one of our recommended cities!
 
+<!--more-->
+
 Have fun,
 
 Hector
