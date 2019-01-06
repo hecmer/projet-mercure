@@ -1,6 +1,17 @@
 <header class="page-header" role="banner">
-	<a href="/"><h1 class="project-name">{{ site.title }}</h1></a>
-	<a href="/" class="btn-jek">Classement</a>
-	<a href="/methodologie" class="btn-jek">Methodologie</a>
-	<a href="/blog" class="btn-jek">Blog</a>
+	<a href="/{{ page.lang }}/"><h1 class="project-name">{{ site.title }}</h1></a>
+	<a href="/{{ page.lang }}/" class="btn-jek">{{ site.data.i18n[page.lang].menu.ranking }}</a>
+	<a href="/{{ page.lang }}/methodology" class="btn-jek">{{ site.data.i18n[page.lang].menu.methodology }}</a>
+	<a href="/{{ page.lang }}/blog" class="btn-jek">{{ site.data.i18n[page.lang].menu.blog }}</a>
+
+	<div class="langselector">
+	{% if page.lang == "en" %}
+	<a class="btn-lang" href="/fr/">Français</a>
+	{% endif %}
+
+	{% if page.lang == "fr" %}
+	<a class="btn-lang" href="/en/">English</a>
+	{% endif %}
+	</div>
+
 </header>

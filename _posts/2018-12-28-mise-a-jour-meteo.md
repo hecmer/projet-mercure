@@ -4,6 +4,7 @@ title:  "Mise à jour de la météo"
 excerpt_separator: <!--more-->
 date: "2018-12-28 00:00:00"
 description: Une variable supplémentaire vient renforcer la note de météo !
+lang: fr
 ---
 
 # Mise à jour de la météo

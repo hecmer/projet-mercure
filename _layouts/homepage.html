@@ -1,0 +1,75 @@
+---
+layout: default
+---
+
+<!-- include the modals -->
+{% for city in site.data.city.villes_tier_1 %}
+  {% include city_modal.html %}
+{% endfor %}
+
+{% for city in site.data.city.villes_tier_2 %}
+  {% include city_modal.html %}
+{% endfor %}
+
+{% for city in site.data.city.villes_tier_3 %}
+  {% include city_modal.html %}
+{% endfor %}
+
+
+<div class="lead text-center py-4 text-light motivation-lead">{{ site.data.i18n[page.lang].ranking.lead }}</div>
+
+<main id="content" class="main-content" role="main">
+  <h1 class="tier_1title">{{ site.data.i18n[page.lang].ranking.top3.title }} <div class="trophies"><span class="fa fa-trophy"></span><span class="fa fa-trophy"></span><span class="fa fa-trophy"></span><span class="fa fa-trophy"></span><span class="fa fa-trophy"></span></div></h1>
+  <p>{{ site.data.i18n[page.lang].ranking.top3.description }}</p>
+  <div class="tier_1">
+      {% for city in site.data.city.villes_tier_1 %}
+      <div class="ville">
+        <h2><span class="classement">{{ city.rang }}</span>{{ city.nom }}</h2>
+        {% include city_ratings.html %}            
+        <!-- Modal button -->
+        <a href="#detail-{{ city.simplename }}"><div class="tell_me_more" data-toggle="modal" data-target="#detail-{{ city.simplename }}">{{ site.data.i18n[page.lang].ranking.tellmemore }}</div></a>
+      </div>
+      {% endfor %}
+  </div>
+
+  <h1 class="tier_2title">{{ site.data.i18n[page.lang].ranking.top11.title }} <div class="trophies"><span class="fa fa-trophy"></span><span class="fa fa-trophy"></span><span class="fa fa-trophy"></span><span class="fa fa-trophy"></span><span class="fa fa-trophy lightsoff"></span></div></h1>
+  <p>{{ site.data.i18n[page.lang].ranking.top11.description }}</p>
+  <div class="tier_2">
+      {% for city in site.data.city.villes_tier_2 %}
+      <div class="ville">
+        <h2><span class="classement">{{ city.rang }}</span>{{ city.nom }}</h2>
+        {% include city_ratings.html %}            
+        <!-- Modal button -->
+        <a href="#detail-{{ city.simplename }}"><div class="tell_me_more" data-toggle="modal" data-target="#detail-{{ city.simplename }}">{{ site.data.i18n[page.lang].ranking.tellmemore }}</div></a>
+      </div>
+      {% endfor %}
+  </div>
+
+  <h1 class="tier_3title">{{ site.data.i18n[page.lang].ranking.top25.title }} <div class="trophies"><span class="fa fa-trophy"></span><span class="fa fa-trophy"></span><span class="fa fa-trophy"></span><span class="fa fa-trophy lightsoff"></span><span class="fa fa-trophy lightsoff"></span></div></h1>
+  <p>{{ site.data.i18n[page.lang].ranking.top25.description }}</p>
+    <div class="tier_3">
+      {% for city in site.data.city.villes_tier_3 %}
+      <div class="ville">
+        <h2><span class="classement">{{ city.rang }}</span>{{ city.nom }}</h2>
+        {% include city_ratings.html %}            
+        <!-- Modal button -->
+        <a href="#detail-{{ city.simplename }}"><div class="tell_me_more" data-toggle="modal" data-target="#detail-{{ city.simplename }}">{{ site.data.i18n[page.lang].ranking.tellmemore }}</div></a>
+      </div>
+      {% endfor %}
+    </div>
+</main>
+
+{% include footer.html %}
+
+<!-- include the modals -->
+{% for city in site.data.city.villes_tier_1 %}
+  {% include map_script.html %}
+{% endfor %}
+
+{% for city in site.data.city.villes_tier_2 %}
+  {% include map_script.html %}
+{% endfor %}
+
+{% for city in site.data.city.villes_tier_3 %}
+  {% include map_script.html %}
+{% endfor %}

@@ -1,0 +1,57 @@
+lang:
+  french: Français
+  english: English
+
+menu:
+  ranking: Classement
+  methodology: Méthodologie
+  blog: Blog
+
+# Ranking
+ranking:
+  lead: Avec Remote France, trouvez la ville française idéale pour vous installer et travailler en freelance !
+  top3:
+    title: Le podium
+    description: Voici les villes avec les meilleurs classements à travers toutes les catégories. Commencez déjà à faire vos bagages, il y a tout ce qu'il vous faut dans ces villes !
+  top11:
+    title: Le peloton
+    description: Ces villes ont des forces indéniables. A regarder de près !
+  top25:
+    title: Les poursuivants
+    description: Encore, toujours plus de choix ! Notre algorythme (que dis-je, notre "<b>IA</b>") nous signale également ces villes françaises.
+  tellmemore: Dites m'en plus !
+  modal:
+    title: Tout savoir sur
+    numberinhabitants: Nombre d'habitants
+    medianrent: Loyer médian d'un appartement 1 chambre 
+    studentpop: Population étudiante
+    numberrestaurants: Nombre de restaurants pour 1000 habitants
+    4gcoverage: Couverture 4G 
+    internetspeed: Vitesse ADSL/Fibre moyenne
+    averagetemp: Température moyenne
+    rain: Précipitations annuelles
+    trainparis: Temps de Trajet vers Paris en train
+    numbercoworkings: Nombre de coworkings
+    subscribe:
+      value: S'inscrire
+      description: Donnez-nous votre adresse email et nous vous tiendrons au courrant dès que nous aurons plus d'information à vous communiquer sur Nancy !
+
+# Ratings
+ratings:
+  rent: Loyer
+  life: Animation
+  safety: Sécurité
+  internet: internet
+  weather: Météo
+  transportation: Transports
+  coworkings: Coworkings
+
+# Methodology
+methodology:
+  lead: Découvrez la méthodologie du classement des villes Remote France
+
+# Blog
+blog:
+  lead: Lisez toutes les actualités de Remote France
+  readmore: Lire la suite
+  

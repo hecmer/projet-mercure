@@ -1,6 +1,11 @@
 ---
 layout: methodologie
+lang: en
 ---
+
+Oops! this page is not yet translated... You may still have a go at it in French, have fun!
+
+
 # Introduction
 
 L'objectif final de ce classement est de permettre à des travailleurs nomades de s'implanter (à court ou long terme) dans des lieux adaptés à leurs besoins, en France. Nomadlist & d'autres font un très bon travail pour couvrir les villes internationales, mais nous restons confrontés à une problématique : pour être résident fiscal français, et donc ne pas avoir d'ennuis ou de complications fiscales, il nous faut résider pendant environ 6 mois par ans en France. Dés lors, où devons-nous nous établir ?
