@@ -24,7 +24,7 @@ Nous mesurons deux choses, qui sont toutes deux utiles pour nous autres remote w
 * La qualité du réseau téléphonique, et en particulier la couverture 4G
 * la qualité du réseau fixe, et en particulier le taux de couverture fibre et les débits moyens
 
-Ces deux critères, réunis dans la catégorie "Internet", permettent de s'assurer que la ville que nous choisirons a une infrastructure sufisante en place pour nous permettre de travailler dans de bonnes conditions. Et aussi, de regarder Netflix & jouer à nos jeux vidéos confortablement !
+Ces deux critères, réunis dans la catégorie "Internet", permettent de s'assurer que la ville que nous choisirons a une infrastructure suffisante en place pour nous permettre de travailler dans de bonnes conditions. Et aussi, de regarder Netflix & jouer à nos jeux vidéos confortablement !
 
 ## Météo
 Beau et chaud > pluvieux et froid. Certes, ça dépend des goûts, mais nous suivons pour l'instant le consensus. Les villes avec le moins de précipitations et les plus hautes températures l'emportent donc.

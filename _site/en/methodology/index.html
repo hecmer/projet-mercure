@@ -71,72 +71,64 @@
     <div class="lead text-center py-4 text-light motivation-lead">Discover the methodology behind our ranking of french cities</div>
 
     <main id="content" class="main-content main-content-small" role="main">
-    <p>Oops! this page is not yet translated… You may still have a go at it in French, have fun!</p>
+    <h1 id="introduction">Introduction</h1>
 
-<h1 id="introduction">Introduction</h1>
+<p>The ultimate goal of this ranking is to allow nomad or remote workers to set up in best place in France. Nomadlist &amp; many others make a great job at covering international cities, but struggle when in comes to secondary cities or national importance, but with limited international exposure.</p>
 
-<p>L’objectif final de ce classement est de permettre à des travailleurs nomades de s’implanter (à court ou long terme) dans des lieux adaptés à leurs besoins, en France. Nomadlist &amp; d’autres font un très bon travail pour couvrir les villes internationales, mais nous restons confrontés à une problématique : pour être résident fiscal français, et donc ne pas avoir d’ennuis ou de complications fiscales, il nous faut résider pendant environ 6 mois par ans en France. Dés lors, où devons-nous nous établir ?</p>
+<p>Remote France uses open source data in order to feed an algorythm which rates each of the cities according to a series of criteria. This allows us to obtain a consistent and objective ranking.</p>
 
-<p>Remote France utilise des sources ouvertes afin d’alimenter un algorythme qui note chacune des charactéristiques des villes, et permet ainsi d’obtenir un classement cohérent et objectif.</p>
+<h1 id="description-of-the-ratings">Description of the ratings</h1>
+<h2 id="rent">Rent</h2>
+<p>The rent is a very important criteria. We compute the median monthly rent for an appartment or house with one bedroom, and one to two rooms. The general idea is to know how much it would cost to live alone or in a couple in each of the french cities.</p>
 
-<h1 id="présentation-des-catégories">Présentation des catégories</h1>
-<h2 id="loyer">Loyer</h2>
-<p>Le loyer est un critère très important. Nous calculons le loyer mensuel médian pour un appartement ou une maison avec une chambre, et une à deux pièces. L’idée est de savoir combien cela vous coûterait de vivre seul ou en couple dans la ville visée.</p>
+<h2 id="life">Life</h2>
+<p>A lively city is a city where is it good to spend time, where one can go out and make new acquaintances. The Life rating gives us a general idea of this. It is based on the number of bars and restaurants per inhabitants, and on the proportion of students in the city. To be noted, the proportion of students can be above 100%, in the cases where many students are attending a university of the city, but live in the peripheric cities.</p>
 
-<h2 id="animation">Animation</h2>
-<p>Une ville animée, c’est une ville où il fait bon vivre, où l’on peut sortir et faire des rencontres. La note animation donne donc une idée de l’activité de la ville. Elle utilise le nombre de bars et restaurants dans la ville, ainsi que la proportion d’étudiants. La proportion d’étudiants peut être supérieure à 100%, dans le cas où de nombreux étudiants seraient enrollés dans les universités de la ville, mais résideraient en périphérie, par exemple.</p>
-
-<h2 id="sécurité">Sécurité</h2>
-<p>La limite du critère des loyers est que des endroits franchement peu accueillant, et avec une ambiance menaçante peuvent tirer leur épingle du jeu. La note se sécurité permet de contrôler ce paramètre en plombant les villes avec un taux de délinquance élevé.</p>
+<h2 id="safety">Safety</h2>
+<p>The rent criteria is great, but it has limits. The safety criteria aims at correcting one of those limits. Indeed, rents tend to be very low is unsafe areas, where criminality rates are very high. We aim at controlling this shortcoming with the Safety rating, which allows us to highlight safe cities.</p>
 
 <h2 id="internet">Internet</h2>
-<p>Nous mesurons deux choses, qui sont toutes deux utiles pour nous autres remote workers :</p>
+<p>We use two metrics to compute the Internet rating:</p>
 <ul>
-  <li>La qualité du réseau téléphonique, et en particulier la couverture 4G</li>
-  <li>la qualité du réseau fixe, et en particulier le taux de couverture fibre et les débits moyens</li>
+  <li>The quality of the mobile network and 4G coverage</li>
+  <li>The quality of the fixed internet (speed of ADSL &amp; optic fiber connections)</li>
 </ul>
 
-<p>Ces deux critères, réunis dans la catégorie “Internet”, permettent de s’assurer que la ville que nous choisirons a une infrastructure sufisante en place pour nous permettre de travailler dans de bonnes conditions. Et aussi, de regarder Netflix &amp; jouer à nos jeux vidéos confortablement !</p>
+<p>These two metrics allow us to ensure that the city we will end up choosing has a sufficient infrastructure to allow us to work, watch movies and play video games without troubles.</p>
 
-<h2 id="météo">Météo</h2>
-<p>Beau et chaud &gt; pluvieux et froid. Certes, ça dépend des goûts, mais nous suivons pour l’instant le consensus. Les villes avec le moins de précipitations et les plus hautes températures l’emportent donc.
-Nous ajoutons en outre un bonus aux villes proches de la montagne ou de la mer. Ces éléments naturels permettent en effet de se consoler du temps maussade. En particulier de la température basse quand on est à la montage (Ski, yey !)</p>
+<h2 id="weather">Weather</h2>
+<p>A hot and sunny weather is more confortable than a cold and rainy weather. Sure, it depends on personal taste, but that’s the consensus, and we followed along. This criteria aggregates both the annual precipitations, and the average temperature of each of the cities.</p>
+
+<p>We also add a bonus to the cities that are located in the mountains, or on the seaside. These environment typically make it easier to tolerate the weather. Who would complain of a cold weather in the mountains? (Ski, yeah!)</p>
 
 <h2 id="transports">Transports</h2>
-<p>Pouvoir se déplacer facilement, et si possible sans voiture, est un critère quasi-éliminatoire pour beaucoup d’entres nous. Sinon, nous pourrionns nous installer dans un vieux corps de ferme en rase campagne ! Nous y viendrons peut-être, mais en attendant de pouvoir nous couper un peu plus du monde, nous favorisons les villes avec une infrastructure de transports bien en place, en particulier permettant de joindre d’autres villes facilement, en avion ou en train.</p>
+<p>Being able to move around easily is a very important criteria. If you’re not able to go to your city easily, working can be more difficult. If transportation is not a criteria for you, you may want to consider setting yourself up in the back country in a nice farm, and enjoy the solitude.</p>
+
+<p>But for our purpose, we favor cities that are well integrated into the national railroad system, and that have an airport.</p>
 
 <h2 id="coworkings">Coworkings</h2>
-<p>Travailler à la maison, ce n’est pas pour tous le monde. D’ailleurs, ce n’est pas pour moi, je préfère de loin les coworkings ! Les villes avec le plus grand nombre de coworkings finissent avec le plus de point sur ce classement, pour vous permettre d’identifier rapidement où ce sera le plus facile de trouver une place ! A noter, les prix sont remarquablement uniformes à travers la France : 160-250€ pour un poste fixe avec accès 24/7 est la norme partout en France, sauf à paris où il faut compter une centaine d’euros de plus pour le même service (eh oui, les coworkings doivent payer un loyer ou rembourser leur emprunt !)</p>
+<p>Working home is not for everyone. Having an office or a place to work can significantly boost your productivity, and that’s what coworkings are for. The coworking rating only takes into account the number of coworkings, in proportion of the size of the city, and not the prices of these coworkings.</p>
 
-<h1 id="les-sources">Les sources</h1>
-<p>Nous utilisons uniquement des sources ouvertes. Les informations sont récupérées grâce à des scrapers, et sont aggrégées par un algorythme. Très franchement, nous sommes tentés de parler d’IA. C’est super intelligent de collecter de l’information d’un nombre de sources limitées, et de les aggréger toujours de la même manière, non ? C’est même du Machine Learning, que dis-je du Deep Learning ! On se sert même d’une Blockch… Sorry j’en peux plus il est trois heures du mat.</p>
+<p>The prices are actually quite predictable : 175€-250€ per month for a fixed desk &amp; 24/7 access. Add about a 100€ to get the prices in Paris (which will obviously be in the upper part of your updated range)</p>
 
-<p>Plus sérieusement, nos sources sont principalements des données fournies par le gouvernement français via les initiatives ‘Open Data’. nous utilisons également des données venant de sites d’annonces, par exemple pour l’immobilier, ou d’instituts européens, enter autres pour ce qui est de la météo.</p>
+<h1 id="sources">Sources</h1>
+<p>We only use open sources. The information are retrieved thanks to scrapers, and are aggregated by our algorythm. Frankly, we are very tempted to call this an AI. Isn’t it very <em>intelligent</em> to collect data from a finite number of sources and to systematically aggregate them? It might even be Machine learning - wait, it’s deep learning! We could even use a Blockcha…. sorry, I can’t take it anymore it’s 3am.</p>
 
-<h1 id="les-notes">Les notes</h1>
-<p>Nous utilisons une notation relative, car le but est de trouver la meilleure ville en France, et pas de juger si la meilleure est, en absolu, mauvaise, ou si la moins bonne est, en absolu, excellente. Nous voulons choisir une ville !</p>
+<p>More seriously, our sources are mainly data provided by the french government through its “Open Data” initiatives, of which we are <strong>very</strong> fond. We also use additional data from european institutions and other organizations.</p>
 
-<p>Pour chacune des catégories, nous attribuons donc une note sur 5. Les meilleures villes obtiennent 5, et les moins bonnes 1.</p>
+<h1 id="the-ranking">The ranking</h1>
+<p>For each of the rating categories, we attribute a rating from 1 to 5. The smaller the grade, the worse it is.</p>
 
-<p>Pour calculer la note finale de la ville, et déterminer dans quelle catégorie elle se situe (1, 2, 3 ou “Podium”, “Peloton” et “Poursuivants”), nous aggrégeons les notes de chaque catégorie en tenant compte de la pondération de chacune des catégories. En cas d’égalité, la ville avec la meilleure note sur le critère du loyer l’emporte. S’il y a encore une inégalité, la ville avec la meilleure connectivité internet gagne.</p>
+<p>To compute the final rating of a city, and determine in which of our 3 layers it will end up on our main page, we sum all the ratings, raking into account the weights described below. if there is a tie, the city with the best Rent rating wins. If there is still a tie, the city with the best internet rating wins. If there is <em>still</em> a tie, the city with the best transports rating wins. That about covers it all!</p>
 
-<h1 id="la-pondération">La pondération</h1>
-<p>Nous adoptons une pondération très simple : dans une tradition <a href="http://larevolutionpasteque.com/">pastéquière</a>, nous considérons que “Cash is King”, et nous donnons donc un coefficient 2 au Loyer. Toutes les autres catégories not un coefficient 1.</p>
+<h1 id="weights">Weights</h1>
+<p>We have a very simple weighting policy: all ratings have a weight 1, except for the rent, which has a weight of 2. The reason for this is that we consider that “Cash is King”, and that the rent is a paramount criteria to choose where to settle up.</p>
 
-<p>Cela nous permet de séparer les 250 plus grandes villes en 4 segments :</p>
+<h1 id="questions-remarks-comments">Questions, remarks, comments?</h1>
 <ul>
-  <li>Le podium (de la 1re à la 3ème ville)</li>
-  <li>Le peloton (de la 4ème à 11ème ville)</li>
-  <li>Les poursuivants (de la 12ème à 23ème ville)</li>
-  <li>Les exclus, qui ne sont pas dans le classement (à partir de la 24ème ville)</li>
+  <li>A city you like is not in our ranking, and you think it should be? Shoot us an email!</li>
+  <li>Your city is in the ranking, but you think it shouldn’t be? SHoot us an email!</li>
 </ul>
-
-<h1 id="questions-remarques-commentaires">Questions, remarques, commentaires</h1>
-<ul>
-  <li>Votre ville ne figure pas au classement, et vous pensez qu’elle le devrait ? Envoyez-nous un email !</li>
-  <li>Votre ville figure au classement, et vous pensez qu’elle ne le devrait pas ? Envoyez-nous un email !</li>
-</ul>
-
 
   
     </main>
