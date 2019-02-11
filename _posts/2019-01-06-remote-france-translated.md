@@ -6,6 +6,7 @@ date: "2019-01-06 00:00:00"
 description: At last, Remote France is available in english
 lang: en
 locale: en_US
+author: Hector
 ---
 
 # Remote France Translated
@@ -16,6 +17,4 @@ We wish you all a very happy and productive year 2019 - bonus points to you if y
 
 <!--more-->
 
-Have fun,
-
-Hector
+Have fun!

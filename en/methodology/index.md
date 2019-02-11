@@ -9,10 +9,9 @@ The ultimate goal of this ranking is to allow nomad or remote workers to set up 
 
 Remote France uses open source data in order to feed an algorythm which rates each of the cities according to a series of criteria. This allows us to obtain a consistent and objective ranking.
 
-
 # Description of the ratings
 ## Rent
-The rent is a very important criteria. We compute the median monthly rent for an appartment or house with one bedroom, and one to two rooms. The general idea is to know how much it would cost to live alone or in a couple in each of the french cities.
+The rent is a very important criteria. We compute the median monthly rent for an appartment or house with one bedroom, and one to two rooms. We also incorporate in this rating the cost of groceries. The general idea is to know how much it would cost to live alone or in a couple in each of the french cities.
 
 ## Life
 A lively city is a city where is it good to spend time, where one can go out and make new acquaintances. The Life rating gives us a general idea of this. It is based on the number of bars and restaurants per inhabitants, and on the proportion of students in the city. To be noted, the proportion of students can be above 100%, in the cases where many students are attending a university of the city, but live in the peripheric cities.

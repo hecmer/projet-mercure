@@ -739,7 +739,7 @@ a {
   .main-content h4,
   .main-content h5,
   .main-content h6 {
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
     font-family: "Exo 2";
     color: #061161; }
@@ -854,7 +854,7 @@ a {
     margin-top: 0; }
   @media screen and (min-width: 64em) {
     .main-content-small {
-      max-width: 70rem;
+      max-width: 60rem;
       padding: 2rem 6rem;
       margin: 0 auto;
       font-size: 1rem; } }
@@ -887,6 +887,11 @@ a {
 
 .site-footer-credits {
   color: #819198; }
+
+.postpreview {
+  box-shadow: 2px 2px 3px 1px #656565;
+  border: 2px solid #264193;
+  border-radius: 30px; }
 
 .tier_1, .tier_2, .tier_3 {
   margin: auto;

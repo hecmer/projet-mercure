@@ -6,6 +6,7 @@ date: "2018-12-10 00:00:00"
 description: Remote France is the best tool to choose the ideal french city for you to work & live.
 lang: en
 locale: en_US
+author: Hector
 ---
 
 # Welcome to Remote France ! 

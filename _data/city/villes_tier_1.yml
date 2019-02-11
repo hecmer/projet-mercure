@@ -22,29 +22,6 @@
  temperature: 11.6° 
  precipitations: 592mm 
 -
- nom: Bordeaux
- simplename: bordeaux
- loyer: 4
- animation: 5
- delinquance: 4
- internet: 4
- meteo: 4
- transport: 5
- coworking: 4
- rang: 2
- longitude: 44.85724454
- latitude: -0.573696781
- population: 249,712
- rentprice: 536€
- timetoparis: 128 minutes
- proportionrestaurants: 12
- 4gcoverage: 99%
- students: 28%
- minavginternet: 90Gb/s
- nbcoworkings: 10
- temperature: 12.7° 
- precipitations: 694mm 
--
  nom: Nantes
  simplename: nantes
  loyer: 4
@@ -54,7 +31,7 @@
  meteo: 4
  transport: 4
  coworking: 5
- rang: 3
+ rang: 2
  longitude: 47.23163568
  latitude: -1.5483100859999999
  population: 303,382
@@ -67,3 +44,27 @@
  nbcoworkings: 25
  temperature: 11.6° 
  precipitations: 657mm 
+-
+ nom: Bordeaux
+ simplename: bordeaux
+ loyer: 4
+ animation: 5
+ delinquance: 4
+ internet: 4
+ meteo: 4
+ transport: 5
+ coworking: 4
+ rang: 3
+ longitude: 44.85724454
+ latitude: -0.573696781
+ population: 249,712
+ rentprice: 539€
+ timetoparis: 128 minutes
+ proportionrestaurants: 12
+ 4gcoverage: 99%
+ students: 28%
+ minavginternet: 90Gb/s
+ nbcoworkings: 10
+ temperature: 12.7° 
+ precipitations: 694mm 
+ 

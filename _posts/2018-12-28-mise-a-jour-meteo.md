@@ -6,6 +6,7 @@ date: "2018-12-28 00:00:00"
 description: Une variable supplémentaire vient renforcer la note de météo !
 lang: fr
 locale: fr_FR
+author: Hector
 ---
 
 # Mise à jour de la météo
@@ -31,6 +32,6 @@ Les conséquences de cette mise à jour ont été assez drastiques : Lyon et Bor
 9. Avignon
 10. Le Mans
 
-Bon travail en remote à tous !
+Bon travail en remote à tous!
 
 Hector

@@ -10,7 +10,7 @@ Remote France utilise des sources ouvertes afin d'alimenter un algorythme qui no
 
 # Présentation des catégories
 ## Loyer
-Le loyer est un critère très important. Nous calculons le loyer mensuel médian pour un appartement ou une maison avec une chambre, et une à deux pièces. L'idée est de savoir combien cela vous coûterait de vivre seul ou en couple dans la ville visée.
+Le loyer est un critère très important. Nous calculons le loyer mensuel médian pour un appartement ou une maison avec une chambre, et une à deux pièces. Nous prenons également en compte les prix des courses au supermarché afin de refléter les légères différences d'une ville et d'une région à l'autre. L'idée est de savoir combien cela vous coûterait de vivre seul ou en couple dans la ville visée.
 
 
 ## Animation

@@ -6,6 +6,7 @@ date: "2018-12-28 00:00:00"
 description: An additional criteria reinforces our weather rating!
 lang: en
 locale: en_US
+author: Hector
 ---
 
 # Weather Update
@@ -31,6 +32,4 @@ The consequences of this update have been massive - the biggest move since the i
 9. Avignon
 10. Le Mans
 
-Work well, work remote !
-
-Hector
+Work well, work remote!

@@ -12,7 +12,7 @@
  longitude: 42.69659541
  latitude: 2.89936954
  population: 121,934
- rentprice: 410€
+ rentprice: 415€
  timetoparis: 332 minutes
  proportionrestaurants: 8
  4gcoverage: 98%
@@ -21,6 +21,29 @@
  nbcoworkings: 1
  temperature: 15.4° 
  precipitations: 441mm 
+-
+ nom: Poitiers
+ simplename: poitiers
+ loyer: 5
+ animation: 4
+ delinquance: 3
+ internet: 2
+ meteo: 4
+ transport: 3
+ coworking: 5
+ rang: 13
+ longitude: 46.58392077
+ latitude: 0.359947653
+ population: 87,918
+ rentprice: 395€
+ timetoparis: 96 minutes
+ proportionrestaurants: 5
+ 4gcoverage: 97%
+ students: 62%
+ minavginternet: 42Gb/s
+ nbcoworkings: 4
+ temperature: 11.3° 
+ precipitations: 554mm 
 -
  nom: Rennes
  simplename: rennes
@@ -31,11 +54,11 @@
  meteo: 2
  transport: 5
  coworking: 2
- rang: 13
+ rang: 14
  longitude: 48.11197912
  latitude: -1.681864491
  population: 215,366
- rentprice: 495€
+ rentprice: 490€
  timetoparis: 91 minutes
  proportionrestaurants: 6
  4gcoverage: 99%
@@ -44,6 +67,52 @@
  nbcoworkings: 4
  temperature: 11.2° 
  precipitations: 670mm 
+-
+ nom: Toulon
+ simplename: toulon
+ loyer: 4
+ animation: 4
+ delinquance: 3
+ internet: 4
+ meteo: 5
+ transport: 4
+ coworking: 2
+ rang: 15
+ longitude: 43.13615897
+ latitude: 5.9323963420000005
+ population: 167,479
+ rentprice: 506€
+ timetoparis: 301 minutes
+ proportionrestaurants: 7
+ 4gcoverage: 97%
+ students: 6%
+ minavginternet: 91Gb/s
+ nbcoworkings: 3
+ temperature: 15.1° 
+ precipitations: 338mm 
+-
+ nom: Grenoble
+ simplename: grenoble
+ loyer: 4
+ animation: 5
+ delinquance: 4
+ internet: 4
+ meteo: 1
+ transport: 4
+ coworking: 4
+ rang: 16
+ longitude: 45.18212152
+ latitude: 5.721330517999999
+ population: 160,649
+ rentprice: 500€
+ timetoparis: 183 minutes
+ proportionrestaurants: 10
+ 4gcoverage: 94%
+ students: 28%
+ minavginternet: 96Gb/s
+ nbcoworkings: 6
+ temperature: 11.2° 
+ precipitations: 898mm 
 -
  nom: Villeurbanne
  simplename: villeurbanne
@@ -54,11 +123,11 @@
  meteo: 5
  transport: 1
  coworking: 5
- rang: 14
+ rang: 17
  longitude: 45.77077042
  latitude: 4.888458174
  population: 148,665
- rentprice: 590€
+ rentprice: 584.5€
  timetoparis: 131 minutes
  proportionrestaurants: 5
  4gcoverage: 99%
@@ -77,11 +146,11 @@
  meteo: 5
  transport: 4
  coworking: 3
- rang: 15
+ rang: 18
  longitude: 43.61344091
  latitude: 3.8685165789999996
  population: 277,639
- rentprice: 575.4€
+ rentprice: 573.25€
  timetoparis: 256 minutes
  proportionrestaurants: 8
  4gcoverage: 98%
@@ -100,11 +169,11 @@
  meteo: 5
  transport: 3
  coworking: 5
- rang: 16
+ rang: 19
  longitude: 43.55262028
  latitude: 7.004275927
  population: 74,285
- rentprice: 659€
+ rentprice: 688€
  timetoparis: 314 minutes
  proportionrestaurants: 16
  4gcoverage: 97%
@@ -114,154 +183,16 @@
  temperature: 14.5° 
  precipitations: 442mm 
 -
- nom: Angers
- simplename: angers
- loyer: 5
- animation: 4
- delinquance: 4
- internet: 4
- meteo: 4
- transport: 1
- coworking: 3
- rang: 17
- longitude: 47.47683742
- latitude: -0.556125995
- population: 151,520
- rentprice: 410€
- timetoparis: 109 minutes
- proportionrestaurants: 5
- 4gcoverage: 98%
- students: 48%
- minavginternet: 100Gb/s
- nbcoworkings: 4
- temperature: 11.5° 
- precipitations: 615mm 
--
- nom: Niort
- simplename: niort
- loyer: 5
- animation: 3
- delinquance: 5
- internet: 5
- meteo: 4
- transport: 3
- coworking: 0
- rang: 18
- longitude: 46.32826024
- latitude: -0.465353019
- population: 58,952
- rentprice: 400€
- timetoparis: 145 minutes
- proportionrestaurants: 5
- 4gcoverage: 99%
- students: 8%
- minavginternet: 97Gb/s
- nbcoworkings: 0
- temperature: 12.2° 
- precipitations: 597mm 
--
- nom: Grenoble
- simplename: grenoble
- loyer: 4
- animation: 5
- delinquance: 4
- internet: 3
- meteo: 1
- transport: 4
- coworking: 4
- rang: 19
- longitude: 45.18212152
- latitude: 5.721330517999999
- population: 160,649
- rentprice: 510€
- timetoparis: 183 minutes
- proportionrestaurants: 10
- 4gcoverage: 94%
- students: 28%
- minavginternet: 96Gb/s
- nbcoworkings: 6
- temperature: 11.2° 
- precipitations: 898mm 
--
- nom: Toulon
- simplename: toulon
- loyer: 4
- animation: 4
- delinquance: 3
- internet: 3
- meteo: 5
- transport: 4
- coworking: 2
- rang: 20
- longitude: 43.13615897
- latitude: 5.9323963420000005
- population: 167,479
- rentprice: 508.5€
- timetoparis: 301 minutes
- proportionrestaurants: 7
- 4gcoverage: 97%
- students: 6%
- minavginternet: 91Gb/s
- nbcoworkings: 3
- temperature: 15.1° 
- precipitations: 338mm 
--
- nom: Marseille
- simplename: marseille
- loyer: 3
- animation: 4
- delinquance: 2
- internet: 4
- meteo: 5
- transport: 4
- coworking: 3
- rang: 21
- longitude: 43.23408349
- latitude: 5.452496831
- population: 861,635
- rentprice: 570€
- timetoparis: 185 minutes
- proportionrestaurants: 7
- 4gcoverage: 99%
- students: 13%
- minavginternet: 92Gb/s
- nbcoworkings: 23
- temperature: 14.2° 
- precipitations: 321mm 
--
- nom: Vannes
- simplename: vannes
- loyer: 5
- animation: 4
- delinquance: 5
- internet: 2
- meteo: 3
- transport: 3
- coworking: 2
- rang: 22
- longitude: 47.65974938
- latitude: -2.757143295
- population: 53,200
- rentprice: 440€
- timetoparis: 158 minutes
- proportionrestaurants: 7
- 4gcoverage: 97%
- students: 24%
- minavginternet: 54Gb/s
- nbcoworkings: 1
- temperature: 11.6° 
- precipitations: 712mm 
--
  nom: Mulhouse
  simplename: mulhouse
  loyer: 5
  animation: 4
  delinquance: 3
- internet: 4
+ internet: 5
  meteo: 2
  transport: 4
  coworking: 2
- rang: 23
+ rang: 20
  longitude: 47.7491633
  latitude: 7.325700475
  population: 110,370
@@ -275,39 +206,39 @@
  temperature: 10.1° 
  precipitations: 632mm 
 -
- nom: Carcassonne
- simplename: carcassonne
+ nom: Niort
+ simplename: niort
  loyer: 5
- animation: 5
- delinquance: 3
- internet: 2
- meteo: 5
- transport: 4
+ animation: 3
+ delinquance: 5
+ internet: 5
+ meteo: 4
+ transport: 3
  coworking: 0
- rang: 24
- longitude: 43.20937984
- latitude: 2.343988554
- population: 45,996
- rentprice: 395€
- timetoparis: 371 minutes
- proportionrestaurants: 9
- 4gcoverage: 95%
- students: 5%
- minavginternet: 39Gb/s
+ rang: 21
+ longitude: 46.32826024
+ latitude: -0.465353019
+ population: 58,952
+ rentprice: 400€
+ timetoparis: 145 minutes
+ proportionrestaurants: 5
+ 4gcoverage: 99%
+ students: 8%
+ minavginternet: 97Gb/s
  nbcoworkings: 0
- temperature: 13.6° 
- precipitations: 516mm 
+ temperature: 12.2° 
+ precipitations: 597mm 
 -
  nom: Nîmes
  simplename: nîmes
  loyer: 4
  animation: 4
  delinquance: 3
- internet: 3
+ internet: 4
  meteo: 4
  transport: 4
  coworking: 2
- rang: 25
+ rang: 22
  longitude: 43.84493839
  latitude: 4.34806797
  population: 150,672
@@ -320,3 +251,73 @@
  nbcoworkings: 3
  temperature: 13.8° 
  precipitations: 644mm 
+-
+ nom: Strasbourg
+ simplename: strasbourg
+ loyer: 3
+ animation: 5
+ delinquance: 3
+ internet: 5
+ meteo: 3
+ transport: 5
+ coworking: 1
+ rang: 23
+ longitude: 48.57126798
+ latitude: 7.767526795
+ population: 277,270
+ rentprice: 555€
+ timetoparis: 106 minutes
+ proportionrestaurants: 7
+ 4gcoverage: 98%
+ students: 41%
+ minavginternet: 96Gb/s
+ nbcoworkings: 4
+ temperature: 10.1° 
+ precipitations: 602mm 
+-
+ nom: Marseille
+ simplename: marseille
+ loyer: 3
+ animation: 4
+ delinquance: 2
+ internet: 4
+ meteo: 5
+ transport: 4
+ coworking: 3
+ rang: 24
+ longitude: 43.23408349
+ latitude: 5.452496831
+ population: 861,635
+ rentprice: 575€
+ timetoparis: 185 minutes
+ proportionrestaurants: 7
+ 4gcoverage: 99%
+ students: 13%
+ minavginternet: 92Gb/s
+ nbcoworkings: 23
+ temperature: 14.2° 
+ precipitations: 321mm 
+-
+ nom: Pau
+ simplename: pau
+ loyer: 5
+ animation: 5
+ delinquance: 4
+ internet: 3
+ meteo: 2
+ transport: 4
+ coworking: 1
+ rang: 25
+ longitude: 43.32001898
+ latitude: -0.35033791799999997
+ population: 77,215
+ rentprice: 469€
+ timetoparis: 261 minutes
+ proportionrestaurants: 8
+ 4gcoverage: 98%
+ students: 30%
+ minavginternet: 76Gb/s
+ nbcoworkings: 1
+ temperature: 12.3° 
+ precipitations: 1,073mm
+  

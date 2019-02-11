@@ -4,5 +4,9 @@ layout: default
 
 <main id="content" class="main-content main-content-small" role="main">
 	{{ content }}
+
+
+	{{ page.author }}, {{ page.date | date: "%Y-%m-%d" }}
+
 </main>
 {% include footer.html %}

@@ -1,4 +1,76 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-01-06T22:01:56+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Remote France</title><subtitle>Quelle ville française choisir pour le télétravail ?</subtitle><entry xml:lang="en"><title type="html">Remote France Translated</title><link href="http://localhost:4000/2019/01/remote-france-translated-Copy.html" rel="alternate" type="text/html" title="Remote France Translated" /><published>2019-01-06T00:00:00+01:00</published><updated>2019-01-06T00:00:00+01:00</updated><id>http://localhost:4000/2019/01/remote-france-translated%20-%20Copy</id><content type="html" xml:base="http://localhost:4000/2019/01/remote-france-translated-Copy.html">&lt;h1 id=&quot;remote-france-translated&quot;&gt;Remote France Translated&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-11T09:25:25+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Remote France</title><subtitle>Quelle ville française choisir pour le télétravail ?</subtitle><entry xml:lang="fr"><title type="html">Update February 2019</title><link href="http://localhost:4000/2019/02/update-february-2019.html" rel="alternate" type="text/html" title="Update February 2019" /><published>2019-02-11T00:00:00+01:00</published><updated>2019-02-11T00:00:00+01:00</updated><id>http://localhost:4000/2019/02/update-february-2019</id><content type="html" xml:base="http://localhost:4000/2019/02/update-february-2019.html">&lt;h1 id=&quot;update-february-2019&quot;&gt;Update February 2019&lt;/h1&gt;
+
+&lt;p&gt;Just as every month, the update of february brings new changes to the ranking methodology and data!&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h2 id=&quot;rents-update&quot;&gt;Rents Update&lt;/h2&gt;
+
+&lt;p&gt;The first update concerns the price of the rent, thanks to new data gathered during the previous month. This update of our data has not buldged the ranking by a single bit, which shows that our data start being quite reliable.&lt;/p&gt;
+
+&lt;p&gt;We may want to start forgetting old rent data, say, prices older than 6 months, which would allow the ranking to be more flexible, and adapt to actual rent prices and changes in prices. But this is a change for another month. I’ll probably leave it to the second half of 2019, as for now, my scrapper does not gather some key data such as the publication date of the posts, neither does it include the date on which the data was found in its output format. I’ll make sure to add that in the future, and we’ll be able to make the rent updates more interesting!&lt;/p&gt;
+
+&lt;h2 id=&quot;groceries-prices&quot;&gt;Groceries Prices&lt;/h2&gt;
+
+&lt;p&gt;Quite by accident, I found a nice map of France showing the average groceries prices for each department. The basket of goods purchased in each department and cities goes from 350€ to 415€. Of course, it’s dependent on each brand of supermarket, and where precisely the supermarket is located. Nevertheless, I think that it is a nice touch to add.&lt;/p&gt;
+
+&lt;p&gt;It also allowed me to simplify quite efficiently the rent rating, which is now more linear and consistent with the other ratings (it uses quintiles instead of a more complex formula before).&lt;/p&gt;
+
+&lt;h2 id=&quot;a-new-data-in-february&quot;&gt;A new data in February?&lt;/h2&gt;
+
+&lt;p&gt;Third major update this month… A failed attempt. That’s said. You know, I’m always looking for new criterias to improve my ranking, but I’m very rigorous. If you suggest a crieria to me, I’ll have to make sure that it does comply with several characteristics :&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;It must be one-sided, in that it must be cristal-clear and unchallengeable whether a value of that criteria indicates a positive or a negative. That’s not always as obvious as we may like. For example, I hesitated in the past to integrate the number of policemen as part of the security rating. But, is it good or bad to have a lot of policemen ? When there is a high number of policemen, is it a sign of an increased public safety, or is it a sign that there is a strong rampant criminality ? That’s clearly not obvious, and we might be able to find cases supporting both of these hypotheses. Conclusion: the number of policemen is not a good indicator of public safety.&lt;/li&gt;
+  &lt;li&gt;The data must be available online, and accessible without cost, and without too much trouble. Ideally, it takes the form of a database, or another structured dataset. I can parse a website, download files, etc. I can even gather the data by hand if I’m really convinced that it’s a great data. That’s an hour of my time for the 250 cities, I can usually handle that, provided I don’t need to repeat that every month.&lt;/li&gt;
+  &lt;li&gt;THe data muse be available throughout all the french cities. If I can’t rate some cities, how could we end up with an objective ranking at national level? (we couldn’t)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I am quite demanding and strict on these caracteristics, because for every new data or new criteria I add to the ranking, its complexity improves. The gain is usually marginal, and I must therefore be careful not to obfuscate the ranking, making it full of particularities, obscure criterias, and overall, complex and hard to undersand as a whole.&lt;/p&gt;
+
+&lt;p&gt;A few days ago, an admirer from Nice made an interesting suggestion. Well, I’m not sure that “admirer” is the best description for that nice guy, but he can’t complain, there’s no comments on this blog, ha! Anyways, his suggestion was to take into account the number of associations as part of the “life” rating. It’s a great idea ! Associations and clubs can be about sports, arts, culture, community. They typically show how much citizens are actively involved in the life of their communities.&lt;/p&gt;
+
+&lt;p&gt;I was so happy. I was looking forward to integrating that new idea. I ran to a computer, found the “RNA”, the french “Registre National des Associations”, which offers two files online, with ALL of the french associations. It includes the postal codes, perfect! Everything is going fine, untill I notice an error on my spreadsheet. A few cities show no data… Strenge, strange…. In particular, I’ve got nothing on Mulhouse and Strasbourd.&lt;/p&gt;
+
+&lt;p&gt;Holy cow! The sausage-eating germans striked again. I curse Bismark and his minions. Why, why, why is a french defeat almost 150 years old still haunting me? Because of the mean germans, Alsace and Moselle were indeed not French between 1870 and 1918. I can’t say I’m happy about that, but on the principle, I don’t care so much. What I really care about is that the law on associations in France was signed in 1901, meaning it does not apply to Alsace and Moselle….&lt;/p&gt;
+
+&lt;p&gt;And here goes my brilliant criteria. Whooosh! flush down the toilets, all because of second-best ennemy of France. Loosing again to a second.&lt;/p&gt;
+
+&lt;p&gt;That’s probably anough of a rant, I feel much better now! but nothing is forgiven yet, you Lager Beer drinkers! Anyways, I’m still and always open to new ideas on how to make my ranking better, so feel free to let me know if you have any brilliant idea! But please, make sure that the data is available in Alsace :)&lt;/p&gt;</content><author><name>Hector</name></author><summary type="html">Update February 2019 Just as every month, the update of february brings new changes to the ranking methodology and data!</summary></entry><entry xml:lang="fr"><title type="html">Mise à jour Février 2019</title><link href="http://localhost:4000/2019/02/mise-a-jour-fevrier-2019.html" rel="alternate" type="text/html" title="Mise à jour Février 2019" /><published>2019-02-11T00:00:00+01:00</published><updated>2019-02-11T00:00:00+01:00</updated><id>http://localhost:4000/2019/02/mise-a-jour-fevrier-2019</id><content type="html" xml:base="http://localhost:4000/2019/02/mise-a-jour-fevrier-2019.html">&lt;h1 id=&quot;mise-à-jour-février-2019&quot;&gt;Mise à jour Février 2019&lt;/h1&gt;
+
+&lt;p&gt;Comme tous les mois, la mise à jour de Février amène quelques changements à la méthodologie du classement et aux données de base !&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h2 id=&quot;mise-à-jour-des-loyers&quot;&gt;Mise à jour des loyers&lt;/h2&gt;
+
+&lt;p&gt;Le premier changement est l’habituelle mise à jour des prix des loyers, grâces aux données récoltées pendant le mois précédent. Cette mise à jour de nos données n’a pas fait bouger le classement d’un poil, signe que nos données commencent à être de plus en plus fiables.&lt;/p&gt;
+
+&lt;p&gt;Il faudra peut-être commencer à ne prendre en considération que le prix des loyers sur les 6 derniers mois, afin de renforcer la fiabilité de la donnée, et permettre au classement de s’adapter aux conditions réelles. Mais réservons ce changement pour de prochains mois, voire pour la fin de l’année 2019… Il se pourrait en effet que mes scrappers n’indiquent pas la date de publication des annonces immobilières, et ne mentionnent pas non plus dans le format de sortie la date à laquelle la donnée a été identifiée… A suivre !&lt;/p&gt;
+
+&lt;h2 id=&quot;prix-des-courses-en-supermarché&quot;&gt;Prix des courses en supermarché&lt;/h2&gt;
+
+&lt;p&gt;Un peu par accident, je suis tombé sur une magnifique carte de France montrant le prix moyen des courses que nous réalisons chaque mois, département par département. Les chiffres vont de 350€ à 415€ : au final, c’est assez rapproché, mais il y a tout de même une différence, qui se fait bien sentir. Bien sûr, ces chiffres dépendent beaucoup de l’enseigne et de la localisation précise de cette dernière, mais globalement, ces prix nous donnent une bonne indication du coût de la vie.&lt;/p&gt;
+
+&lt;p&gt;J’ai donc ajouté ce critère au Loyer. Cela m’a permis par la même occasion de simplifier significativement la méthode de calcul de la note de loyer : elle correspond maintenant aux quintiles, alors qu’auparavant j’utilisais un calcul plus complexe.&lt;/p&gt;
+
+&lt;h2 id=&quot;un-nouveau-critère-&quot;&gt;Un nouveau critère ?&lt;/h2&gt;
+
+&lt;p&gt;Troisième mise à jour importante…. Une tentative avortée. Voilà, c’est dit. Je suis toujours à l’affut de nouveaux critères pour affiner mon classement, mais je suis très pointilleux. Si vous me proposez un critère, je vais m’assurer qu’il respecte plusieurs caractéristiques :&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Il doit être univoque, c’est à dire qu’il est clair qu’il est indiscutable que lorsque la note est élevée, c’est un point positif, et que quand la note est faible, c’est un point négatif. Ce n’est pas toujours évident. Par exemple, j’ai hésité à intégrer le nombre de policiers dans la note de sécurité. Mais un nombre de policier élevé est-il un signe d’une sécurité accrue, ou d’une délinquance particulièrement élevée ? Ce n’est pas évident, et un nombre de policier élevé peut probablement indiquer chacun de ces deux cas.&lt;/li&gt;
+  &lt;li&gt;Il doit être disponnible en ligne, sans trop de soucis. Dans l’idéal, sous la forme d’une base de donnée, ou structurée d’une autre manière, sur un site internet que je peux scraper avec mes petits programmes en python. Au pire, si la donnée est très intéressante, je peux aussi passer une petite heure à la noter pour les 250 villes que j’ai dans mon classement initial.&lt;/li&gt;
+  &lt;li&gt;Il doit être disponible sur la totalité du territoire, pour des raisons évidentes : si je ne peux pas noter certaines villes, comment peut-on avoir un classement objectif au niveau national ?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Je suis assez exigeant sur ces caractéristiques, parce qu’à chaque donnée ou chaque critère que j’ajoute, la complexité du classement s’accroit. Et le gain est généralement marginal, il me faut donc être vigilant pour ne pas aboutir à un classement incompréhensible, plein de particularités et difficile à comprendre dans son ensemble.&lt;/p&gt;
+
+&lt;p&gt;C’est la suggestion d’un admirateur Niçois qui m’a plût - “admirateur” est peut-être un mot un peu fort, mais il n’y a pas de commentaires sur ce blog, personne ne pourra se plaindre ! Cette suggestion, c’est d’intégrer le nombre d’associations dans l’animation. C’est une excellente idée ! Les associations peuvent être sportives, culturelles, associatives… Elles sont clairement un reflet de l’implication des citoyens dans la vie de leur communauté.&lt;/p&gt;
+
+&lt;p&gt;Je me léchais les babines. J’avais hâte. Je cours sur internet, je trouve le RNA, le Registre National des Associations, qui propose deux fichiers en ligne, contenant l’ensemble des associations françaises. J’intègre la donnée à mon classement. Tout se passe bien…. Puis je remarque une erreur bizare sur quelques villes. En particulier, sur Mulhouse et Strasbourg.&lt;/p&gt;
+
+&lt;p&gt;Boudiou ! Encore la faute à ces andouilles de teutons. L’alsace et la moselle étaient Allemandes lors de l’entrée en vigueur de la loi sur les associations de 1901. Déception, pleurs, tristesse. Et voilà comment l’héritage historique de l’Est français a pourri mon week-end.&lt;/p&gt;
+
+&lt;p&gt;Je n’en reste pas moins déterminé à améliorer chacune des notes que j’attribue à nos villes françaises. Si vous avez des idées, n’hésitez pas à m’en faire part ! Et si possible, vérifiez d’abord que la donnée est disponible en Alsace Moselle, merci !&lt;/p&gt;</content><author><name>Hector</name></author><summary type="html">Mise à jour Février 2019 Comme tous les mois, la mise à jour de Février amène quelques changements à la méthodologie du classement et aux données de base !</summary></entry><entry xml:lang="en"><title type="html">Remote France Translated</title><link href="http://localhost:4000/2019/01/remote-france-translated.html" rel="alternate" type="text/html" title="Remote France Translated" /><published>2019-01-06T00:00:00+01:00</published><updated>2019-01-06T00:00:00+01:00</updated><id>http://localhost:4000/2019/01/remote-france-translated</id><content type="html" xml:base="http://localhost:4000/2019/01/remote-france-translated.html">&lt;h1 id=&quot;remote-france-translated&quot;&gt;Remote France Translated&lt;/h1&gt;
 
 &lt;p&gt;At last! Remote France is available in english. To all our friends who are looking for a new home in France, you can now browse our ranking with ease.&lt;/p&gt;
 
@@ -6,44 +78,13 @@
 
 &lt;!--more--&gt;
 
-&lt;p&gt;Have fun,&lt;/p&gt;
-
-&lt;p&gt;Hector&lt;/p&gt;</content><author><name></name></author><summary type="html">Remote France Translated At last! Remote France is available in english. To all our friends who are looking for a new home in France, you can now browse our ranking with ease. We wish you all a very happy and productive year 2019 - bonus points to you if you settle up in one of our recommended cities!</summary></entry><entry xml:lang="fr"><title type="html">Remote France en Anglais</title><link href="http://localhost:4000/2019/01/remote-france-en-anglais.html" rel="alternate" type="text/html" title="Remote France en Anglais" /><published>2019-01-06T00:00:00+01:00</published><updated>2019-01-06T00:00:00+01:00</updated><id>http://localhost:4000/2019/01/remote-france-en-anglais</id><content type="html" xml:base="http://localhost:4000/2019/01/remote-france-en-anglais.html">&lt;h1 id=&quot;remote-france-en-anglais&quot;&gt;Remote France en Anglais&lt;/h1&gt;
+&lt;p&gt;Have fun!&lt;/p&gt;</content><author><name>Hector</name></author><summary type="html">Remote France Translated At last! Remote France is available in english. To all our friends who are looking for a new home in France, you can now browse our ranking with ease. We wish you all a very happy and productive year 2019 - bonus points to you if you settle up in one of our recommended cities!</summary></entry><entry xml:lang="fr"><title type="html">Remote France en Anglais</title><link href="http://localhost:4000/2019/01/remote-france-en-anglais.html" rel="alternate" type="text/html" title="Remote France en Anglais" /><published>2019-01-06T00:00:00+01:00</published><updated>2019-01-06T00:00:00+01:00</updated><id>http://localhost:4000/2019/01/remote-france-en-anglais</id><content type="html" xml:base="http://localhost:4000/2019/01/remote-france-en-anglais.html">&lt;h1 id=&quot;remote-france-en-anglais&quot;&gt;Remote France en Anglais&lt;/h1&gt;
 
 &lt;p&gt;Remote France est maintenant disponible en anglais ! A tous nos amis anglophones : vous pouvez maintenant parcourir notre classement sans soucis, la langue n’est plus un obstacle ni une excuse !&lt;/p&gt;
 
 &lt;p&gt;Nous vous souhaitons à tous une excellente et productive année 2019 - d’autant plus si vous vous installez dans une des villes que nous recommandons à travers notre classement !&lt;/p&gt;
 
-&lt;!--more--&gt;
-
-&lt;p&gt;Hector&lt;/p&gt;</content><author><name></name></author><summary type="html">Remote France en Anglais Remote France est maintenant disponible en anglais ! A tous nos amis anglophones : vous pouvez maintenant parcourir notre classement sans soucis, la langue n’est plus un obstacle ni une excuse ! Nous vous souhaitons à tous une excellente et productive année 2019 - d’autant plus si vous vous installez dans une des villes que nous recommandons à travers notre classement !</summary></entry><entry xml:lang="en"><title type="html">Weather Update</title><link href="http://localhost:4000/2018/12/weather-update.html" rel="alternate" type="text/html" title="Weather Update" /><published>2018-12-28T00:00:00+01:00</published><updated>2018-12-28T00:00:00+01:00</updated><id>http://localhost:4000/2018/12/weather-update</id><content type="html" xml:base="http://localhost:4000/2018/12/weather-update.html">&lt;h1 id=&quot;weather-update&quot;&gt;Weather Update&lt;/h1&gt;
-
-&lt;p&gt;Before, our weather rating only included 2 variables: annual precipitations, and a bonus given from the location of the city, it is located near the mountains or the sea. We have updated this rating to make it more &lt;strong&gt;reliable&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;We have indeed kept the two pre-existing variables, and we have added a new one: the average temperature. Now, when precipitations are similar, warmer cities rank higher… Which makes a lot of sense!&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;We have also seized this opportunity to update the rent data, and made a few adjustements to the Transports rating, in order to make it fairer. The old Transport rating was to complacent to isolated cities which still had an airport. Now, this issue is solved!&lt;/p&gt;
-
-&lt;p&gt;The consequences of this update have been massive - the biggest move since the inception of our rating. The new top 10 cities are now:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Lyon&lt;/li&gt;
-  &lt;li&gt;Bordeau&lt;/li&gt;
-  &lt;li&gt;Nantes&lt;/li&gt;
-  &lt;li&gt;Clermont-Ferrand&lt;/li&gt;
-  &lt;li&gt;Tours&lt;/li&gt;
-  &lt;li&gt;La Rochelle&lt;/li&gt;
-  &lt;li&gt;Narbonne&lt;/li&gt;
-  &lt;li&gt;Nancy&lt;/li&gt;
-  &lt;li&gt;Avignon&lt;/li&gt;
-  &lt;li&gt;Le Mans&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Work well, work remote !&lt;/p&gt;
-
-&lt;p&gt;Hector&lt;/p&gt;</content><author><name></name></author><summary type="html">Weather Update Before, our weather rating only included 2 variables: annual precipitations, and a bonus given from the location of the city, it is located near the mountains or the sea. We have updated this rating to make it more reliable. We have indeed kept the two pre-existing variables, and we have added a new one: the average temperature. Now, when precipitations are similar, warmer cities rank higher… Which makes a lot of sense!</summary></entry><entry xml:lang="fr"><title type="html">Mise à jour de la météo</title><link href="http://localhost:4000/2018/12/mise-a-jour-meteo.html" rel="alternate" type="text/html" title="Mise à jour de la météo" /><published>2018-12-28T00:00:00+01:00</published><updated>2018-12-28T00:00:00+01:00</updated><id>http://localhost:4000/2018/12/mise-a-jour-meteo</id><content type="html" xml:base="http://localhost:4000/2018/12/mise-a-jour-meteo.html">&lt;h1 id=&quot;mise-à-jour-de-la-météo&quot;&gt;Mise à jour de la météo&lt;/h1&gt;
+&lt;!--more--&gt;</content><author><name>Hector</name></author><summary type="html">Remote France en Anglais Remote France est maintenant disponible en anglais ! A tous nos amis anglophones : vous pouvez maintenant parcourir notre classement sans soucis, la langue n’est plus un obstacle ni une excuse ! Nous vous souhaitons à tous une excellente et productive année 2019 - d’autant plus si vous vous installez dans une des villes que nous recommandons à travers notre classement !</summary></entry><entry xml:lang="fr"><title type="html">Mise à jour de la météo</title><link href="http://localhost:4000/2018/12/mise-a-jour-meteo.html" rel="alternate" type="text/html" title="Mise à jour de la météo" /><published>2018-12-28T00:00:00+01:00</published><updated>2018-12-28T00:00:00+01:00</updated><id>http://localhost:4000/2018/12/mise-a-jour-meteo</id><content type="html" xml:base="http://localhost:4000/2018/12/mise-a-jour-meteo.html">&lt;h1 id=&quot;mise-à-jour-de-la-météo&quot;&gt;Mise à jour de la météo&lt;/h1&gt;
 
 &lt;p&gt;Auparavant, notre indice de météo n’intégrait que deux variables : les précipitations annuelles, ainsi qu’un bonus conféré par l’environement (montagne ou mer). Nous avons renforcé cet indice pour le rendre plus &lt;strong&gt;fiable&lt;/strong&gt;.&lt;/p&gt;
 
@@ -68,9 +109,34 @@
   &lt;li&gt;Le Mans&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Bon travail en remote à tous !&lt;/p&gt;
+&lt;p&gt;Bon travail en remote à tous!&lt;/p&gt;
 
-&lt;p&gt;Hector&lt;/p&gt;</content><author><name></name></author><summary type="html">Mise à jour de la météo Auparavant, notre indice de météo n’intégrait que deux variables : les précipitations annuelles, ainsi qu’un bonus conféré par l’environement (montagne ou mer). Nous avons renforcé cet indice pour le rendre plus fiable. Nous avons conservé ces deux indicateurs, et ajouté une nouvelle variable : la température moyenne. A précipitations similaires, cela permet de mettre en valeur les villes relativement plus chaudes !</summary></entry><entry xml:lang="fr"><title type="html">Bienvenue sur Remote France !</title><link href="http://localhost:4000/2018/12/bienvenue-sur-remote-france-Copy.html" rel="alternate" type="text/html" title="Bienvenue sur Remote France !" /><published>2018-12-10T00:00:00+01:00</published><updated>2018-12-10T00:00:00+01:00</updated><id>http://localhost:4000/2018/12/bienvenue-sur-remote-france%20-%20Copy</id><content type="html" xml:base="http://localhost:4000/2018/12/bienvenue-sur-remote-france-Copy.html">&lt;h1 id=&quot;bienvenue-sur-remote-france-&quot;&gt;Bienvenue sur Remote France !&lt;/h1&gt;
+&lt;p&gt;Hector&lt;/p&gt;</content><author><name>Hector</name></author><summary type="html">Mise à jour de la météo Auparavant, notre indice de météo n’intégrait que deux variables : les précipitations annuelles, ainsi qu’un bonus conféré par l’environement (montagne ou mer). Nous avons renforcé cet indice pour le rendre plus fiable. Nous avons conservé ces deux indicateurs, et ajouté une nouvelle variable : la température moyenne. A précipitations similaires, cela permet de mettre en valeur les villes relativement plus chaudes !</summary></entry><entry xml:lang="en"><title type="html">Weather Update</title><link href="http://localhost:4000/2018/12/weather-update.html" rel="alternate" type="text/html" title="Weather Update" /><published>2018-12-28T00:00:00+01:00</published><updated>2018-12-28T00:00:00+01:00</updated><id>http://localhost:4000/2018/12/weather-update</id><content type="html" xml:base="http://localhost:4000/2018/12/weather-update.html">&lt;h1 id=&quot;weather-update&quot;&gt;Weather Update&lt;/h1&gt;
+
+&lt;p&gt;Before, our weather rating only included 2 variables: annual precipitations, and a bonus given from the location of the city, it is located near the mountains or the sea. We have updated this rating to make it more &lt;strong&gt;reliable&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;We have indeed kept the two pre-existing variables, and we have added a new one: the average temperature. Now, when precipitations are similar, warmer cities rank higher… Which makes a lot of sense!&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;We have also seized this opportunity to update the rent data, and made a few adjustements to the Transports rating, in order to make it fairer. The old Transport rating was to complacent to isolated cities which still had an airport. Now, this issue is solved!&lt;/p&gt;
+
+&lt;p&gt;The consequences of this update have been massive - the biggest move since the inception of our rating. The new top 10 cities are now:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Lyon&lt;/li&gt;
+  &lt;li&gt;Bordeau&lt;/li&gt;
+  &lt;li&gt;Nantes&lt;/li&gt;
+  &lt;li&gt;Clermont-Ferrand&lt;/li&gt;
+  &lt;li&gt;Tours&lt;/li&gt;
+  &lt;li&gt;La Rochelle&lt;/li&gt;
+  &lt;li&gt;Narbonne&lt;/li&gt;
+  &lt;li&gt;Nancy&lt;/li&gt;
+  &lt;li&gt;Avignon&lt;/li&gt;
+  &lt;li&gt;Le Mans&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Work well, work remote!&lt;/p&gt;</content><author><name>Hector</name></author><summary type="html">Weather Update Before, our weather rating only included 2 variables: annual precipitations, and a bonus given from the location of the city, it is located near the mountains or the sea. We have updated this rating to make it more reliable. We have indeed kept the two pre-existing variables, and we have added a new one: the average temperature. Now, when precipitations are similar, warmer cities rank higher… Which makes a lot of sense!</summary></entry><entry xml:lang="fr"><title type="html">Bienvenue sur Remote France !</title><link href="http://localhost:4000/2018/12/bienvenue-sur-remote-france.html" rel="alternate" type="text/html" title="Bienvenue sur Remote France !" /><published>2018-12-10T00:00:00+01:00</published><updated>2018-12-10T00:00:00+01:00</updated><id>http://localhost:4000/2018/12/bienvenue-sur-remote-france</id><content type="html" xml:base="http://localhost:4000/2018/12/bienvenue-sur-remote-france.html">&lt;h1 id=&quot;bienvenue-sur-remote-france-&quot;&gt;Bienvenue sur Remote France !&lt;/h1&gt;
 
 &lt;p&gt;Remote France est l’outil de référence pour choisir où s’installer en France.&lt;/p&gt;
 
@@ -82,7 +148,7 @@
 
 &lt;p&gt;Nous proposons donc des alternatives qui mettent en valeur l’ensemble du territoire français, sans oublier personne. Nous ne faisons aucun choix ou préférentisme pour aucune ville ni aucune région, mais il se trouve que le classement fait souvent remonter des villes de différentes régions : de l’Auvergne-Rhône-Alpes (Lyon) à la Bretagne (Rennes) en passant par le Grand Est (Nancy), la Nouvelle Aquitaine (Bordeau), ou encore l’Occitanie (Narbonne) et le Centre-Val de Loire (Tours).&lt;/p&gt;
 
-&lt;p&gt;Ce classement est une occasion pour nous tous de découvrir plus en profondeurs les différentes régions !&lt;/p&gt;</content><author><name></name></author><summary type="html">Bienvenue sur Remote France ! Remote France est l’outil de référence pour choisir où s’installer en France. Nous vous proposons une sélection des meilleures villes de France où s’installer, selon des critères objectifs. Dans un esprit d’ouverture, nous mettons également à disposition notre méthodologie. Il n’y a aucun secret, aucune sauce magique : ces villes méritent objectivement et empiriquement de figurer à leur place dans le classement !</summary></entry><entry xml:lang="en"><title type="html">Welcome to Remote France !</title><link href="http://localhost:4000/2018/12/welcome-to-remote-france.html" rel="alternate" type="text/html" title="Welcome to Remote France !" /><published>2018-12-10T00:00:00+01:00</published><updated>2018-12-10T00:00:00+01:00</updated><id>http://localhost:4000/2018/12/welcome-to-remote-france</id><content type="html" xml:base="http://localhost:4000/2018/12/welcome-to-remote-france.html">&lt;h1 id=&quot;welcome-to-remote-france-&quot;&gt;Welcome to Remote France !&lt;/h1&gt;
+&lt;p&gt;Ce classement est une occasion pour nous tous de découvrir plus en profondeurs les différentes régions!&lt;/p&gt;</content><author><name>Hector</name></author><summary type="html">Bienvenue sur Remote France ! Remote France est l’outil de référence pour choisir où s’installer en France. Nous vous proposons une sélection des meilleures villes de France où s’installer, selon des critères objectifs. Dans un esprit d’ouverture, nous mettons également à disposition notre méthodologie. Il n’y a aucun secret, aucune sauce magique : ces villes méritent objectivement et empiriquement de figurer à leur place dans le classement !</summary></entry><entry xml:lang="en"><title type="html">Welcome to Remote France !</title><link href="http://localhost:4000/2018/12/welcome-to-remote-france.html" rel="alternate" type="text/html" title="Welcome to Remote France !" /><published>2018-12-10T00:00:00+01:00</published><updated>2018-12-10T00:00:00+01:00</updated><id>http://localhost:4000/2018/12/welcome-to-remote-france</id><content type="html" xml:base="http://localhost:4000/2018/12/welcome-to-remote-france.html">&lt;h1 id=&quot;welcome-to-remote-france-&quot;&gt;Welcome to Remote France !&lt;/h1&gt;
 
 &lt;p&gt;Remote France is the best tool to choose the ideal french city for you to work &amp;amp; live.&lt;/p&gt;
 
@@ -94,4 +160,4 @@
 
 &lt;p&gt;We offer alternatives which highlight the strenghts of the whole french territory, without omitting any location. We do not apply any bonus to any city or region. We remain strictly objective. But it so happens that our ranking brings up cities from a lot of french regions : from Auvergne-Rhône-Alpes (Lyon) to Bretagne (Rennes), Grand Est (Nancy), Nouvelle Aquitaine (Bordeau), or Occitanie (Narbonne) and Centre-Val de Loire (Tours).&lt;/p&gt;
 
-&lt;p&gt;This ranking is an opportunity for all of us to discover in depth the treasures of the various french regions!&lt;/p&gt;</content><author><name></name></author><summary type="html">Welcome to Remote France ! Remote France is the best tool to choose the ideal french city for you to work &amp;amp; live. We provide a comprehensive list of the best french cities according to objective criteria. In a spirit of openness, we give you access to our methodology. There’s no secret : the cities in our ranking are objectively and empirically the best, and all deserve precisely their place in the ranking!</summary></entry></feed>
+&lt;p&gt;This ranking is an opportunity for all of us to discover in depth the treasures of the various french regions!&lt;/p&gt;</content><author><name>Hector</name></author><summary type="html">Welcome to Remote France ! Remote France is the best tool to choose the ideal french city for you to work &amp;amp; live. We provide a comprehensive list of the best french cities according to objective criteria. In a spirit of openness, we give you access to our methodology. There’s no secret : the cities in our ranking are objectively and empirically the best, and all deserve precisely their place in the ranking!</summary></entry></feed>
