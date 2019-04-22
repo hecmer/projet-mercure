@@ -32,6 +32,7 @@ ranking:
     rain: Annual precipitations
     trainparis: Length of a trip to Paris
     numbercoworkings: Number of coworkings
+    pollution: Air quality index
     subscribe:
       value: Submit
       description: Leave us your email address, and we'll make sure to let you know when we'll have more information to tell you about
