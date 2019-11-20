@@ -17,7 +17,7 @@ Le loyer est un critère très important. Nous calculons le loyer mensuel média
 Une ville animée, c'est une ville où il fait bon vivre, où l'on peut sortir et faire des rencontres. La note animation donne donc une idée de l'activité de la ville. Elle utilise le nombre de bars et restaurants dans la ville, ainsi que la proportion d'étudiants. La proportion d'étudiants peut être supérieure à 100%, dans le cas où de nombreux étudiants seraient enrollés dans les universités de la ville, mais résideraient en périphérie, par exemple.
 
 ## Sécurité
-La limite du critère des loyers est que des endroits franchement peu accueillant, et avec une ambiance menaçante peuvent tirer leur épingle du jeu. La note se sécurité permet de contrôler ce paramètre en plombant les villes avec un taux de délinquance élevé.
+La limite du critère des loyers est que des endroits franchement peu accueillant, et avec une ambiance menaçante peuvent tirer leur épingle du jeu. La note de sécurité permet de contrôler ce paramètre en plombant les villes avec un taux de délinquance élevé.
 
 ## Internet
 Nous mesurons deux choses, qui sont toutes deux utiles pour nous autres remote workers : 
