@@ -1,27 +1,4 @@
 -
- nom: Lyon
- simplename: lyon
- loyer: 3
- animation: 5
- delinquance: 3
- internet: 5
- meteo: 5
- transport: 5
- coworking: 5
- rang: 1
- longitude: 45.77868676
- latitude: 4.823961127
- population: 513,275
- rentprice: 630.38€
- timetoparis: 131 minutes
- proportionrestaurants: 9
- 4gcoverage: 99%
- students: 38%
- minavginternet: 98Gb/s
- nbcoworkings: 31
- temperature: 11.6° 
- precipitations: 592mm 
--
  nom: Nantes
  simplename: nantes
  loyer: 4
@@ -31,11 +8,11 @@
  meteo: 4
  transport: 4
  coworking: 5
- rang: 2
+ rang: 1
  longitude: 47.23163568
  latitude: -1.5483100859999999
  population: 303,382
- rentprice: 530€
+ rentprice: 529€
  timetoparis: 151 minutes
  proportionrestaurants: 7
  4gcoverage: 99%
@@ -44,27 +21,52 @@
  nbcoworkings: 25
  temperature: 11.6° 
  precipitations: 657mm 
+ pollution: 3.9 
 -
- nom: Bordeaux
- simplename: bordeaux
- loyer: 4
+ nom: Clermont-Ferrand
+ simplename: clermontferrand
+ loyer: 5
  animation: 5
- delinquance: 4
+ delinquance: 3
  internet: 4
  meteo: 4
+ transport: 3
+ coworking: 5
+ rang: 2
+ longitude: 45.785649299999996
+ latitude: 3.115545429
+ population: 141,398
+ rentprice: 436€
+ timetoparis: 210 minutes
+ proportionrestaurants: 7
+ 4gcoverage: 95%
+ students: 38%
+ minavginternet: 94Gb/s
+ nbcoworkings: 7
+ temperature: 10.6° 
+ precipitations: 579mm 
+ pollution: 4.1 
+-
+ nom: Nancy
+ simplename: nancy
+ loyer: 5
+ animation: 5
+ delinquance: 3
+ internet: 5
+ meteo: 1
  transport: 5
- coworking: 4
+ coworking: 5
  rang: 3
- longitude: 44.85724454
- latitude: -0.573696781
- population: 249,712
- rentprice: 539€
- timetoparis: 128 minutes
- proportionrestaurants: 12
- 4gcoverage: 99%
- students: 28%
- minavginternet: 90Gb/s
- nbcoworkings: 10
- temperature: 12.7° 
- precipitations: 694mm 
- 
+ longitude: 48.69019955
+ latitude: 6.175882543999999
+ population: 105,162
+ rentprice: 450€
+ timetoparis: 90 minutes
+ proportionrestaurants: 8
+ 4gcoverage: 98%
+ students: 61%
+ minavginternet: 97Gb/s
+ nbcoworkings: 5
+ temperature: 9.7° 
+ precipitations: 738mm 
+ pollution: 4.0 

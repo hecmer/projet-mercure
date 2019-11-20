@@ -32,6 +32,7 @@ ranking:
     rain: Précipitations annuelles
     trainparis: Temps de Trajet vers Paris en train
     numbercoworkings: Nombre de coworkings
+    pollution: Indice de qualité de l'air
     subscribe:
       value: S'inscrire
       description: Donnez-nous votre adresse email et nous vous tiendrons au courrant dès que nous aurons plus d'information à vous communiquer sur Nancy !
